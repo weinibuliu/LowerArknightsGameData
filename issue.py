@@ -23,7 +23,7 @@ def open():
 def close():
     all_issues = repo.get_issues(state="open", labels=[f"bug: {lang}"])
 
-    issues: List[Issue.Issue] = []
+    issues: List[Issue.Issue] = List()
     new_issue = []
     num = 0
     while new_issue == [] and num <= 5:
