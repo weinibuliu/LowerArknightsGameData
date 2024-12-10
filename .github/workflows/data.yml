@@ -52,7 +52,7 @@ jobs:
       - name: Set Timezone (${{ inputs.timezone }})
         uses: szenius/set-timezone@v1.1
         with:
-          timezoneMacos: ${{ inputs.timestamp }}
+          timezoneMacos: ${{ inputs.timezone }}
 
       - name: Setup Python
         uses: actions/setup-python@v5.2.0
