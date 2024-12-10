@@ -2,11 +2,10 @@
 
 import os
 import sys
-import time
 import shutil
 import subprocess
 from pathlib import Path
-
+from datetime import datetime
 
 from src import avatar, character, char_classisy
 from src import cwd, build_path, cache_path
@@ -42,7 +41,7 @@ with open(f"{build_path}/version", "w", encoding="utf-8") as vs:
         version = f"{ver[0]}{ver[1]}{ver[2]}{ver[3]}{ver[4]}{ver[5]}"
 
     built_timestamp = int(sys.argv[2])
-    built_time = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(built_timestamp))
+    built_time = datetime.fromtimestamp(built_timestamp)
 
     vs.write(f"{current_version}\n")
     vs.write(f"{version}\n")
