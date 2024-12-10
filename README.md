@@ -48,7 +48,6 @@ The copyright of all static resources in this repository belongs to **[Arknights
 - **[add-and-commit](https://github.com/EndBug/add-and-commit)**
 - **[checkout](https://github.com/actions/checkout)**
 - **[download-artifact](https://github.com/actions/download-artifact)**
-- **[issues-helper](https://github.com/actions-cool/issues-helper)**
 - **[upload-artifact](https://github.com/actions/upload-artifact)**
 - **[set-timezone](https://github.com/szenius/set-timezone)**
 - **[setup-python](https://github.com/actions/setup-python)**
