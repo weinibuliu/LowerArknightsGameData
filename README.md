@@ -40,7 +40,7 @@ This repository uses data from the following repositories.Thanks the contributio
 
 The copyright of all static resources in this repository belongs to **[Arknights](https://ak.hypergryph.com)**. This repository only quotes them for learning and communication.
 
-## 致谢
+## 致谢 | Acknowledgments
 ### 开源项目 | Repository
 
 #### Github 工作流 | Github Workflows
