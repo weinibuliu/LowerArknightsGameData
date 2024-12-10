@@ -9,8 +9,7 @@ on:
         - ".github/workflows/**"
         - "src/**"
         - "version/**"
-        - "build.py"
-        - "meta.py"
+        - "**.py"
 
     schedule:
       - cron: '30 2 * * *'
