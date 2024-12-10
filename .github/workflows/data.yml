@@ -99,6 +99,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           labels: ${{ inputs.lang }}
           close-reason: completed
+          inactive-day: 0
           body: |
             According to the operation of https://github.com/weinibuliu/LowerArknightsGameData/actions/runs/${{ github.run_id}}  (#${{github.run_number}}), the data building of ${{ inputs.lang }} has returned to normal.
             Therefore, this issue will be marked as completed and closed.
