@@ -29,12 +29,11 @@ def close():
     while new_issue == [] and num <= 5:
         new_issue = []
         new_issue = all_issues.get_page(num)
-        issues.append(i for i in new_issue)
+        issues.extend(new_issue)
         num += 1
 
     for issue in issues:
         print(type(issue), issue)
-        print(issue.body)
         issue.create_comment(
             f"According to the operation of https://github.com/weinibuliu/LowerArknightsGameData/actions/runs/{action_id}  ({action_num}), the data building of {lang} has returned to normal.\nTherefore, this issue will be marked as completed and closed."
         )
