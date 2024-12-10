@@ -101,7 +101,7 @@ jobs:
           title: "${{ inputs.lang}}(${{ inputs.timestamp }}) dosen't build."
           body: |
               The workflow about ${{ inputs.lang}}(${{ inputs.timestamp }}) was not successful,please check Github Action.
-              ${{ github.actor_id}} ${{github.api_url}}
+              ${{ github.run_id}} ${{github.run_number}}
               @weinibuliu
 
       - name: Exit Workflows
