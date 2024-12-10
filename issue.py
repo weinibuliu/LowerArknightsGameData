@@ -29,7 +29,7 @@ def close():
     while new_issue == [] and num <= 5:
         new_issue = []
         new_issue = all_issues.get_page(num)
-        issues.append(new_issue)
+        issues.append(i for i in new_issue)
         num += 1
 
     for issue in issues:
