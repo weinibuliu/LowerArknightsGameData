@@ -91,13 +91,28 @@ jobs:
           name: ${{ inputs.lang }}-${{ inputs.timestamp }}
           path: build/*
 
+      - name: Close All Issue
+        if: env.FINISH == 'true'
+        uses: actions-cool/issues-helper@v3.6.0
+        with:
+          actions: "close-issue"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          labels: ${{ inputs.lang }}
+          close-reason: completed
+          body: |
+            According to the operation of https://github.com/weinibuliu/LowerArknightsGameData/actions/runs/${{ github.run_id}}  (#${{github.run_number}}), the data building of ${{ inputs.lang }} has returned to normal.
+            Therefore, this issue will be marked as completed and closed.
+
+
       - name: Open an Issue
         if: env.FINISH != 'true'
         uses: actions-cool/issues-helper@v3.6.0
         with:
           actions: "create-issue"
           token: ${{ secrets.GITHUB_TOKEN }}
-          labels: 'bug'
+          labels: |
+            bug
+            ${{ inputs.lang }}
           title: "${{ inputs.lang}}(${{ inputs.timestamp }}) dosen't build."
           body: |
               The workflow about ${{ inputs.lang}}(${{ inputs.timestamp }}) was not successful,please check Github Action.

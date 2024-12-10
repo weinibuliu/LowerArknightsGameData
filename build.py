@@ -11,7 +11,6 @@ from src import avatar, character, char_classisy
 from src import cwd, build_path, cache_path
 from src.commit import get_version
 
-raise RuntimeError()  # test
 
 lang = sys.argv[1]
 print(f"Language: {lang}")
