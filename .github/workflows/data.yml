@@ -67,15 +67,27 @@ jobs:
           path: cache/${{ inputs.lang }}/avatar
 
       - name: Run build.py
+        id: run_python
         timeout-minutes: 2
+        continue-on-error: true
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
           mkdir -p version/${{ inputs.lang }}
           python build.py ${{ inputs.lang }} ${{ inputs.timestamp }} ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Open an Issue
+        if: failure()
+        uses: actions-cool/issues-helper@v3.6.0
+        with:
+          actions: "create-issue"
+          title: "${{ inputs.timestamp }} was not successful"
+          body: |
+              ${{ inputs.timestamp }} was not successful,please check Github Action.
+              @weinibuliu
+
       - name: Upload Avatar Artifact
-        if: ${{ inputs.lang == 'zh_CN' }}
+        if: inputs.lang == 'zh_CN' && env.FINISH == 'true'
         uses: actions/upload-artifact@v4.4.1
         with:
           name: avatar-zh_CN-${{ inputs.timestamp }}
@@ -83,11 +95,13 @@ jobs:
             build/avatar/*
 
       - name: Upload Release Artifact
+        if: env.FINISH == 'true'
         uses: actions/upload-artifact@v4.4.1
         with:
           name: ${{ inputs.lang }}-${{ inputs.timestamp }}
           path: build/*
 
     outputs:
+      finish: ${{ env.FINISH }}
       release: ${{ env.RELEASE }}
       ver: ${{ env.VER }}

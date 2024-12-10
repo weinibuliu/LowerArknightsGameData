@@ -11,6 +11,8 @@ from src import avatar, character, char_classisy
 from src import cwd, build_path, cache_path
 from src.commit import get_version
 
+raise RuntimeError()  # test
+
 lang = sys.argv[1]
 print(f"Language: {lang}")
 
@@ -62,6 +64,7 @@ if os.environ.get("CI"):
         print("env.RELEASE = true")
     else:
         print("env.RELEASE = false")
+    subprocess.check_call(f'echo FINISH=true >> "$GITHUB_ENV"', shell=True)
 print("Done: Version")
 
 print("All Done!")
