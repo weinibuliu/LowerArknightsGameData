@@ -33,6 +33,7 @@ def close():
         num += 1
 
     for issue in issues:
+        print(issue)
         issue.create_comment(
             f"According to the operation of https://github.com/weinibuliu/LowerArknightsGameData/actions/runs/{action_id}  ({action_num}), the data building of {lang} has returned to normal.\nTherefore, this issue will be marked as completed and closed."
         )

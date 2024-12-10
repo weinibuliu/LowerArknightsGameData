@@ -93,20 +93,9 @@ jobs:
           name: ${{ inputs.lang }}-${{ inputs.timestamp }}
           path: build/*
 
-      - name: Find Issues
-        if: env.FINISH == 'true'
-        id: find_issues
-        uses: actions-cool/issues-helper@v3.6.0
-        with:
-          actions: 'find-issues'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-state: 'open'
-          labels: 'bug: ${{ inputs.lang }}'
-
       - name: Issue Events
         run: |
           python issue.py ${{ env.FINISH }} ${{ inputs.lang }} ${{ secrets.GITHUB_TOKEN }} ${{ github.run_id }} ${{ github.run_number }}
-
 
       - name: Exit Workflows
         if: env.FINISH != 'true'
