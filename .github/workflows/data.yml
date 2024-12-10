@@ -38,6 +38,8 @@ on:
 jobs:
   Build:
     runs-on: macos-latest
+    env:
+      FINISH: 'false'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4.2.1
@@ -91,33 +93,20 @@ jobs:
           name: ${{ inputs.lang }}-${{ inputs.timestamp }}
           path: build/*
 
-      - name: Close Issues
+      - name: Find Issues
         if: env.FINISH == 'true'
+        id: find_issues
         uses: actions-cool/issues-helper@v3.6.0
         with:
-          actions: "close-issues"
+          actions: 'find-issues'
           token: ${{ secrets.GITHUB_TOKEN }}
-          labels: ${{ inputs.lang }}
-          close-reason: completed
-          inactive-day: 0
-          body: |
-            According to the operation of https://github.com/weinibuliu/LowerArknightsGameData/actions/runs/${{ github.run_id}}  (#${{github.run_number}}), the data building of ${{ inputs.lang }} has returned to normal.
-            Therefore, this issue will be marked as completed and closed.
+          issue-state: 'open'
+          labels: 'bug: ${{ inputs.lang }}'
 
-      - name: Open an Issue
-        if: env.FINISH != 'true'
-        uses: actions-cool/issues-helper@v3.6.0
-        with:
-          actions: "create-issue"
-          token: ${{ secrets.GITHUB_TOKEN }}
-          labels: |
-            bug
-            ${{ inputs.lang }}
-          title: "${{ inputs.lang}}(${{ inputs.timestamp }}) dosen't build."
-          body: |
-              The workflow about ${{ inputs.lang}}(${{ inputs.timestamp }}) was not successful,please check Github Action.
-              https://github.com/weinibuliu/LowerArknightsGameData/actions/runs/${{ github.run_id}}  (#${{github.run_number}})
-              @weinibuliu
+      - name: Issue Events:
+        run: |
+          python issue.py ${{ env.FINISH }} ${{ inputs.lang }} ${{ secrets.GITHUB_TOKEN }} ${{ github.run_id }} ${{ github.run_number }}
+
 
       - name: Exit Workflows
         if: env.FINISH != 'true'
