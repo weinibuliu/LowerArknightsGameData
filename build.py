@@ -14,9 +14,6 @@ from src.commit import get_version
 lang = sys.argv[1]
 print(f"Language: {lang}")
 
-if lang in ["en_US"]:
-    raise RuntimeError()
-
 character.run(lang)
 char_classisy.run(lang)
 avatar.run(lang)

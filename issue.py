@@ -1,3 +1,5 @@
+# 未被使用的代码，设计用途是 open 或 close issue
+
 import sys
 from typing import List
 

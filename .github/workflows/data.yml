@@ -70,8 +70,7 @@ jobs:
 
       - name: Run build.py
         id: run_python
-        timeout-minutes: 2
-        continue-on-error: true
+        timeout-minutes: 2.5
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
@@ -92,16 +91,6 @@ jobs:
         with:
           name: ${{ inputs.lang }}-${{ inputs.timestamp }}
           path: build/*
-
-      - name: Issue Events
-        run: |
-          python issue.py ${{ env.FINISH }} ${{ inputs.lang }} ${{ secrets.GITHUB_TOKEN }} ${{ github.run_id }} ${{ github.run_number }}
-
-      - name: Exit Workflows
-        if: env.FINISH != 'true'
-        run: |
-          echo "::error::Failed to build ${{ inputs.lang }} data."
-          exit 1
 
     outputs:
       finish: ${{ env.FINISH }}
