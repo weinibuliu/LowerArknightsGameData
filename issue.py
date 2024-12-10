@@ -16,7 +16,7 @@ def open():
     repo.create_issue(
         title=f"{lang} didn't build",
         body=f"{lang} didn't build,please check Github Action.\nhttps://github.com/weinibuliu/LowerArknightsGameData/actions/runs/{action_id}  ({action_num})\n@weinibuliu",
-        labels=f"bug: {lang}",
+        labels=[f"bug: {lang}"],
     )
 
 
