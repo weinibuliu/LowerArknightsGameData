@@ -69,13 +69,12 @@ jobs:
       - name: Run build.py
         timeout-minutes: 2
         run: |
-          ls cache
           pip install --upgrade pip
           pip install -r requirements.txt
           mkdir -p version/${{ inputs.lang }}
-          python build.py ${{ inputs.lang }} ${{ secrets.GITHUB_TOKEN }}
+          python build.py ${{ inputs.lang }} ${{ inputs.timestamp }} ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload zh_CN Avatar Artifact
+      - name: Upload Avatar Artifact
         if: ${{ inputs.lang == 'zh_CN' }}
         uses: actions/upload-artifact@v4.4.1
         with:

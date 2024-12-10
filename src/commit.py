@@ -8,8 +8,8 @@ from datetime import datetime, timedelta
 from github import Github
 
 token = None
-if len(sys.argv) > 2:
-    token = sys.argv[2]
+if len(sys.argv) > 3:
+    token = sys.argv[3]
 
 until = datetime.now()
 since = until - timedelta(15)
