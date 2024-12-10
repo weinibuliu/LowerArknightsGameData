@@ -101,13 +101,14 @@ jobs:
           title: "${{ inputs.lang}}(${{ inputs.timestamp }}) dosen't build."
           body: |
               The workflow about ${{ inputs.lang}}(${{ inputs.timestamp }}) was not successful,please check Github Action.
+              ${{ github.actor_id}} ${{github.api_url}}
               @weinibuliu
 
       - name: Exit Workflows
         if: env.FINISH != 'true'
         run: |
           echo "::error::Failed to build ${{ inputs.lang }} data."
-          exit
+          exit 1
 
     outputs:
       finish: ${{ env.FINISH }}
