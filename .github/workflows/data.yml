@@ -107,6 +107,7 @@ jobs:
         if: env.FINISH != 'true'
         run: |
           echo "::error::Failed to build ${{ inputs.lang }} data."
+          exit
 
     outputs:
       finish: ${{ env.FINISH }}
