@@ -103,7 +103,7 @@ jobs:
           issue-state: 'open'
           labels: 'bug: ${{ inputs.lang }}'
 
-      - name: Issue Events:
+      - name: Issue Events
         run: |
           python issue.py ${{ env.FINISH }} ${{ inputs.lang }} ${{ secrets.GITHUB_TOKEN }} ${{ github.run_id }} ${{ github.run_number }}
 
