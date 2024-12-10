@@ -96,16 +96,17 @@ jobs:
         uses: actions-cool/issues-helper@v3.6.0
         with:
           actions: "create-issue"
-          title: "${{ inputs.timestamp }} was not successful"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          labels: 'bug'
+          title: "${{ inputs.lang}}(${{ inputs.timestamp }}) dosen't build."
           body: |
-              ${{ inputs.timestamp }} was not successful,please check Github Action.
+              The workflow about ${{ inputs.lang}}(${{ inputs.timestamp }}) was not successful,please check Github Action.
               @weinibuliu
 
       - name: Exit Workflows
         if: env.FINISH != 'true'
         run: |
-          echo "::error::Failed to build data"
-          ::exit::failure
+          echo "::error::Failed to build ${{ inputs.lang }} data."
 
     outputs:
       finish: ${{ env.FINISH }}
