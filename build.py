@@ -41,7 +41,7 @@ with open(f"{build_path}/version", "w", encoding="utf-8") as vs:
         ver = current_version.split("-")
         version = f"{ver[0]}{ver[1]}{ver[2]}{ver[3]}{ver[4]}{ver[5]}"
 
-    built_timestamp: int = sys.argv[2]
+    built_timestamp = int(sys.argv[2])
     built_time = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(built_timestamp))
 
     vs.write(f"{current_version}\n")
