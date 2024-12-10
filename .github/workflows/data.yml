@@ -1,0 +1,94 @@
+name: Data
+
+on:
+  workflow_call:
+    inputs:
+        checkout_repo:
+          required: false
+          type: string
+          default: Kengxxiao/ArknightsGameData_YoStar
+
+        checkout_path:
+          required: false
+          type: string
+          default: cache
+
+        checkout_files:
+          required: true
+          type: string
+
+        lang:
+          required: true
+          type: string
+
+        timezone:
+          required: true
+          type: string
+
+        timestamp:
+          required: true
+          type: string
+
+    outputs:
+      release:
+        value: ${{ jobs.Build.outputs.RELEASE }}
+      ver:
+        value: ${{jobs.Build.outputs.ver}}
+
+jobs:
+  Build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4.2.1
+
+      - name: Checkout ${{ inputs.checkout_repo }}
+        uses: actions/checkout@v4.2.1
+        with:
+          repository: ${{ inputs.checkout_repo }}
+          path: ${{ inputs.checkout_path }}
+          sparse-checkout: ${{ inputs.checkout_files }}
+
+      - name: Set Timezone (${{ inputs.timezone }})
+        uses: szenius/set-timezone@v1.1
+        with:
+          timezoneMacos: ${{ inputs.timestamp }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5.2.0
+        with:
+          python-version: "3.12"
+
+      - name: Download Avatar
+        if: ${{ inputs.lang != 'zh_CN' }}
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: avatar-zh_CN-${{ inputs.timestamp }}
+          path: cache/${{ inputs.lang }}/avatar
+
+      - name: Run build.py
+        timeout-minutes: 2
+        run: |
+          ls cache
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          mkdir -p version/${{ inputs.lang }}
+          python build.py ${{ inputs.lang }} ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload zh_CN Avatar Artifact
+        if: ${{ inputs.lang == 'zh_CN' }}
+        uses: actions/upload-artifact@v4.4.1
+        with:
+          name: avatar-zh_CN-${{ inputs.timestamp }}
+          path: |
+            build/avatar/*
+
+      - name: Upload Release Artifact
+        uses: actions/upload-artifact@v4.4.1
+        with:
+          name: ${{ inputs.lang }}-${{ inputs.timestamp }}
+          path: build/*
+
+    outputs:
+      release: ${{ env.RELEASE }}
+      ver: ${{ env.VER }}
