@@ -3,7 +3,7 @@ from typing import List
 
 from github import Github, Issue
 
-whetherclose = sys.argv[1]  #'true'(close)|| 'false'(open)
+whetherclose = sys.argv[1]  # 'true'(close) | 'false'(open)
 lang = sys.argv[2]
 token = sys.argv[3]
 action_id = sys.argv[4]
