@@ -60,7 +60,7 @@ jobs:
         with:
           checkout_files: en_US/gamedata/excel/character_table.json
           lang: en_US
-          timezone: America/New_York
+          timezone: America/Dawson
           timestamp: ${{ needs.meta.outputs.timestamp }}
 
     ja_JP:
