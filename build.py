@@ -62,8 +62,8 @@ if os.environ.get("CI"):
         release = "true"
         change = f"{existing_version} -> {current_version}"
 
-    subprocess.run(f'echo release={release} >> "$GITHUB_ENV"', shell=True)
-    subprocess.run(f'echo change={change} >> "$GITHUB_ENV"', shell=True)
+    subprocess.run(f'echo "release={release}" >> "$GITHUB_ENV"', shell=True)
+    subprocess.run(f'echo "change={change}" >> "$GITHUB_ENV"', shell=True)
     print(f"env.release = {release}")
     print(f"env.change = {change}")
     print(f"env.ver = {current_version}")
