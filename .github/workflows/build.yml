@@ -98,10 +98,10 @@ jobs:
 
         - name: Create Zip and Move Files
           run: |
-            echo "zh_CN: ${{ needs.zh_CN.outputs.ver }}"
-            echo "en_US: ${{ needs.en_US.outputs.ver }}"
-            echo "ja_JP: ${{ needs.ja_JP.outputs.ver }}"
-            echo "ko_KR: ${{ needs.ko_KR.outputs.ver }}"
+            echo "zh_CN: ${{ needs.zh_CN.outputs.change }}"
+            echo "en_US: ${{ needs.en_US.outputs.change }}"
+            echo "ja_JP: ${{ needs.ja_JP.outputs.change }}"
+            echo "ko_KR: ${{ needs.ko_KR.outputs.change }}"
 
             mkdir -p version && cd version
             mkdir -p zh_CN && mkdir -p en_US && mkdir -p ja_JP && mkdir -p ko_KR && cd ..
@@ -183,11 +183,12 @@ jobs:
               assets/ja_JP-version
               assets/ko_KR-version
             body: |
+              #### Versions
               - zh_CN: ${{ needs.zh_CN.outputs.ver }}
               - en_US: ${{ needs.en_US.outputs.ver }}
               - ja_JP: ${{ needs.ja_JP.outputs.ver }}
               - ko_KR: ${{ needs.ko_KR.outputs.ver }}
-              changings:
+              #### Changings
               - zh_CN: ${{ needs.zh_CN.outputs.change }}
               - en_US: ${{ needs.en_US.outputs.change }}
               - ja_JP: ${{ needs.ja_JP.outputs.change }}

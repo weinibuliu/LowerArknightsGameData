@@ -52,17 +52,16 @@ with open(f"{build_path}/{lang}-version", "w", encoding="utf-8") as vl:
     vl.write(current_version)
 
 shutil.copyfile(Path(build_path, "version"), existing_version_path)
-
+change = None
 # 写入 GITHUB ENV
 if os.environ.get("CI"):
     subprocess.run(f'echo ver={current_version} >> "$GITHUB_ENV"', shell=True)
     if current_version is not None and current_version != existing_version:
+        change = f"{existing_version} -> {current_version}"
         subprocess.run(f'echo release=true >> "$GITHUB_ENV"', shell=True)
-        subprocess.run(
-            f'echo change={existing_version} -> {current_version} >> "$GITHUB_ENV"',
-            shell=True,
-        )
+        subprocess.run(f'echo change={change}>> "$GITHUB_ENV"', shell=True)
         print("env.RELEASE = true")
+        print(f"env.change = {change}")
     else:
         print("env.release = false")
         print("env.change = 'null'")
