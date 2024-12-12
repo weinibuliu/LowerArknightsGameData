@@ -84,7 +84,7 @@ jobs:
     Release:
         needs: [meta,zh_CN,en_US,ja_JP,ko_KR]
         runs-on: macos-latest
-        if: needs.meta.outputs.create_release == 'true' &&  (needs.outputs.zh_CN.release == 'true' || needs.en_US.outputs.release == 'true' || needs.ja_JP.outputs.release == 'true' || needs.ko_KR.outputs.release == 'true')
+        if: needs.meta.outputs.create_release == 'true' && (needs.outputs.zh_CN.release == 'true' || needs.en_US.outputs.release == 'true' || needs.ja_JP.outputs.release == 'true' || needs.ko_KR.outputs.release == 'true')
         env:
           timestamp: ${{ needs.meta.outputs.timestamp }}
         steps:
