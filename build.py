@@ -58,10 +58,10 @@ if os.environ.get("CI"):
     subprocess.run(f'echo VER={current_version} >> "$GITHUB_ENV"', shell=True)
     if current_version is not None and current_version != existing_version:
         subprocess.run(f'echo RELEASE=true >> "$GITHUB_ENV"', shell=True)
-        subprocess.run("echo '::notice:: env.RELEASE = true'", shell=True)
+        print("env.RELEASE = true")
     else:
-        subprocess.run("echo '::notice:: env.RELEASE = false'", shell=True)
-    subprocess.run(f"echo '::notice:: env.VER = {current_version}'", shell=True)
+        print("env.RELEASE = false")
+    print(f"env.VER = {current_version}")
 print("Done: Version")
 
 print("All Done!")

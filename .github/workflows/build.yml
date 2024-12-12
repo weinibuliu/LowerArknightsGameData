@@ -98,10 +98,10 @@ jobs:
 
         - name: Create Zip and Move Files
           run: |
-            echo "::notice:: zh_CN: ${{ needs.zh_CN.outputs.release }}"
-            echo "::notice:: en_US: ${{ needs.en_US.outputs.release }}"
-            echo "::notice:: ja_JP: ${{ needs.ja_JP.outputs.release }}"
-            echo "::notice:: ko_KR: ${{ needs.ko_KR.outputs.release }}"
+            echo "zh_CN: ${{ needs.zh_CN.outputs.ver }}"
+            echo "en_US: ${{ needs.en_US.outputs.ver }}"
+            echo "ja_JP: ${{ needs.ja_JP.outputs.ver }}"
+            echo "ko_KR: ${{ needs.ko_KR.outputs.ver }}"
 
             mkdir -p version && cd version
             mkdir -p zh_CN && mkdir -p en_US && mkdir -p ja_JP && mkdir -p ko_KR && cd ..
