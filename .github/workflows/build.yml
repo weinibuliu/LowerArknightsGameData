@@ -41,7 +41,7 @@ jobs:
 
     zh_CN:
         needs: meta
-        if: ${{ needs.meta.outputs.enable_workflow }} && ${{ needs.meta.outputs.zh_CN == 'true' }}
+        if: ${{ needs.meta.outputs.enable_workflow }}
         uses: ./.github/workflows/data.yml
         with:
           checkout_repo: yuanyan3060/ArknightsGameResource
