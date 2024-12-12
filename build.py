@@ -55,13 +55,13 @@ shutil.copyfile(Path(build_path, "version"), existing_version_path)
 
 # 写入 GITHUB ENV
 if os.environ.get("CI"):
-    subprocess.check_call(f'echo VER={current_version} >> "$GITHUB_ENV"', shell=True)
+    subprocess.run(f'echo VER={current_version} >> "$GITHUB_ENV"', shell=True)
     if current_version is not None and current_version != existing_version:
-        subprocess.check_call(f'echo RELEASE=true >> "$GITHUB_ENV"', shell=True)
-        print("::info::env.RELEASE = true")
+        subprocess.run(f'echo RELEASE=true >> "$GITHUB_ENV"', shell=True)
+        subprocess.run("echo ::info::env.RELEASE = true", shell=True)
     else:
-        print("::info::env.RELEASE = false")
-print(f"::info::env.VER = {current_version}")
+        subprocess.run("echo ::info::env.RELEASE = false", shell=True)
+    subprocess.run(f"echo ::info::env.VER = {current_version}", shell=True)
 print("Done: Version")
 
 print("All Done!")
