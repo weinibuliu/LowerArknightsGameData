@@ -41,6 +41,7 @@ jobs:
     env:
       release: 'false'
       ver: 'null'
+      change: 'null'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4.2.1
@@ -93,5 +94,6 @@ jobs:
           path: build/*
 
     outputs:
-      release: ${{ env.RELEASE }}
-      ver: ${{ env.VER }}
+      ver: ${{ env.ver }}
+      change: ${{ env.change }}
+      release: ${{ env.release }}

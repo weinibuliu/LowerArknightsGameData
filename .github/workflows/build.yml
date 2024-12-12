@@ -183,7 +183,12 @@ jobs:
               assets/ja_JP-version
               assets/ko_KR-version
             body: |
-             - zh_CN: ${{ needs.zh_CN.outputs.ver }}
-             - en_US: ${{ needs.en_US.outputs.ver }}
-             - ja_JP: ${{ needs.ja_JP.outputs.ver }}
-             - ko_KR: ${{ needs.ko_KR.outputs.ver }}
+              - zh_CN: ${{ needs.zh_CN.outputs.ver }}
+              - en_US: ${{ needs.en_US.outputs.ver }}
+              - ja_JP: ${{ needs.ja_JP.outputs.ver }}
+              - ko_KR: ${{ needs.ko_KR.outputs.ver }}
+             changing:
+              - zh_CN: ${{ needs.zh_CN.outputs.change }}
+              - en_US: ${{ needs.en_US.outputs.change }}
+              - ja_JP: ${{ needs.ja_JP.outputs.change }}
+              - ko_KR: ${{ needs.ko_KR.outputs.change }}
