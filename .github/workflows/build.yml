@@ -187,7 +187,7 @@ jobs:
               - en_US: ${{ needs.en_US.outputs.ver }}
               - ja_JP: ${{ needs.ja_JP.outputs.ver }}
               - ko_KR: ${{ needs.ko_KR.outputs.ver }}
-             changing:
+              changings:
               - zh_CN: ${{ needs.zh_CN.outputs.change }}
               - en_US: ${{ needs.en_US.outputs.change }}
               - ja_JP: ${{ needs.ja_JP.outputs.change }}
