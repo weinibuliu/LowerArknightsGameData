@@ -70,3 +70,4 @@ if os.environ.get("CI"):
 
 print("Done: Version")
 print("\nAll Done!")
+print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")

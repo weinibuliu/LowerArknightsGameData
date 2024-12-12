@@ -31,7 +31,9 @@ on:
 
     outputs:
       release:
-        value: ${{ jobs.Build.outputs.RELEASE }}
+        value: ${{ jobs.Build.outputs.release }}
+      change:
+        value: ${{ jobs.Build.outputs.change}}
       ver:
         value: ${{jobs.Build.outputs.ver}}
 
@@ -40,8 +42,8 @@ jobs:
     runs-on: macos-latest
     env:
       release: 'false'
-      ver: 'null'
       change: 'null'
+      ver: 'null'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4.2.1
