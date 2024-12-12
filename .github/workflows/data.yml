@@ -78,7 +78,6 @@ jobs:
           pip install -r requirements.txt
           mkdir -p version/${{ inputs.lang }}
           python build.py ${{ inputs.lang }} ${{ inputs.timestamp }} ${{ secrets.GITHUB_TOKEN }}
-          echo ${{ env.change }}
 
       - name: Upload Avatar Artifact
         if: inputs.lang == 'zh_CN'
