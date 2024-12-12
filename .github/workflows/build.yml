@@ -96,7 +96,7 @@ jobs:
           with:
             path: assets
 
-        - name: Create Zip and Move Files
+        - name: Release(s) Preparation
           run: |
             echo "zh_CN: ${{ needs.zh_CN.outputs.change }}"
             echo "en_US: ${{ needs.en_US.outputs.change }}"
@@ -183,12 +183,12 @@ jobs:
               assets/ja_JP-version
               assets/ko_KR-version
             body: |
-              #### Versions
+              ### Versions
               - zh_CN: ${{ needs.zh_CN.outputs.ver }}
               - en_US: ${{ needs.en_US.outputs.ver }}
               - ja_JP: ${{ needs.ja_JP.outputs.ver }}
               - ko_KR: ${{ needs.ko_KR.outputs.ver }}
-              #### Changings
+              ### Changings
               - zh_CN: ${{ needs.zh_CN.outputs.change }}
               - en_US: ${{ needs.en_US.outputs.change }}
               - ja_JP: ${{ needs.ja_JP.outputs.change }}
