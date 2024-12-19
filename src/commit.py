@@ -44,7 +44,7 @@ def get_commit_msg(lang: Literal["en_US", "ja_JP", "ko_KR"]) -> str:
 def get_version(lang: str) -> str | None:
     msg = get_commit_msg(lang)
     if msg is None:
-        return
+        raise RuntimeError("Version is None.Please check the repo.")
     ver = msg.split("Data:")[-1]
     return ver
 
