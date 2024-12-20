@@ -22,8 +22,6 @@ def get_commit_msg(lang: Literal["en_US", "ja_JP", "ko_KR"]) -> str:
     if lang not in ["en_US", "ja_JP", "ko_KR"]:
         raise ValueError(f"{lang} is not supported langugae.")
 
-    repo = gh.get_repo("Kengxxiao/ArknightsGameData_YoStar")
-
     if lang == "en_US":
         flag = lang.split("_")[0].upper()
     else:
@@ -35,13 +33,13 @@ def get_commit_msg(lang: Literal["en_US", "ja_JP", "ko_KR"]) -> str:
         until=until,
     ).get_page(0)
 
-    for commit in commits:
-        msg = commit.commit.message
+    for c in commits:
+        msg = c.commit.message
         if flag in msg:
             return msg
 
 
-def get_version(lang: str) -> str | None:
+def get_version(lang: str) -> str:
     msg = get_commit_msg(lang)
     if msg is None:
         raise RuntimeError("Version is None.Please check the repo.")
