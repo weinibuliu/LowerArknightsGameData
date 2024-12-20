@@ -6,9 +6,9 @@
 This repository aims to provide smaller and more targeted Arknights data and resource files for use in other scenarios. For details on the using data, see **[Data Source](#数据来源--data-source)** .
 
 ## 更新时间 | Update Time
-仓库将于 **UTC-7 | UTC+8 | UTC+9** 的 **17:30** 运行工作流。这意味着仓库数据 ***不会*** 立即跟进计划外的修复（如临时闪断更新）。如您对数据时效有较高要求，建议 **fork** 仓库后自行修改工作流。
+仓库将于 **UTC-7 | UTC+8 | UTC+9** 的 **18:30** 运行工作流。这意味着仓库数据 ***不会*** 立即跟进计划外的修复（如临时闪断更新）。如您对数据时效有较高要求，建议 **fork** 仓库后自行修改工作流。
 
-The repository will run the workflow at **17:30** on **UTC-7 | UTC+8 | UTC+9**. This means that the repository datas ***don't*** keep up with unplanned fixes (such as temporary flash updates) immediately. If you have high requirements for data timeliness, it is recommended to **fork** the repository and modify the workflow yourself.
+The repository will run the workflow at **18:30** on **UTC-7 | UTC+8 | UTC+9**. This means that the repository datas ***don't*** keep up with unplanned fixes (such as temporary flash updates) immediately. If you have high requirements for data timeliness, it is recommended to **fork** the repository and modify the workflow yourself.
 
 >[!WARNING]
 仓库使用 **[Pygithub](https://github.com/PyGithub/PyGithub)** 获取 commit message ，如请求过于频繁，可能会触发 Github API 相关限制。请控制请求频率。\
