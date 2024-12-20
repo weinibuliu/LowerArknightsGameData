@@ -46,28 +46,28 @@ jobs:
       ver: 'null'
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v4
 
       - name: Checkout ${{ inputs.checkout_repo }}
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v4
         with:
           repository: ${{ inputs.checkout_repo }}
           path: ${{ inputs.checkout_path }}
           sparse-checkout: ${{ inputs.checkout_files }}
 
       - name: Set Timezone (${{ inputs.timezone }})
-        uses: szenius/set-timezone@v1.1
+        uses: szenius/set-timezone@v1
         with:
           timezoneMacos: ${{ inputs.timezone }}
 
       - name: Setup Python
-        uses: actions/setup-python@v5.2.0
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Download Avatar
         if: ${{ inputs.lang != 'zh_CN' }}
-        uses: actions/download-artifact@v4.1.8
+        uses: actions/download-artifact@v4
         with:
           name: avatar-zh_CN-${{ inputs.timestamp }}
           path: cache/${{ inputs.lang }}/avatar
@@ -83,14 +83,14 @@ jobs:
 
       - name: Upload Avatar Artifact
         if: inputs.lang == 'zh_CN'
-        uses: actions/upload-artifact@v4.4.1
+        uses: actions/upload-artifact@v4
         with:
           name: avatar-zh_CN-${{ inputs.timestamp }}
           path: |
             build/avatar/*
 
       - name: Upload Release Artifact
-        uses: actions/upload-artifact@v4.4.1
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.lang }}-${{ inputs.timestamp }}
           path: build/*

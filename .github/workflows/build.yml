@@ -12,22 +12,19 @@ on:
         - "**.py"
 
     schedule:
-      - cron: '30 3 * * *'
-      - cron: '30 9 * * *'
-      - cron: '30 2 * * *'
-      - cron: '30 8 * * *'
-      - cron: '30 18 * * *'
-      - cron: '30 0 * * *'
+      - cron: '30 9 * * *' # UTC+8
+      - cron: '30 8 * * *' # UTC+9
+      - cron: '30 0 * * *' # UTC-7
 
 jobs:
     meta:
       runs-on: macos-latest
       steps:
         - name: Checkout Code
-          uses: actions/checkout@v4.2.1
+          uses: actions/checkout@v4
 
         - name: Setup Python
-          uses: actions/setup-python@v5.2.0
+          uses: actions/setup-python@v5
           with:
             python-version: "3.12"
         - name: Run meta.py
@@ -89,10 +86,10 @@ jobs:
           timestamp: ${{ needs.meta.outputs.timestamp }}
         steps:
         - name: Checkout Code
-          uses: actions/checkout@v4.2.1
+          uses: actions/checkout@v4
 
         - name: Download Artifacts
-          uses: actions/download-artifact@v4.1.8
+          uses: actions/download-artifact@v4
           with:
             path: assets
 
@@ -133,7 +130,7 @@ jobs:
 
         - name: Commit zh_CN Version
           if: ${{ needs.zh_CN.outputs.release == 'true' }}
-          uses: EndBug/add-and-commit@v9.1.4
+          uses: EndBug/add-and-commit@v9
           with:
             author_name: github-actions
             author_email: github-actions[bot]@users.noreply.github.com
@@ -142,7 +139,7 @@ jobs:
 
         - name: Commit en_US Version
           if: ${{ needs.en_US.outputs.release == 'true' }}
-          uses: EndBug/add-and-commit@v9.1.4
+          uses: EndBug/add-and-commit@v9
           with:
             author_name: github-actions
             author_email: github-actions[bot]@users.noreply.github.com
@@ -151,7 +148,7 @@ jobs:
 
         - name: Commit ja_JP Version
           if: ${{ needs.ja_JP.outputs.release == 'true' }}
-          uses: EndBug/add-and-commit@v9.1.4
+          uses: EndBug/add-and-commit@v9
           with:
             author_name: github-actions
             author_email: github-actions[bot]@users.noreply.github.com
@@ -160,7 +157,7 @@ jobs:
 
         - name: Commit ko_KR Version
           if: ${{ needs.ko_KR.outputs.release == 'true' }}
-          uses: EndBug/add-and-commit@v9.1.4
+          uses: EndBug/add-and-commit@v9
           with:
             author_name: github-actions
             author_email: github-actions[bot]@users.noreply.github.com
@@ -168,7 +165,7 @@ jobs:
             add: 'version/ko_KR/version'
 
         - name: Create Release
-          uses: softprops/action-gh-release@v2.1.0
+          uses: softprops/action-gh-release@v2
           with:
             tag_name: ${{ env.timestamp }}
             make_latest: true
@@ -183,12 +180,12 @@ jobs:
               assets/ja_JP-version
               assets/ko_KR-version
             body: |
-              ### Versions
+              ### Version
               - zh_CN: ${{ needs.zh_CN.outputs.ver }}
               - en_US: ${{ needs.en_US.outputs.ver }}
               - ja_JP: ${{ needs.ja_JP.outputs.ver }}
               - ko_KR: ${{ needs.ko_KR.outputs.ver }}
-              ### Changings
+              ### Changing
               - zh_CN: ${{ needs.zh_CN.outputs.change }}
               - en_US: ${{ needs.en_US.outputs.change }}
               - ja_JP: ${{ needs.ja_JP.outputs.change }}
