@@ -103,30 +103,17 @@ jobs:
             mkdir -p version && cd version
             mkdir -p zh_CN && mkdir -p en_US && mkdir -p ja_JP && mkdir -p ko_KR && cd ..
 
-            cd assets
-            cd avatar-zh_CN-${{ env.timestamp }}
-            zip -r -q avatar-zh_CN.zip .
-            mv avatar-zh_CN.zip ..
-
-            cd ../zh_CN-${{ env.timestamp }} && mv zh_CN-version ..
-            zip -r -q zh_CN.zip .
-            mv zh_CN.zip ..
-            mv -f version ../../version/zh_CN/
+            cd assets/zh_CN-${{ env.timestamp }} && mv zh_CN-version ..
+            zip -r -q zh_CN.zip . && mv zh_CN.zip .. && mv -f version ../../version/zh_CN/
 
             cd ../en_US-${{ env.timestamp }} && mv en_US-version ..
-            zip -r -q en_US.zip .
-            mv en_US.zip ..
-            mv -f version ../../version/en_US/
+            zip -r -q en_US.zip . && mv en_US.zip .. && mv -f version ../../version/en_US/
 
             cd ../ja_JP-${{ env.timestamp }} && mv ja_JP-version ..
-            zip -r -q ja_JP.zip .
-            mv ja_JP.zip ..
-            mv -f version ../../version/ja_JP/
+            zip -r -q ja_JP.zip . && mv ja_JP.zip .. && mv -f version ../../version/ja_JP/
 
             cd ../ko_KR-${{ env.timestamp }} && mv ko_KR-version ..
-            zip -r -q ko_KR.zip .
-            mv ko_KR.zip ..
-            mv -f version ../../version/ko_KR/
+            zip -r -q ko_KR.zip . && mv ko_KR.zip .. && mv -f version ../../version/ko_KR/
 
         - name: Commit zh_CN Version
           if: ${{ needs.zh_CN.outputs.release == 'true' }}
@@ -170,7 +157,6 @@ jobs:
             tag_name: ${{ env.timestamp }}
             make_latest: true
             files: |
-              assets/avatar-zh_CN.zip
               assets/zh_CN.zip
               assets/en_US.zip
               assets/ja_JP.zip
