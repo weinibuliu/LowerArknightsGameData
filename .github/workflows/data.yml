@@ -42,8 +42,8 @@ jobs:
     runs-on: macos-latest
     env:
       release: 'false'
-      change: 'null'
-      ver: 'null'
+      change: 'None'
+      ver: 'None'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
