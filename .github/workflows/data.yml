@@ -33,9 +33,9 @@ on:
       release:
         value: ${{ jobs.Build.outputs.release }}
       change:
-        value: ${{ jobs.Build.outputs.change}}
+        value: ${{ jobs.Build.outputs.change }}
       ver:
-        value: ${{jobs.Build.outputs.ver}}
+        value: ${{ jobs.Build.outputs.ver }}
 
 jobs:
   Build:
