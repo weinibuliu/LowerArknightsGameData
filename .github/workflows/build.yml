@@ -115,6 +115,32 @@ jobs:
             cd ../ko_KR-${{ env.timestamp }} && mv ko_KR-version ..
             zip -r -q ko_KR.zip . && mv ko_KR.zip .. && mv -f version ../../version/ko_KR/
 
+        - name: Create Release
+          uses: softprops/action-gh-release@v2
+          with:
+            tag_name: ${{ env.timestamp }}
+            make_latest: true
+            files: |
+              assets/zh_CN.zip
+              assets/en_US.zip
+              assets/ja_JP.zip
+              assets/ko_KR.zip
+              assets/zh_CN-version
+              assets/en_US-version
+              assets/ja_JP-version
+              assets/ko_KR-version
+            body: |
+              ### Version Info
+              - zh_CN: ${{ needs.zh_CN.outputs.ver }}
+              - en_US: ${{ needs.en_US.outputs.ver }}
+              - ja_JP: ${{ needs.ja_JP.outputs.ver }}
+              - ko_KR: ${{ needs.ko_KR.outputs.ver }}
+              ### Changing
+              - zh_CN: ${{ needs.zh_CN.outputs.change }}
+              - en_US: ${{ needs.en_US.outputs.change }}
+              - ja_JP: ${{ needs.ja_JP.outputs.change }}
+              - ko_KR: ${{ needs.ko_KR.outputs.change }}
+
         - name: Commit zh_CN Version
           if: ${{ needs.zh_CN.outputs.release == 'true' }}
           uses: EndBug/add-and-commit@v9
@@ -150,29 +176,3 @@ jobs:
             author_email: github-actions[bot]@users.noreply.github.com
             message: '[ko_KR] ${{ needs.ko_KR.outputs.ver }}'
             add: 'version/ko_KR/version'
-
-        - name: Create Release
-          uses: softprops/action-gh-release@v2
-          with:
-            tag_name: ${{ env.timestamp }}
-            make_latest: true
-            files: |
-              assets/zh_CN.zip
-              assets/en_US.zip
-              assets/ja_JP.zip
-              assets/ko_KR.zip
-              assets/zh_CN-version
-              assets/en_US-version
-              assets/ja_JP-version
-              assets/ko_KR-version
-            body: |
-              ### Version Info
-              - zh_CN: ${{ needs.zh_CN.outputs.ver }}
-              - en_US: ${{ needs.en_US.outputs.ver }}
-              - ja_JP: ${{ needs.ja_JP.outputs.ver }}
-              - ko_KR: ${{ needs.ko_KR.outputs.ver }}
-              ### Changing
-              - zh_CN: ${{ needs.zh_CN.outputs.change }}
-              - en_US: ${{ needs.en_US.outputs.change }}
-              - ja_JP: ${{ needs.ja_JP.outputs.change }}
-              - ko_KR: ${{ needs.ko_KR.outputs.change }}
