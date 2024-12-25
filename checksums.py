@@ -14,7 +14,8 @@ assets = release.assets
 for a in assets:
     if ".zip" not in a.name:
         continue
-    with open(Path(Path.cwd(), a.name), "rb") as file:
+    with open(Path(Path.cwd(), "assets", a.name), "rb") as file:
         data = file.read()
         md5 = hashlib.md5().hexdigest()
+        print(f"{a.name}: {md5}")
     a.update_asset(a.name, md5)

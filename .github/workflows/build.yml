@@ -141,6 +141,10 @@ jobs:
               - ja_JP: ${{ needs.ja_JP.outputs.change }}
               - ko_KR: ${{ needs.ko_KR.outputs.change }}
 
+        - name: Update Checksums
+          run: |
+            python checksums.py ${{ secrets.GITHUB_TOKEN }}
+
         - name: Commit zh_CN Version
           if: ${{ needs.zh_CN.outputs.release == 'true' }}
           uses: EndBug/add-and-commit@v9
@@ -175,8 +179,3 @@ jobs:
             author_name: github-actions
             author_email: github-actions[bot]@users.noreply.github.com
             message: '[ko_KR] ${{ needs.ko_KR.outputs.ver }}'
-            add: 'version/ko_KR/version'
-
-    Checksums:
-      needs: Release
-      uses: ./.github/workflows/checksums.yml
