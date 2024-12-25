@@ -1,0 +1,483 @@
+{
+    "PIONEER": {
+        "pioneer": {
+            "야토": "char_502_nblade",
+            "팽": "char_123_fang",
+            "바닐라": "char_240_wyvern",
+            "예비 인원 - 근거리": "char_504_rguard",
+            "쿠리어": "char_198_blackd",
+            "스캐빈저": "char_149_scave",
+            "지마": "char_115_headbr",
+            "텍사스": "char_102_texas",
+            "키아베": "char_349_chiave",
+            "폰사이러스": "char_488_buildr",
+            "튤립": "char_513_apionr",
+            "케스트럴": "char_4023_rfalcn",
+            "시즈": "char_112_siege",
+            "사가": "char_362_saga",
+            "플레임테일": "char_420_flamtl"
+        },
+        "charger": {
+            "플룸": "char_192_falco",
+            "비그나": "char_290_vigna",
+            "리드": "char_261_sddrag",
+            "와일드메인": "char_496_wildmn",
+            "팽 더 파이어 샤픈드": "char_1036_fang2",
+            "백파이프": "char_222_bpipe",
+            "그라니": "char_220_grani"
+        },
+        "bearer": {
+            "머틀": "char_151_myrtle",
+            "엘리시움": "char_401_elysm",
+            "완칭": "char_4119_wanqin",
+            "사일라흐": "char_479_sleach"
+        },
+        "tactician": {
+            "빈스토크": "char_452_bstalk",
+            "블랙나이트": "char_476_blkngt",
+            "비질": "char_427_vigil",
+            "뮤엘시스": "char_249_mlyss"
+        },
+        "agent": {
+            "칸타빌레": "char_497_ctable",
+            "퍼즐": "char_4017_puzzle",
+            "이네스": "char_4087_ines"
+        }
+    },
+    "WARRIOR": {
+        "fearless": {
+            "Castle-3": "char_286_cast3",
+            "멜란사": "char_208_melan",
+            "마토이마루": "char_289_gyuki",
+            "컨빅션": "char_159_peacok",
+            "프란카": "char_106_franka",
+            "플레임브링어": "char_131_flameb",
+            "모건": "char_154_morgan",
+            "Sharp": "char_508_aguard",
+            "니어 더 래디언트 나이트": "char_1014_nearl2",
+            "레싱": "char_4011_lessng",
+            "스카디": "char_263_skadi"
+        },
+        "centurion": {
+            "포푸카": "char_281_popka",
+            "에스텔": "char_127_estell",
+            "스펙터": "char_143_ghost",
+            "브로카": "char_356_broca",
+            "Fuze": "char_4126_fuze",
+            "블레이즈": "char_017_huang",
+            "가비알 디 인빈서블": "char_1026_gvial2",
+            "새비지": "char_230_savage"
+        },
+        "instructor": {
+            "도베르만": "char_130_doberm",
+            "스와이어": "char_308_swire",
+            "위슬래시": "char_265_sophia",
+            "브라이오피타": "char_4106_bryota",
+            "Doc": "char_4125_rdoc",
+            "팔라스": "char_485_pallas"
+        },
+        "lord": {
+            "프로스트리프": "char_193_frostl",
+            "아렌": "char_271_spikes",
+            "나소흑": "char_4067_lolxh",
+            "라플란드": "char_140_whitew",
+            "에이어스카르페": "char_294_ayer",
+            "레토": "char_194_leto",
+            "실버애쉬": "char_172_svrash",
+            "쏜즈": "char_293_thorns",
+            "치우바이": "char_4082_qiubai",
+            "미드나이트": "char_283_midn"
+        },
+        "artsfghter": {
+            "무스": "char_185_frncat",
+            "아스테시아": "char_274_astesi",
+            "시데로카": "char_333_sidero",
+            "수르트": "char_350_surtr",
+            "비비아나": "char_4098_vvana"
+        },
+        "sword": {
+            "커터": "char_301_cutter",
+            "바이비크": "char_252_bibeak",
+            "Tachanka": "char_459_tachak",
+            "첸": "char_010_chen",
+            "아이린": "char_4009_irene",
+            "데겐블레허": "char_4116_blkkgt"
+        },
+        "musha": {
+            "우타게": "char_337_utage",
+            "아카후유": "char_475_akafyu",
+            "레우스S 느와르 코르네": "char_1030_noirc2",
+            "헬라그": "char_188_helage",
+            "좌락": "char_4121_zuole"
+        },
+        "crusher": {
+            "쿼츠": "char_4063_quartz",
+            "윈드차임스": "char_4083_chimes",
+            "외드레르": "char_4088_hodrer",
+            "울피아누스": "char_4145_ulpia"
+        },
+        "reaper": {
+            "휴머스": "char_491_humus",
+            "라 플루마": "char_421_crow",
+            "하이모어": "char_4066_highmo",
+            "이그제큐터 디 엑스 포에데레": "char_1032_excu2"
+        },
+        "fighter": {
+            "인드라": "char_155_tiger",
+            "플린트": "char_415_flint",
+            "다그다": "char_157_dagda",
+            "마운틴": "char_264_f12yin",
+            "총웨": "char_2024_chyue",
+            "비헌터": "char_137_brownb",
+            "재키": "char_347_jaksel"
+        },
+        "librator": {
+            "테킬라": "char_486_takila",
+            "무에나": "char_4064_mlynar"
+        },
+        "hammer": {
+            "오다": "char_4131_odda"
+        }
+    },
+    "TANK": {
+        "protector": {
+            "Friston-3": "char_4093_frston",
+            "느와르 코르네": "char_500_noirc",
+            "카디건": "char_209_ardign",
+            "비글": "char_122_beagle",
+            "예비 인원 - 디펜더": "char_514_rdfend",
+            "마터호른": "char_199_yak",
+            "쿠오라": "char_150_snakek",
+            "버블": "char_381_bubble",
+            "크루아상": "char_201_moeshd",
+            "바이슨": "char_325_bison",
+            "헤비레인": "char_304_zebra",
+            "호시구마": "char_136_hsguma",
+            "니엔": "char_2014_nian"
+        },
+        "guardian": {
+            "스팟": "char_284_spot",
+            "굼": "char_196_sunbr",
+            "니어": "char_148_nearl",
+            "훔": "char_226_hmau",
+            "베이스라인": "char_4109_baslin",
+            "사리아": "char_202_demkni",
+            "블레미샤인": "char_423_blemsh",
+            "슈": "char_2025_shu"
+        },
+        "unyield": {
+            "루토나다": "char_4130_luton",
+            "벌컨": "char_163_hpsts",
+            "머드락": "char_311_mudrok",
+            "페넌스": "char_4065_judge"
+        },
+        "artsprotector": {
+            "듀나": "char_260_durnar",
+            "아스베스토스": "char_378_asbest",
+            "샬렘": "char_4025_aprot2",
+            "체르니": "char_4047_pianst"
+        },
+        "shotprotector": {
+            "리스캄": "char_107_liskam",
+            "언더플로우": "char_4137_udflow",
+            "Blitz": "char_457_blitz",
+            "제시카 더 리버레이티드": "char_1034_jesca2"
+        },
+        "fortress": {
+            "애쉬락": "char_431_ashlok",
+            "파이어휘슬": "char_493_firwhl",
+            "혼": "char_4039_horn"
+        },
+        "duelist": {
+            "오로라": "char_422_aurora",
+            "시멘트": "char_464_cement",
+            "유넥티스": "char_416_zumama"
+        }
+    },
+    "SNIPER": {
+        "fastshot": {
+            "저스티스 나이트": "char_4000_jnight",
+            "레인저": "char_503_rang",
+            "크루스": "char_124_kroos",
+            "아드나키엘": "char_211_adnach",
+            "예비 인원 - 스나이퍼": "char_507_rsnipe",
+            "제시카": "char_235_jesica",
+            "메테오": "char_126_shotst",
+            "버메일": "char_190_clour",
+            "메이": "char_133_mm",
+            "블루포이즌": "char_129_bluep",
+            "플래티넘": "char_204_platnm",
+            "그레이스롯": "char_367_swllow",
+            "Stormeye": "char_511_asnipe",
+            "에이프릴": "char_365_aprl",
+            "크루스 더 킨 글린트": "char_1021_kroos2",
+            "인사이더": "char_498_inside",
+            "엑시아": "char_103_angel",
+            "아르케토": "char_332_archet",
+            "Ash": "char_456_ash"
+        },
+        "bombarder": {
+            "테라 대륙 조사단": "char_4077_palico",
+            "그레이 더 라이트닝베어러": "char_1027_greyy2",
+            "로즈몬티스": "char_391_rosmon",
+            "위셔델": "char_1035_wisdel"
+        },
+        "aoesniper": {
+            "시라유키": "char_118_yuki",
+            "메테오라이트": "char_219_meteo",
+            "세사": "char_379_sesa",
+            "지에윈": "char_4078_bdhkgt",
+            "W": "char_113_cqbw",
+            "피아메타": "char_300_phenxi",
+            "캐터펄트": "char_282_catap"
+        },
+        "reaperrange": {
+            "파인콘": "char_440_pinecn",
+            "이그제큐터": "char_279_excu",
+            "아오스타": "char_346_aosta",
+            "첸 더 홀룽데이": "char_1013_chen2"
+        },
+        "longrange": {
+            "엠브리엘": "char_302_glaze",
+            "파이어워치": "char_158_milu",
+            "안드레아나": "char_218_cuttle",
+            "루나컵": "char_4014_lunacu",
+            "파투스": "char_430_fartth"
+        },
+        "closerange": {
+            "애시드드롭": "char_366_acdrop",
+            "프로방스": "char_145_prove",
+            "멜라나이트": "char_4006_melnte",
+            "슈바르츠": "char_340_shwaz",
+            "파죰카": "char_4055_bgsnow"
+        },
+        "siegesniper": {
+            "토터": "char_4062_totter",
+            "토디폰스": "char_363_toddi",
+            "에라토": "char_4043_erato",
+            "로사": "char_197_poca",
+            "티폰": "char_2012_typhon"
+        },
+        "loopshooter": {
+            "케이퍼": "char_4100_caper"
+        },
+        "hunter": {
+            "콜드샷": "char_4104_coldst",
+            "레이": "char_4117_ray"
+        }
+    },
+    "CASTER": {
+        "corecaster": {
+            "두린": "char_501_durin",
+            "스튜어드": "char_210_stward",
+            "예비 인원 - 캐스터": "char_505_rcast",
+            "헤이즈": "char_141_nights",
+            "아미야": "char_002_amiya",
+            "압생트": "char_405_absin",
+            "토미미": "char_411_tomimi",
+            "카니팔라트": "char_466_qanik",
+            "에이야퍄들라": "char_180_amgoat",
+            "케오베": "char_2013_cerber",
+            "오올헤약": "char_4027_heyak",
+            "로고스": "char_4133_logos",
+            "나이트메어": "char_164_nightm"
+        },
+        "splashcaster": {
+            "12F": "char_009_12fce",
+            "라바": "char_121_lava",
+            "기타노": "char_109_fmout",
+            "그레이": "char_253_greyy",
+            "스카이파이어": "char_166_skfire",
+            "Pith": "char_509_acast",
+            "레온하르트": "char_373_lionhd",
+            "산탈라": "char_341_sntlla",
+            "라바 더 퍼거토리": "char_1011_lava2",
+            "모스티마": "char_213_mostma",
+            "시": "char_2015_dusk"
+        },
+        "funnel": {
+            "클릭": "char_328_cammou",
+            "쉐라": "char_4013_kjera",
+            "락락": "char_4040_rockr",
+            "미니멀리스트": "char_4054_malist",
+            "골든글로우": "char_377_gdglow"
+        },
+        "mystic": {
+            "인디고": "char_469_indigo",
+            "아이리스": "char_338_iris",
+            "아르모니": "char_297_hamoni",
+            "델핀": "char_4110_delphn",
+            "에벤홀츠": "char_4046_ebnhlz"
+        },
+        "chain": {
+            "푸딩": "char_4004_pudd",
+            "레이즈": "char_306_leizi",
+            "아스트젠": "char_135_halo",
+            "패신저": "char_472_pasngr"
+        },
+        "phalanx": {
+            "비즈왁스": "char_344_beewax",
+            "민트": "char_388_mint",
+            "카넬리안": "char_426_billro",
+            "린": "char_4080_lin"
+        },
+        "blastcaster": {
+            "코로세럼": "char_489_serum",
+            "아로마": "char_446_aroma",
+            "이프리트": "char_134_ifrit"
+        },
+        "primcaster": {
+            "디아만테": "char_499_kaitou",
+            "워미": "char_4081_warmy"
+        }
+    },
+    "MEDIC": {
+        "physician": {
+            "Lancet-2": "char_285_medic2",
+            "히비스커스": "char_120_hibisc",
+            "안셀": "char_212_ansel",
+            "예비 인원 - 지원": "char_506_rmedic",
+            "미르": "char_117_myrrh",
+            "가비알": "char_187_ccheal",
+            "수수로": "char_298_susuro",
+            "사일런스": "char_108_silent",
+            "와파린": "char_171_bldsk",
+            "폴리닉": "char_345_folnic",
+            "Touch": "char_510_amedic",
+            "투예": "char_402_tuye",
+            "샤이닝": "char_147_shining",
+            "켈시": "char_003_kalts"
+        },
+        "ringhealer": {
+            "퍼퓨머": "char_181_flower",
+            "프틸롭시스": "char_128_plosis",
+            "브리즈": "char_275_breeze",
+            "나이팅게일": "char_179_cgbird"
+        },
+        "healer": {
+            "퓨어스트림": "char_385_finlpp",
+            "실론": "char_348_ceylon",
+            "위스퍼레인": "char_436_whispr",
+            "루멘": "char_4042_lumen"
+        },
+        "wandermedic": {
+            "체스트넛": "char_4041_chnut",
+            "멀베리": "char_473_mberry",
+            "허니베리": "char_449_glider",
+            "해럴드": "char_4114_harold",
+            "에이야퍄들라 더 크비트 아스카": "char_1016_agoat2"
+        },
+        "incantationmedic": {
+            "히비스커스 더 퓨리파이어": "char_1024_hbisc2",
+            "벤델라": "char_494_vendla",
+            "리드 더 플레임 섀도우": "char_1020_reed2"
+        },
+        "chainhealer": {
+            "파프리카": "char_4071_peper"
+        }
+    },
+    "SUPPORT": {
+        "bard": {
+            "U-Official": "char_4091_ulika",
+            "소라": "char_101_sora",
+            "하이디": "char_4045_heidi",
+            "스카디 더 커럽팅 하트": "char_1012_skadi2",
+            "시빌라이트 에테르나": "char_4134_cetsyr"
+        },
+        "ritualist": {
+            "PhonoR-0": "char_4136_phonor",
+            "발라크빈": "char_4102_threye",
+            "비르투오사": "char_245_cello"
+        },
+        "slower": {
+            "오키드": "char_278_orchid",
+            "어스스피릿": "char_183_skgoat",
+            "포덴코": "char_258_podego",
+            "이스티나": "char_195_glassb",
+            "글라우쿠스": "char_326_glacus",
+            "프로바이조": "char_4032_provs",
+            "그레인버즈": "char_4122_grabds",
+            "안젤리나": "char_291_aglina",
+            "스즈란": "char_358_lisa"
+        },
+        "summoner": {
+            "딥컬러": "char_110_deepcl",
+            "메이어": "char_242_otter",
+            "씬": "char_336_folivo",
+            "마젤란": "char_248_mgllan",
+            "링": "char_2023_ling"
+        },
+        "craftsman": {
+            "로베르타": "char_484_robrta",
+            "윈드플릿": "char_433_windft",
+            "스테인리스": "char_4072_ironmn"
+        },
+        "underminer": {
+            "프라마닉스": "char_174_slbell",
+            "샤마르": "char_254_vodfox",
+            "루실라": "char_4079_haini",
+            "노시스": "char_206_gnosis"
+        },
+        "blessing": {
+            "츠키노기": "char_343_tknogi",
+            "나인컬러드 디어": "char_4019_ncdeer",
+            "퀘르쿠스": "char_492_quercu",
+            "사일런스 더 패러디그매틱": "char_1031_slent2"
+        }
+    },
+    "SPECIAL": {
+        "executor": {
+            "THRM-EX": "char_376_therex",
+            "그라벨": "char_237_gravel",
+            "레드": "char_144_red",
+            "와이후": "char_243_waaifu",
+            "카프카": "char_214_kafka",
+            "팬텀": "char_250_phatom",
+            "텍사스 디 오메르토사": "char_1028_texas2",
+            "키린R 야토": "char_1029_yato2"
+        },
+        "merchant": {
+            "제이": "char_272_strong",
+            "우요우": "char_455_nothin",
+            "리": "char_322_lmlee",
+            "스와이어 디 엘리건트 위트": "char_1033_swire2"
+        },
+        "hookmaster": {
+            "로프": "char_236_rope",
+            "클리프하트": "char_173_slchan",
+            "스노우상트": "char_383_snsant",
+            "아몬드": "char_4105_almond",
+            "글래디아": "char_474_glady"
+        },
+        "stalker": {
+            "에단": "char_355_ethan",
+            "맨티코어": "char_215_mantic",
+            "키라라": "char_478_kirara",
+            "미즈키": "char_437_mizuki",
+            "아스카론": "char_4132_ascln"
+        },
+        "pusher": {
+            "쇼": "char_277_sqrrel",
+            "에프이터": "char_241_panda",
+            "인포서": "char_4036_forcer",
+            "위디": "char_400_weedy"
+        },
+        "dollkeeper": {
+            "버던트": "char_4107_vrdant",
+            "베나": "char_369_bena",
+            "카제마루": "char_4016_kazema",
+            "Iana": "char_4124_iana",
+            "스펙터 디 언체인드": "char_1023_ghost2"
+        },
+        "geek": {
+            "스푸리아": "char_4015_spuria",
+            "아": "char_225_haak"
+        },
+        "traper": {
+            "로빈": "char_451_robin",
+            "Frost": "char_458_rfrost",
+            "도로시": "char_4048_doroth",
+            "Ela": "char_4123_ela"
+        }
+    }
+}
