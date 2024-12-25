@@ -160,4 +160,5 @@ cython_debug/
 #.idea/
 
 cache
-test.py
+assets
+test*.py
