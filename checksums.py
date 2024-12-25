@@ -17,5 +17,6 @@ for a in assets:
     with open(Path(Path.cwd(), "assets", a.name), "rb") as file:
         data = file.read()
         md5 = hashlib.md5().hexdigest()
+        print(Path(Path.cwd(), "assets", a.name))
         print(f"{a.name}: {md5}")
     a.update_asset(a.name, md5)
