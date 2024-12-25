@@ -12,6 +12,8 @@ repo = gh.get_repo("weinibuliu/LowerArknightsGameData")
 release = repo.get_latest_release()
 assets = release.assets
 for a in assets:
+    if ".zip" not in a.name:
+        continue
     with open(Path(Path.cwd(), a.name), "rb") as file:
         data = file.read()
         md5 = hashlib.md5().hexdigest()
