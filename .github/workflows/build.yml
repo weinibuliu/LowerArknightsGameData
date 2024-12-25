@@ -143,6 +143,7 @@ jobs:
 
         - name: Update Checksums
           run: |
+            pip install -r requirements.txt
             python checksums.py ${{ secrets.GITHUB_TOKEN }}
 
         - name: Commit zh_CN Version
