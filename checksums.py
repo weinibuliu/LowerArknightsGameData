@@ -1,4 +1,5 @@
 import hashlib
+import subprocess
 import sys
 from pathlib import Path
 
@@ -21,8 +22,10 @@ for a in assets:
         data = file.read()
 
     md5 = hashlib.md5(data).hexdigest()
-    sha256 = hashlib.sha256(data).hexdigest()
     print(f"{a.name} Path: {path}")
     print(f"{a.name}: {md5}")
 
+    subprocess.check_call(
+        f'echo {a.name.split(".")[0]}_MD5={md5} >> "$GITHUB_ENV"', shell=True
+    )
     a.update_asset(a.name, md5)
