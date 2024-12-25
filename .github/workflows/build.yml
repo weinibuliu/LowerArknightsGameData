@@ -140,11 +140,6 @@ jobs:
               - en_US: ${{ needs.en_US.outputs.change }}
               - ja_JP: ${{ needs.ja_JP.outputs.change }}
               - ko_KR: ${{ needs.ko_KR.outputs.change }}
-              ### MD5
-              - zh_CN: ${{ env.zh_CN_MD5 }}
-              - en_US: ${{ env.en_US_MD5 }}
-              - ja_JP: ${{ env.ja_JP_MD5 }}
-              - ko_KR: ${{ env.ko_KR_MD5 }}
 
         - name: Setup Python
           uses: actions/setup-python@v5
