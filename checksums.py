@@ -26,6 +26,6 @@ for a in assets:
     print(f"{a.name}: {md5}")
 
     subprocess.check_call(
-        f'echo {a.name.split(".")[0]}_MD5={md5} >> "$GITHUB_ENV"', shell=True
+        f'echo "{a.name.split(".")[0]}_MD5"="{md5}" >> "$GITHUB_ENV"', shell=True
     )
     a.update_asset(a.name, md5)
