@@ -22,8 +22,7 @@ for a in assets:
         data = file.read()
 
     md5 = hashlib.md5(data).hexdigest()
-    print(f"{a.name} Path: {path}")
-    print(f"{a.name}: {md5}")
+    print(f"{a.name.split(".")[0]}_MD5: {md5}")
 
     subprocess.check_call(
         f'echo "{a.name.split(".")[0]}_MD5"="{md5}" >> "$GITHUB_ENV"', shell=True
