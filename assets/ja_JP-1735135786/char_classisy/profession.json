@@ -1,0 +1,483 @@
+{
+    "PIONEER": {
+        "pioneer": {
+            "ヤトウ": "char_502_nblade",
+            "フェン": "char_123_fang",
+            "バニラ": "char_240_wyvern",
+            "予備隊員-近距離": "char_504_rguard",
+            "クーリエ": "char_198_blackd",
+            "スカベンジャー": "char_149_scave",
+            "ズィマー": "char_115_headbr",
+            "テキサス": "char_102_texas",
+            "キアーベ": "char_349_chiave",
+            "ポンシラス": "char_488_buildr",
+            "チューリップ": "char_513_apionr",
+            "ケストレル": "char_4023_rfalcn",
+            "シージ": "char_112_siege",
+            "サガ": "char_362_saga",
+            "フレイムテイル": "char_420_flamtl"
+        },
+        "charger": {
+            "プリュム": "char_192_falco",
+            "ヴィグナ": "char_290_vigna",
+            "リード": "char_261_sddrag",
+            "ワイルドメイン": "char_496_wildmn",
+            "歴陣鋭槍フェン": "char_1036_fang2",
+            "バグパイプ": "char_222_bpipe",
+            "グラニ": "char_220_grani"
+        },
+        "bearer": {
+            "テンニンカ": "char_151_myrtle",
+            "エリジウム": "char_401_elysm",
+            "ワンチィン": "char_4119_wanqin",
+            "サイラッハ": "char_479_sleach"
+        },
+        "tactician": {
+            "ビーンストーク": "char_452_bstalk",
+            "ブラックナイト": "char_476_blkngt",
+            "ヴィジェル": "char_427_vigil",
+            "ミュルジス": "char_249_mlyss"
+        },
+        "agent": {
+            "カンタービレ": "char_497_ctable",
+            "パズル": "char_4017_puzzle",
+            "イネス": "char_4087_ines"
+        }
+    },
+    "WARRIOR": {
+        "fearless": {
+            "Castle-3": "char_286_cast3",
+            "メランサ": "char_208_melan",
+            "マトイマル": "char_289_gyuki",
+            "コンビクション": "char_159_peacok",
+            "フランカ": "char_106_franka",
+            "エンカク": "char_131_flameb",
+            "モーガン": "char_154_morgan",
+            "Sharp": "char_508_aguard",
+            "耀騎士ニアール": "char_1014_nearl2",
+            "レッシング": "char_4011_lessng",
+            "スカジ": "char_263_skadi"
+        },
+        "centurion": {
+            "ポプカル": "char_281_popka",
+            "エステル": "char_127_estell",
+            "スペクター": "char_143_ghost",
+            "ブローカ": "char_356_broca",
+            "Fuze": "char_4126_fuze",
+            "ブレイズ": "char_017_huang",
+            "百錬ガヴィル": "char_1026_gvial2",
+            "サベージ": "char_230_savage"
+        },
+        "instructor": {
+            "ドーベルマン": "char_130_doberm",
+            "スワイヤー": "char_308_swire",
+            "ウィスラッシュ": "char_265_sophia",
+            "ブライオファイタ": "char_4106_bryota",
+            "Doc": "char_4125_rdoc",
+            "パラス": "char_485_pallas"
+        },
+        "lord": {
+            "フロストリーフ": "char_193_frostl",
+            "アレーン": "char_271_spikes",
+            "羅小黒": "char_4067_lolxh",
+            "ラップランド": "char_140_whitew",
+            "エアースカーペ": "char_294_ayer",
+            "リェータ": "char_194_leto",
+            "シルバーアッシュ": "char_172_svrash",
+            "ソーンズ": "char_293_thorns",
+            "チューバイ": "char_4082_qiubai",
+            "ミッドナイト": "char_283_midn"
+        },
+        "artsfghter": {
+            "ムース": "char_185_frncat",
+            "アステシア": "char_274_astesi",
+            "シデロカ": "char_333_sidero",
+            "スルト": "char_350_surtr",
+            "ヴィヴィアナ": "char_4098_vvana"
+        },
+        "sword": {
+            "カッター": "char_301_cutter",
+            "バイビーク": "char_252_bibeak",
+            "Tachanka": "char_459_tachak",
+            "チェン": "char_010_chen",
+            "アイリーニ": "char_4009_irene",
+            "デーゲンブレヒャー": "char_4116_blkkgt"
+        },
+        "musha": {
+            "ウタゲ": "char_337_utage",
+            "アカフユ": "char_475_akafyu",
+            "レウスSノイルホーン": "char_1030_noirc2",
+            "ヘラグ": "char_188_helage",
+            "ズオ・ラウ": "char_4121_zuole"
+        },
+        "crusher": {
+            "クォーツ": "char_4063_quartz",
+            "ウィンドチャイム": "char_4083_chimes",
+            "ヘドリー": "char_4088_hodrer",
+            "ウルピアヌス": "char_4145_ulpia"
+        },
+        "reaper": {
+            "ヒューマス": "char_491_humus",
+            "ラ・プルマ": "char_421_crow",
+            "ハイモア": "char_4066_highmo",
+            "聖約イグゼキュター": "char_1032_excu2"
+        },
+        "fighter": {
+            "インドラ": "char_155_tiger",
+            "フリント": "char_415_flint",
+            "ダグザ": "char_157_dagda",
+            "マウンテン": "char_264_f12yin",
+            "チョンユエ": "char_2024_chyue",
+            "ビーハンター": "char_137_brownb",
+            "ジャッキー": "char_347_jaksel"
+        },
+        "librator": {
+            "テキーラ": "char_486_takila",
+            "ムリナール": "char_4064_mlynar"
+        },
+        "hammer": {
+            "オッダ": "char_4131_odda"
+        }
+    },
+    "TANK": {
+        "protector": {
+            "Friston-3": "char_4093_frston",
+            "ノイルホーン": "char_500_noirc",
+            "カーディ": "char_209_ardign",
+            "ビーグル": "char_122_beagle",
+            "予備隊員-重装": "char_514_rdfend",
+            "マッターホルン": "char_199_yak",
+            "クオーラ": "char_150_snakek",
+            "バブル": "char_381_bubble",
+            "クロワッサン": "char_201_moeshd",
+            "バイソン": "char_325_bison",
+            "ヘビーレイン": "char_304_zebra",
+            "ホシグマ": "char_136_hsguma",
+            "ニェン": "char_2014_nian"
+        },
+        "guardian": {
+            "スポット": "char_284_spot",
+            "グム": "char_196_sunbr",
+            "ニアール": "char_148_nearl",
+            "ウン": "char_226_hmau",
+            "ベースライン": "char_4109_baslin",
+            "サリア": "char_202_demkni",
+            "ブレミシャイン": "char_423_blemsh",
+            "シュウ": "char_2025_shu"
+        },
+        "unyield": {
+            "ルトナダ": "char_4130_luton",
+            "ヴァルカン": "char_163_hpsts",
+            "マドロック": "char_311_mudrok",
+            "ペナンス": "char_4065_judge"
+        },
+        "artsprotector": {
+            "ジュナー": "char_260_durnar",
+            "アスベストス": "char_378_asbest",
+            "シャレム": "char_4025_aprot2",
+            "ツェルニー": "char_4047_pianst"
+        },
+        "shotprotector": {
+            "リスカム": "char_107_liskam",
+            "アンダーフロー": "char_4137_udflow",
+            "Blitz": "char_457_blitz",
+            "滌火ジェシカ": "char_1034_jesca2"
+        },
+        "fortress": {
+            "アッシュロック": "char_431_ashlok",
+            "ファイヤーホイッスル": "char_493_firwhl",
+            "ホルン": "char_4039_horn"
+        },
+        "duelist": {
+            "オーロラ": "char_422_aurora",
+            "セメント": "char_464_cement",
+            "ユーネクテス": "char_416_zumama"
+        }
+    },
+    "SNIPER": {
+        "fastshot": {
+            "ジャスティスナイト": "char_4000_jnight",
+            "レンジャー": "char_503_rang",
+            "クルース": "char_124_kroos",
+            "アドナキエル": "char_211_adnach",
+            "予備隊員-狙撃": "char_507_rsnipe",
+            "ジェシカ": "char_235_jesica",
+            "メテオ": "char_126_shotst",
+            "ヴァーミル": "char_190_clour",
+            "メイ": "char_133_mm",
+            "アズリウス": "char_129_bluep",
+            "プラチナ": "char_204_platnm",
+            "グレースロート": "char_367_swllow",
+            "Stormeye": "char_511_asnipe",
+            "エイプリル": "char_365_aprl",
+            "寒芒クルース": "char_1021_kroos2",
+            "インサイダー": "char_498_inside",
+            "エクシア": "char_103_angel",
+            "アルケット": "char_332_archet",
+            "Ash": "char_456_ash"
+        },
+        "bombarder": {
+            "テラ大陸調査団": "char_4077_palico",
+            "承曦グレイ": "char_1027_greyy2",
+            "ロスモンティス": "char_391_rosmon",
+            "ウィシャデル": "char_1035_wisdel"
+        },
+        "aoesniper": {
+            "シラユキ": "char_118_yuki",
+            "メテオリーテ": "char_219_meteo",
+            "シェーシャ": "char_379_sesa",
+            "ジエユン": "char_4078_bdhkgt",
+            "W": "char_113_cqbw",
+            "フィアメッタ": "char_300_phenxi",
+            "カタパルト": "char_282_catap"
+        },
+        "reaperrange": {
+            "パインコーン": "char_440_pinecn",
+            "イグゼキュター": "char_279_excu",
+            "アオスタ": "char_346_aosta",
+            "遊龍チェン": "char_1013_chen2"
+        },
+        "longrange": {
+            "アンブリエル": "char_302_glaze",
+            "ファイヤーウォッチ": "char_158_milu",
+            "アンドレアナ": "char_218_cuttle",
+            "ルナカブ": "char_4014_lunacu",
+            "ファートゥース": "char_430_fartth"
+        },
+        "closerange": {
+            "アシッドドロップ": "char_366_acdrop",
+            "プロヴァンス": "char_145_prove",
+            "メラナイト": "char_4006_melnte",
+            "シュヴァルツ": "char_340_shwaz",
+            "パゼオンカ": "char_4055_bgsnow"
+        },
+        "siegesniper": {
+            "トター": "char_4062_totter",
+            "トギフォンス": "char_363_toddi",
+            "エラト": "char_4043_erato",
+            "ロサ": "char_197_poca",
+            "ティフォン": "char_2012_typhon"
+        },
+        "loopshooter": {
+            "ケイパー": "char_4100_caper"
+        },
+        "hunter": {
+            "コールドショット": "char_4104_coldst",
+            "レイ": "char_4117_ray"
+        }
+    },
+    "CASTER": {
+        "corecaster": {
+            "ドゥリン": "char_501_durin",
+            "スチュワード": "char_210_stward",
+            "予備隊員-術師": "char_505_rcast",
+            "ヘイズ": "char_141_nights",
+            "アーミヤ": "char_002_amiya",
+            "アブサント": "char_405_absin",
+            "トミミ": "char_411_tomimi",
+            "カニパラート": "char_466_qanik",
+            "エイヤフィヤトラ": "char_180_amgoat",
+            "ケオベ": "char_2013_cerber",
+            "ホルハイヤ": "char_4027_heyak",
+            "ロゴス": "char_4133_logos",
+            "ナイトメア": "char_164_nightm"
+        },
+        "splashcaster": {
+            "12F": "char_009_12fce",
+            "ラヴァ": "char_121_lava",
+            "ギターノ": "char_109_fmout",
+            "グレイ": "char_253_greyy",
+            "スカイフレア": "char_166_skfire",
+            "Pith": "char_509_acast",
+            "レオンハルト": "char_373_lionhd",
+            "サンタラ": "char_341_sntlla",
+            "炎獄ラヴァ": "char_1011_lava2",
+            "モスティマ": "char_213_mostma",
+            "シー": "char_2015_dusk"
+        },
+        "funnel": {
+            "カシャ": "char_328_cammou",
+            "イェラ": "char_4013_kjera",
+            "ロックロック": "char_4040_rockr",
+            "ミニマリスト": "char_4054_malist",
+            "ゴールデングロー": "char_377_gdglow"
+        },
+        "mystic": {
+            "インディゴ": "char_469_indigo",
+            "アイリス": "char_338_iris",
+            "ハーモニー": "char_297_hamoni",
+            "デルフィーン": "char_4110_delphn",
+            "エーベンホルツ": "char_4046_ebnhlz"
+        },
+        "chain": {
+            "プリン": "char_4004_pudd",
+            "レイズ": "char_306_leizi",
+            "アステジーニ": "char_135_halo",
+            "パッセンジャー": "char_472_pasngr"
+        },
+        "phalanx": {
+            "ビーズワクス": "char_344_beewax",
+            "ミント": "char_388_mint",
+            "カーネリアン": "char_426_billro",
+            "リン": "char_4080_lin"
+        },
+        "blastcaster": {
+            "コロセラム": "char_489_serum",
+            "アロマ": "char_446_aroma",
+            "イフリータ": "char_134_ifrit"
+        },
+        "primcaster": {
+            "ディアマンテ": "char_499_kaitou",
+            "ウォーミー": "char_4081_warmy"
+        }
+    },
+    "MEDIC": {
+        "physician": {
+            "Lancet-2": "char_285_medic2",
+            "ハイビスカス": "char_120_hibisc",
+            "アンセル": "char_212_ansel",
+            "予備隊員-支援": "char_506_rmedic",
+            "ミルラ": "char_117_myrrh",
+            "ガヴィル": "char_187_ccheal",
+            "ススーロ": "char_298_susuro",
+            "サイレンス": "char_108_silent",
+            "ワルファリン": "char_171_bldsk",
+            "フォリニック": "char_345_folnic",
+            "Touch": "char_510_amedic",
+            "トゥイエ": "char_402_tuye",
+            "シャイニング": "char_147_shining",
+            "ケルシー": "char_003_kalts"
+        },
+        "ringhealer": {
+            "パフューマー": "char_181_flower",
+            "フィリオプシス": "char_128_plosis",
+            "ブリーズ": "char_275_breeze",
+            "ナイチンゲール": "char_179_cgbird"
+        },
+        "healer": {
+            "セイリュウ": "char_385_finlpp",
+            "セイロン": "char_348_ceylon",
+            "ウィスパーレイン": "char_436_whispr",
+            "ルーメン": "char_4042_lumen"
+        },
+        "wandermedic": {
+            "チェストナット": "char_4041_chnut",
+            "マルベリー": "char_473_mberry",
+            "ハニーベリー": "char_449_glider",
+            "ハロルド": "char_4114_harold",
+            "純燼エイヤフィヤトラ": "char_1016_agoat2"
+        },
+        "incantationmedic": {
+            "濯塵ハイビスカス": "char_1024_hbisc2",
+            "ヴァンデラ": "char_494_vendla",
+            "焔影リード": "char_1020_reed2"
+        },
+        "chainhealer": {
+            "パプリカ": "char_4071_peper"
+        }
+    },
+    "SUPPORT": {
+        "bard": {
+            "U-Official": "char_4091_ulika",
+            "ソラ": "char_101_sora",
+            "ハイディ": "char_4045_heidi",
+            "濁心スカジ": "char_1012_skadi2",
+            "シヴィライト・エテルナ": "char_4134_cetsyr"
+        },
+        "ritualist": {
+            "PhonoR-0": "char_4136_phonor",
+            "ヴァラルクビン": "char_4102_threye",
+            "ヴィルトゥオーサ": "char_245_cello"
+        },
+        "slower": {
+            "オーキッド": "char_278_orchid",
+            "アーススピリット": "char_183_skgoat",
+            "ポデンコ": "char_258_podego",
+            "イースチナ": "char_195_glassb",
+            "グラウコス": "char_326_glacus",
+            "プロヴァイゾ": "char_4032_provs",
+            "グレインバッズ": "char_4122_grabds",
+            "アンジェリーナ": "char_291_aglina",
+            "スズラン": "char_358_lisa"
+        },
+        "summoner": {
+            "ディピカ": "char_110_deepcl",
+            "メイヤー": "char_242_otter",
+            "シーン": "char_336_folivo",
+            "マゼラン": "char_248_mgllan",
+            "リィン": "char_2023_ling"
+        },
+        "craftsman": {
+            "ロベルタ": "char_484_robrta",
+            "ウインドフリット": "char_433_windft",
+            "ステインレス": "char_4072_ironmn"
+        },
+        "underminer": {
+            "プラマニクス": "char_174_slbell",
+            "シャマレ": "char_254_vodfox",
+            "ルシーラ": "char_4079_haini",
+            "ノーシス": "char_206_gnosis"
+        },
+        "blessing": {
+            "ツキノギ": "char_343_tknogi",
+            "九色鹿": "char_4019_ncdeer",
+            "クエルクス": "char_492_quercu",
+            "淬羽サイレンス": "char_1031_slent2"
+        }
+    },
+    "SPECIAL": {
+        "executor": {
+            "THRM-EX": "char_376_therex",
+            "グラベル": "char_237_gravel",
+            "レッド": "char_144_red",
+            "ワイフー": "char_243_waaifu",
+            "カフカ": "char_214_kafka",
+            "ファントム": "char_250_phatom",
+            "血掟テキサス": "char_1028_texas2",
+            "キリンRヤトウ": "char_1029_yato2"
+        },
+        "merchant": {
+            "ジェイ": "char_272_strong",
+            "ウユウ": "char_455_nothin",
+            "リー": "char_322_lmlee",
+            "琳琅スワイヤー": "char_1033_swire2"
+        },
+        "hookmaster": {
+            "ロープ": "char_236_rope",
+            "クリフハート": "char_173_slchan",
+            "スノーズント": "char_383_snsant",
+            "アーモンド": "char_4105_almond",
+            "グレイディーア": "char_474_glady"
+        },
+        "stalker": {
+            "イーサン": "char_355_ethan",
+            "マンティコア": "char_215_mantic",
+            "キララ": "char_478_kirara",
+            "ミヅキ": "char_437_mizuki",
+            "アスカロン": "char_4132_ascln"
+        },
+        "pusher": {
+            "ショウ": "char_277_sqrrel",
+            "エフイーター": "char_241_panda",
+            "エンフォーサー": "char_4036_forcer",
+            "ウィーディ": "char_400_weedy"
+        },
+        "dollkeeper": {
+            "ヴァーダント": "char_4107_vrdant",
+            "ベナ": "char_369_bena",
+            "カゼマル": "char_4016_kazema",
+            "Iana": "char_4124_iana",
+            "帰溟スペクター": "char_1023_ghost2"
+        },
+        "geek": {
+            "スプリア": "char_4015_spuria",
+            "ア": "char_225_haak"
+        },
+        "traper": {
+            "ロビン": "char_451_robin",
+            "Frost": "char_458_rfrost",
+            "ドロシー": "char_4048_doroth",
+            "Ela": "char_4123_ela"
+        }
+    }
+}

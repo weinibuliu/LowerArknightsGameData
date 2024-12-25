@@ -1,0 +1,2396 @@
+{
+    "char_285_medic2": {
+        "name": "Lancet-2",
+        "rarity": "TIER_1",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_286_cast3": {
+        "name": "Castle-3",
+        "rarity": "TIER_1",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_376_therex": {
+        "name": "THRM-EX",
+        "rarity": "TIER_1",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "position": "MELEE"
+    },
+    "char_4000_jnight": {
+        "name": "ジャスティスナイト",
+        "rarity": "TIER_1",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_4077_palico": {
+        "name": "テラ大陸調査団",
+        "rarity": "TIER_1",
+        "profession": "SNIPER",
+        "subProfessionId": "bombarder",
+        "position": "RANGED"
+    },
+    "char_4091_ulika": {
+        "name": "U-Official",
+        "rarity": "TIER_1",
+        "profession": "SUPPORT",
+        "subProfessionId": "bard",
+        "position": "RANGED"
+    },
+    "char_4093_frston": {
+        "name": "Friston-3",
+        "rarity": "TIER_1",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_4136_phonor": {
+        "name": "PhonoR-0",
+        "rarity": "TIER_1",
+        "profession": "SUPPORT",
+        "subProfessionId": "ritualist",
+        "position": "RANGED"
+    },
+    "char_502_nblade": {
+        "name": "ヤトウ",
+        "rarity": "TIER_2",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_500_noirc": {
+        "name": "ノイルホーン",
+        "rarity": "TIER_2",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_503_rang": {
+        "name": "レンジャー",
+        "rarity": "TIER_2",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_501_durin": {
+        "name": "ドゥリン",
+        "rarity": "TIER_2",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_009_12fce": {
+        "name": "12F",
+        "rarity": "TIER_2",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_123_fang": {
+        "name": "フェン",
+        "rarity": "TIER_3",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_240_wyvern": {
+        "name": "バニラ",
+        "rarity": "TIER_3",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_504_rguard": {
+        "name": "予備隊員-近距離",
+        "rarity": "TIER_3",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_192_falco": {
+        "name": "プリュム",
+        "rarity": "TIER_3",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "position": "MELEE"
+    },
+    "char_208_melan": {
+        "name": "メランサ",
+        "rarity": "TIER_3",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_281_popka": {
+        "name": "ポプカル",
+        "rarity": "TIER_3",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "position": "MELEE"
+    },
+    "char_209_ardign": {
+        "name": "カーディ",
+        "rarity": "TIER_3",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_122_beagle": {
+        "name": "ビーグル",
+        "rarity": "TIER_3",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_514_rdfend": {
+        "name": "予備隊員-重装",
+        "rarity": "TIER_3",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_284_spot": {
+        "name": "スポット",
+        "rarity": "TIER_3",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "position": "MELEE"
+    },
+    "char_124_kroos": {
+        "name": "クルース",
+        "rarity": "TIER_3",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_211_adnach": {
+        "name": "アドナキエル",
+        "rarity": "TIER_3",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_507_rsnipe": {
+        "name": "予備隊員-狙撃",
+        "rarity": "TIER_3",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_121_lava": {
+        "name": "ラヴァ",
+        "rarity": "TIER_3",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_120_hibisc": {
+        "name": "ハイビスカス",
+        "rarity": "TIER_3",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_212_ansel": {
+        "name": "アンセル",
+        "rarity": "TIER_3",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_506_rmedic": {
+        "name": "予備隊員-支援",
+        "rarity": "TIER_3",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_210_stward": {
+        "name": "スチュワード",
+        "rarity": "TIER_3",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_505_rcast": {
+        "name": "予備隊員-術師",
+        "rarity": "TIER_3",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_278_orchid": {
+        "name": "オーキッド",
+        "rarity": "TIER_3",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_141_nights": {
+        "name": "ヘイズ",
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_109_fmout": {
+        "name": "ギターノ",
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_253_greyy": {
+        "name": "グレイ",
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_328_cammou": {
+        "name": "カシャ",
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "funnel",
+        "position": "RANGED"
+    },
+    "char_469_indigo": {
+        "name": "インディゴ",
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "mystic",
+        "position": "RANGED"
+    },
+    "char_4004_pudd": {
+        "name": "プリン",
+        "rarity": "TIER_4",
+        "profession": "CASTER",
+        "subProfessionId": "chain",
+        "position": "RANGED"
+    },
+    "char_235_jesica": {
+        "name": "ジェシカ",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_126_shotst": {
+        "name": "メテオ",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_190_clour": {
+        "name": "ヴァーミル",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_133_mm": {
+        "name": "メイ",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_118_yuki": {
+        "name": "シラユキ",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "position": "RANGED"
+    },
+    "char_440_pinecn": {
+        "name": "パインコーン",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "reaperrange",
+        "position": "RANGED"
+    },
+    "char_302_glaze": {
+        "name": "アンブリエル",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "longrange",
+        "position": "RANGED"
+    },
+    "char_366_acdrop": {
+        "name": "アシッドドロップ",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "closerange",
+        "position": "RANGED"
+    },
+    "char_4062_totter": {
+        "name": "トター",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "siegesniper",
+        "position": "RANGED"
+    },
+    "char_4100_caper": {
+        "name": "ケイパー",
+        "rarity": "TIER_4",
+        "profession": "SNIPER",
+        "subProfessionId": "loopshooter",
+        "position": "RANGED"
+    },
+    "char_198_blackd": {
+        "name": "クーリエ",
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_149_scave": {
+        "name": "スカベンジャー",
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_290_vigna": {
+        "name": "ヴィグナ",
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "position": "MELEE"
+    },
+    "char_151_myrtle": {
+        "name": "テンニンカ",
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "bearer",
+        "position": "MELEE"
+    },
+    "char_452_bstalk": {
+        "name": "ビーンストーク",
+        "rarity": "TIER_4",
+        "profession": "PIONEER",
+        "subProfessionId": "tactician",
+        "position": "RANGED"
+    },
+    "char_130_doberm": {
+        "name": "ドーベルマン",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "instructor",
+        "position": "MELEE"
+    },
+    "char_289_gyuki": {
+        "name": "マトイマル",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_159_peacok": {
+        "name": "コンビクション",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_193_frostl": {
+        "name": "フロストリーフ",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_127_estell": {
+        "name": "エステル",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "position": "MELEE"
+    },
+    "char_185_frncat": {
+        "name": "ムース",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "artsfghter",
+        "position": "MELEE"
+    },
+    "char_301_cutter": {
+        "name": "カッター",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "sword",
+        "position": "MELEE"
+    },
+    "char_337_utage": {
+        "name": "ウタゲ",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "musha",
+        "position": "MELEE"
+    },
+    "char_271_spikes": {
+        "name": "アレーン",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_4067_lolxh": {
+        "name": "羅小黒",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_4063_quartz": {
+        "name": "クォーツ",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "crusher",
+        "position": "MELEE"
+    },
+    "char_491_humus": {
+        "name": "ヒューマス",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "reaper",
+        "position": "MELEE"
+    },
+    "char_237_gravel": {
+        "name": "グラベル",
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "position": "MELEE"
+    },
+    "char_272_strong": {
+        "name": "ジェイ",
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "merchant",
+        "position": "MELEE"
+    },
+    "char_236_rope": {
+        "name": "ロープ",
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "hookmaster",
+        "position": "MELEE"
+    },
+    "char_117_myrrh": {
+        "name": "ミルラ",
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_187_ccheal": {
+        "name": "ガヴィル",
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_298_susuro": {
+        "name": "ススーロ",
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_181_flower": {
+        "name": "パフューマー",
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "ringhealer",
+        "position": "RANGED"
+    },
+    "char_385_finlpp": {
+        "name": "セイリュウ",
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "healer",
+        "position": "RANGED"
+    },
+    "char_4041_chnut": {
+        "name": "チェストナット",
+        "rarity": "TIER_4",
+        "profession": "MEDIC",
+        "subProfessionId": "wandermedic",
+        "position": "RANGED"
+    },
+    "char_199_yak": {
+        "name": "マッターホルン",
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_150_snakek": {
+        "name": "クオーラ",
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_381_bubble": {
+        "name": "バブル",
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_4130_luton": {
+        "name": "ルトナダ",
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "unyield",
+        "position": "MELEE"
+    },
+    "char_196_sunbr": {
+        "name": "グム",
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "position": "MELEE"
+    },
+    "char_260_durnar": {
+        "name": "ジュナー",
+        "rarity": "TIER_4",
+        "profession": "TANK",
+        "subProfessionId": "artsprotector",
+        "position": "MELEE"
+    },
+    "char_110_deepcl": {
+        "name": "ディピカ",
+        "rarity": "TIER_4",
+        "profession": "SUPPORT",
+        "subProfessionId": "summoner",
+        "position": "RANGED"
+    },
+    "char_183_skgoat": {
+        "name": "アーススピリット",
+        "rarity": "TIER_4",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_258_podego": {
+        "name": "ポデンコ",
+        "rarity": "TIER_4",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_484_robrta": {
+        "name": "ロベルタ",
+        "rarity": "TIER_4",
+        "profession": "SUPPORT",
+        "subProfessionId": "craftsman",
+        "position": "MELEE"
+    },
+    "char_355_ethan": {
+        "name": "イーサン",
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "stalker",
+        "position": "MELEE"
+    },
+    "char_277_sqrrel": {
+        "name": "ショウ",
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "pusher",
+        "position": "MELEE"
+    },
+    "char_4107_vrdant": {
+        "name": "ヴァーダント",
+        "rarity": "TIER_4",
+        "profession": "SPECIAL",
+        "subProfessionId": "dollkeeper",
+        "position": "MELEE"
+    },
+    "char_128_plosis": {
+        "name": "フィリオプシス",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "ringhealer",
+        "position": "RANGED"
+    },
+    "char_275_breeze": {
+        "name": "ブリーズ",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "ringhealer",
+        "position": "RANGED"
+    },
+    "char_115_headbr": {
+        "name": "ズィマー",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_102_texas": {
+        "name": "テキサス",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_349_chiave": {
+        "name": "キアーベ",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_488_buildr": {
+        "name": "ポンシラス",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_513_apionr": {
+        "name": "チューリップ",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_4023_rfalcn": {
+        "name": "ケストレル",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_261_sddrag": {
+        "name": "リード",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "position": "MELEE"
+    },
+    "char_496_wildmn": {
+        "name": "ワイルドメイン",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "position": "MELEE"
+    },
+    "char_1036_fang2": {
+        "name": "歴陣鋭槍フェン",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "position": "MELEE"
+    },
+    "char_401_elysm": {
+        "name": "エリジウム",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "bearer",
+        "position": "MELEE"
+    },
+    "char_4119_wanqin": {
+        "name": "ワンチィン",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "bearer",
+        "position": "MELEE"
+    },
+    "char_476_blkngt": {
+        "name": "ブラックナイト",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "tactician",
+        "position": "RANGED"
+    },
+    "char_497_ctable": {
+        "name": "カンタービレ",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "agent",
+        "position": "MELEE"
+    },
+    "char_4017_puzzle": {
+        "name": "パズル",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "agent",
+        "position": "MELEE"
+    },
+    "char_308_swire": {
+        "name": "スワイヤー",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "instructor",
+        "position": "MELEE"
+    },
+    "char_265_sophia": {
+        "name": "ウィスラッシュ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "instructor",
+        "position": "MELEE"
+    },
+    "char_4106_bryota": {
+        "name": "ブライオファイタ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "instructor",
+        "position": "MELEE"
+    },
+    "char_4125_rdoc": {
+        "name": "Doc",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "instructor",
+        "position": "MELEE"
+    },
+    "char_106_franka": {
+        "name": "フランカ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_131_flameb": {
+        "name": "エンカク",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_154_morgan": {
+        "name": "モーガン",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_508_aguard": {
+        "name": "Sharp",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_155_tiger": {
+        "name": "インドラ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "position": "MELEE"
+    },
+    "char_415_flint": {
+        "name": "フリント",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "position": "MELEE"
+    },
+    "char_157_dagda": {
+        "name": "ダグザ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "position": "MELEE"
+    },
+    "char_140_whitew": {
+        "name": "ラップランド",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_294_ayer": {
+        "name": "エアースカーペ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_194_leto": {
+        "name": "リェータ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_4083_chimes": {
+        "name": "ウィンドチャイム",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "crusher",
+        "position": "MELEE"
+    },
+    "char_252_bibeak": {
+        "name": "バイビーク",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "sword",
+        "position": "MELEE"
+    },
+    "char_459_tachak": {
+        "name": "Tachanka",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "sword",
+        "position": "MELEE"
+    },
+    "char_143_ghost": {
+        "name": "スペクター",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "position": "MELEE"
+    },
+    "char_356_broca": {
+        "name": "ブローカ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "position": "MELEE"
+    },
+    "char_4126_fuze": {
+        "name": "Fuze",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "position": "MELEE"
+    },
+    "char_274_astesi": {
+        "name": "アステシア",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "artsfghter",
+        "position": "MELEE"
+    },
+    "char_333_sidero": {
+        "name": "シデロカ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "artsfghter",
+        "position": "MELEE"
+    },
+    "char_475_akafyu": {
+        "name": "アカフユ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "musha",
+        "position": "MELEE"
+    },
+    "char_1030_noirc2": {
+        "name": "レウスSノイルホーン",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "musha",
+        "position": "MELEE"
+    },
+    "char_421_crow": {
+        "name": "ラ・プルマ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "reaper",
+        "position": "MELEE"
+    },
+    "char_4066_highmo": {
+        "name": "ハイモア",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "reaper",
+        "position": "MELEE"
+    },
+    "char_486_takila": {
+        "name": "テキーラ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "librator",
+        "position": "MELEE"
+    },
+    "char_4131_odda": {
+        "name": "オッダ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "hammer",
+        "position": "MELEE"
+    },
+    "char_129_bluep": {
+        "name": "アズリウス",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_204_platnm": {
+        "name": "プラチナ",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_367_swllow": {
+        "name": "グレースロート",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_511_asnipe": {
+        "name": "Stormeye",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_365_aprl": {
+        "name": "エイプリル",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_1021_kroos2": {
+        "name": "寒芒クルース",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_498_inside": {
+        "name": "インサイダー",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_219_meteo": {
+        "name": "メテオリーテ",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "position": "RANGED"
+    },
+    "char_379_sesa": {
+        "name": "シェーシャ",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "position": "RANGED"
+    },
+    "char_4078_bdhkgt": {
+        "name": "ジエユン",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "position": "RANGED"
+    },
+    "char_279_excu": {
+        "name": "イグゼキュター",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "reaperrange",
+        "position": "RANGED"
+    },
+    "char_346_aosta": {
+        "name": "アオスタ",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "reaperrange",
+        "position": "RANGED"
+    },
+    "char_002_amiya": {
+        "name": "アーミヤ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_405_absin": {
+        "name": "アブサント",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_411_tomimi": {
+        "name": "トミミ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_466_qanik": {
+        "name": "カニパラート",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_166_skfire": {
+        "name": "スカイフレア",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_509_acast": {
+        "name": "Pith",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_306_leizi": {
+        "name": "レイズ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "chain",
+        "position": "RANGED"
+    },
+    "char_135_halo": {
+        "name": "アステジーニ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "chain",
+        "position": "RANGED"
+    },
+    "char_344_beewax": {
+        "name": "ビーズワクス",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "phalanx",
+        "position": "RANGED"
+    },
+    "char_373_lionhd": {
+        "name": "レオンハルト",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_341_sntlla": {
+        "name": "サンタラ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_388_mint": {
+        "name": "ミント",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "phalanx",
+        "position": "RANGED"
+    },
+    "char_338_iris": {
+        "name": "アイリス",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "mystic",
+        "position": "RANGED"
+    },
+    "char_297_hamoni": {
+        "name": "ハーモニー",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "mystic",
+        "position": "RANGED"
+    },
+    "char_4110_delphn": {
+        "name": "デルフィーン",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "mystic",
+        "position": "RANGED"
+    },
+    "char_1011_lava2": {
+        "name": "炎獄ラヴァ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_489_serum": {
+        "name": "コロセラム",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "blastcaster",
+        "position": "RANGED"
+    },
+    "char_446_aroma": {
+        "name": "アロマ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "blastcaster",
+        "position": "RANGED"
+    },
+    "char_4013_kjera": {
+        "name": "イェラ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "funnel",
+        "position": "RANGED"
+    },
+    "char_4040_rockr": {
+        "name": "ロックロック",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "funnel",
+        "position": "RANGED"
+    },
+    "char_4054_malist": {
+        "name": "ミニマリスト",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "funnel",
+        "position": "RANGED"
+    },
+    "char_499_kaitou": {
+        "name": "ディアマンテ",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "primcaster",
+        "position": "RANGED"
+    },
+    "char_4081_warmy": {
+        "name": "ウォーミー",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "primcaster",
+        "position": "RANGED"
+    },
+    "char_242_otter": {
+        "name": "メイヤー",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "summoner",
+        "position": "RANGED"
+    },
+    "char_336_folivo": {
+        "name": "シーン",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "summoner",
+        "position": "RANGED"
+    },
+    "char_108_silent": {
+        "name": "サイレンス",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_171_bldsk": {
+        "name": "ワルファリン",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_345_folnic": {
+        "name": "フォリニック",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_510_amedic": {
+        "name": "Touch",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_348_ceylon": {
+        "name": "セイロン",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "healer",
+        "position": "RANGED"
+    },
+    "char_436_whispr": {
+        "name": "ウィスパーレイン",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "healer",
+        "position": "RANGED"
+    },
+    "char_402_tuye": {
+        "name": "トゥイエ",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_473_mberry": {
+        "name": "マルベリー",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "wandermedic",
+        "position": "RANGED"
+    },
+    "char_449_glider": {
+        "name": "ハニーベリー",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "wandermedic",
+        "position": "RANGED"
+    },
+    "char_4114_harold": {
+        "name": "ハロルド",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "wandermedic",
+        "position": "RANGED"
+    },
+    "char_1024_hbisc2": {
+        "name": "濯塵ハイビスカス",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "incantationmedic",
+        "position": "RANGED"
+    },
+    "char_494_vendla": {
+        "name": "ヴァンデラ",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "incantationmedic",
+        "position": "RANGED"
+    },
+    "char_4071_peper": {
+        "name": "パプリカ",
+        "rarity": "TIER_5",
+        "profession": "MEDIC",
+        "subProfessionId": "chainhealer",
+        "position": "RANGED"
+    },
+    "char_148_nearl": {
+        "name": "ニアール",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "position": "MELEE"
+    },
+    "char_226_hmau": {
+        "name": "ウン",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "position": "MELEE"
+    },
+    "char_4109_baslin": {
+        "name": "ベースライン",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "position": "MELEE"
+    },
+    "char_144_red": {
+        "name": "レッド",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "position": "MELEE"
+    },
+    "char_243_waaifu": {
+        "name": "ワイフー",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "position": "MELEE"
+    },
+    "char_214_kafka": {
+        "name": "カフカ",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "position": "MELEE"
+    },
+    "char_455_nothin": {
+        "name": "ウユウ",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "merchant",
+        "position": "MELEE"
+    },
+    "char_107_liskam": {
+        "name": "リスカム",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "shotprotector",
+        "position": "MELEE"
+    },
+    "char_4137_udflow": {
+        "name": "アンダーフロー",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "shotprotector",
+        "position": "MELEE"
+    },
+    "char_201_moeshd": {
+        "name": "クロワッサン",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_325_bison": {
+        "name": "バイソン",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_163_hpsts": {
+        "name": "ヴァルカン",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "unyield",
+        "position": "MELEE"
+    },
+    "char_378_asbest": {
+        "name": "アスベストス",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "artsprotector",
+        "position": "MELEE"
+    },
+    "char_512_aprot": {
+        "name": "シャレム",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "artsprotector",
+        "position": "MELEE"
+    },
+    "char_4025_aprot2": {
+        "name": "シャレム",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "artsprotector",
+        "position": "MELEE"
+    },
+    "char_4047_pianst": {
+        "name": "ツェルニー",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "artsprotector",
+        "position": "MELEE"
+    },
+    "char_457_blitz": {
+        "name": "Blitz",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "shotprotector",
+        "position": "MELEE"
+    },
+    "char_304_zebra": {
+        "name": "ヘビーレイン",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_431_ashlok": {
+        "name": "アッシュロック",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "fortress",
+        "position": "MELEE"
+    },
+    "char_493_firwhl": {
+        "name": "ファイヤーホイッスル",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "fortress",
+        "position": "MELEE"
+    },
+    "char_422_aurora": {
+        "name": "オーロラ",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "duelist",
+        "position": "MELEE"
+    },
+    "char_464_cement": {
+        "name": "セメント",
+        "rarity": "TIER_5",
+        "profession": "TANK",
+        "subProfessionId": "duelist",
+        "position": "MELEE"
+    },
+    "char_145_prove": {
+        "name": "プロヴァンス",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "closerange",
+        "position": "RANGED"
+    },
+    "char_4006_melnte": {
+        "name": "メラナイト",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "closerange",
+        "position": "RANGED"
+    },
+    "char_158_milu": {
+        "name": "ファイヤーウォッチ",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "longrange",
+        "position": "RANGED"
+    },
+    "char_218_cuttle": {
+        "name": "アンドレアナ",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "longrange",
+        "position": "RANGED"
+    },
+    "char_4014_lunacu": {
+        "name": "ルナカブ",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "longrange",
+        "position": "RANGED"
+    },
+    "char_363_toddi": {
+        "name": "トギフォンス",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "siegesniper",
+        "position": "RANGED"
+    },
+    "char_4043_erato": {
+        "name": "エラト",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "siegesniper",
+        "position": "RANGED"
+    },
+    "char_1027_greyy2": {
+        "name": "承曦グレイ",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "bombarder",
+        "position": "RANGED"
+    },
+    "char_4104_coldst": {
+        "name": "コールドショット",
+        "rarity": "TIER_5",
+        "profession": "SNIPER",
+        "subProfessionId": "hunter",
+        "position": "RANGED"
+    },
+    "char_4015_spuria": {
+        "name": "スプリア",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "geek",
+        "position": "RANGED"
+    },
+    "char_173_slchan": {
+        "name": "クリフハート",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "hookmaster",
+        "position": "MELEE"
+    },
+    "char_383_snsant": {
+        "name": "スノーズント",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "hookmaster",
+        "position": "MELEE"
+    },
+    "char_4105_almond": {
+        "name": "アーモンド",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "hookmaster",
+        "position": "MELEE"
+    },
+    "char_174_slbell": {
+        "name": "プラマニクス",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "underminer",
+        "position": "RANGED"
+    },
+    "char_254_vodfox": {
+        "name": "シャマレ",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "underminer",
+        "position": "RANGED"
+    },
+    "char_4079_haini": {
+        "name": "ルシーラ",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "underminer",
+        "position": "RANGED"
+    },
+    "char_195_glassb": {
+        "name": "イースチナ",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_326_glacus": {
+        "name": "グラウコス",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_4032_provs": {
+        "name": "プロヴァイゾ",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_4122_grabds": {
+        "name": "グレインバッズ",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_433_windft": {
+        "name": "ウインドフリット",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "craftsman",
+        "position": "MELEE"
+    },
+    "char_101_sora": {
+        "name": "ソラ",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "bard",
+        "position": "RANGED"
+    },
+    "char_4045_heidi": {
+        "name": "ハイディ",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "bard",
+        "position": "RANGED"
+    },
+    "char_343_tknogi": {
+        "name": "ツキノギ",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "blessing",
+        "position": "RANGED"
+    },
+    "char_4019_ncdeer": {
+        "name": "九色鹿",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "blessing",
+        "position": "RANGED"
+    },
+    "char_492_quercu": {
+        "name": "クエルクス",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "blessing",
+        "position": "RANGED"
+    },
+    "char_4102_threye": {
+        "name": "ヴァラルクビン",
+        "rarity": "TIER_5",
+        "profession": "SUPPORT",
+        "subProfessionId": "ritualist",
+        "position": "RANGED"
+    },
+    "char_215_mantic": {
+        "name": "マンティコア",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "stalker",
+        "position": "MELEE"
+    },
+    "char_478_kirara": {
+        "name": "キララ",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "stalker",
+        "position": "MELEE"
+    },
+    "char_241_panda": {
+        "name": "エフイーター",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "pusher",
+        "position": "MELEE"
+    },
+    "char_4036_forcer": {
+        "name": "エンフォーサー",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "pusher",
+        "position": "MELEE"
+    },
+    "char_451_robin": {
+        "name": "ロビン",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "traper",
+        "position": "RANGED"
+    },
+    "char_458_rfrost": {
+        "name": "Frost",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "traper",
+        "position": "RANGED"
+    },
+    "char_369_bena": {
+        "name": "ベナ",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "dollkeeper",
+        "position": "MELEE"
+    },
+    "char_4016_kazema": {
+        "name": "カゼマル",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "dollkeeper",
+        "position": "MELEE"
+    },
+    "char_4124_iana": {
+        "name": "Iana",
+        "rarity": "TIER_5",
+        "profession": "SPECIAL",
+        "subProfessionId": "dollkeeper",
+        "position": "MELEE"
+    },
+    "char_103_angel": {
+        "name": "エクシア",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_332_archet": {
+        "name": "アルケット",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_456_ash": {
+        "name": "Ash",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "fastshot",
+        "position": "RANGED"
+    },
+    "char_340_shwaz": {
+        "name": "シュヴァルツ",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "closerange",
+        "position": "RANGED"
+    },
+    "char_4055_bgsnow": {
+        "name": "パゼオンカ",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "closerange",
+        "position": "RANGED"
+    },
+    "char_430_fartth": {
+        "name": "ファートゥース",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "longrange",
+        "position": "RANGED"
+    },
+    "char_113_cqbw": {
+        "name": "W",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "position": "RANGED"
+    },
+    "char_300_phenxi": {
+        "name": "フィアメッタ",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "position": "RANGED"
+    },
+    "char_197_poca": {
+        "name": "ロサ",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "siegesniper",
+        "position": "RANGED"
+    },
+    "char_2012_typhon": {
+        "name": "ティフォン",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "siegesniper",
+        "position": "RANGED"
+    },
+    "char_391_rosmon": {
+        "name": "ロスモンティス",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "bombarder",
+        "position": "RANGED"
+    },
+    "char_1035_wisdel": {
+        "name": "ウィシャデル",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "bombarder",
+        "position": "RANGED"
+    },
+    "char_1013_chen2": {
+        "name": "遊龍チェン",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "reaperrange",
+        "position": "RANGED"
+    },
+    "char_4117_ray": {
+        "name": "レイ",
+        "rarity": "TIER_6",
+        "profession": "SNIPER",
+        "subProfessionId": "hunter",
+        "position": "RANGED"
+    },
+    "char_112_siege": {
+        "name": "シージ",
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_222_bpipe": {
+        "name": "バグパイプ",
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "position": "MELEE"
+    },
+    "char_362_saga": {
+        "name": "サガ",
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_479_sleach": {
+        "name": "サイラッハ",
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "bearer",
+        "position": "MELEE"
+    },
+    "char_420_flamtl": {
+        "name": "フレイムテイル",
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "pioneer",
+        "position": "MELEE"
+    },
+    "char_427_vigil": {
+        "name": "ヴィジェル",
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "tactician",
+        "position": "RANGED"
+    },
+    "char_249_mlyss": {
+        "name": "ミュルジス",
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "tactician",
+        "position": "RANGED"
+    },
+    "char_4087_ines": {
+        "name": "イネス",
+        "rarity": "TIER_6",
+        "profession": "PIONEER",
+        "subProfessionId": "agent",
+        "position": "MELEE"
+    },
+    "char_134_ifrit": {
+        "name": "イフリータ",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "blastcaster",
+        "position": "RANGED"
+    },
+    "char_213_mostma": {
+        "name": "モスティマ",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_180_amgoat": {
+        "name": "エイヤフィヤトラ",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_2013_cerber": {
+        "name": "ケオベ",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_4027_heyak": {
+        "name": "ホルハイヤ",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_4133_logos": {
+        "name": "ロゴス",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_2015_dusk": {
+        "name": "シー",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "splashcaster",
+        "position": "RANGED"
+    },
+    "char_472_pasngr": {
+        "name": "パッセンジャー",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "chain",
+        "position": "RANGED"
+    },
+    "char_426_billro": {
+        "name": "カーネリアン",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "phalanx",
+        "position": "RANGED"
+    },
+    "char_4080_lin": {
+        "name": "リン",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "phalanx",
+        "position": "RANGED"
+    },
+    "char_377_gdglow": {
+        "name": "ゴールデングロー",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "funnel",
+        "position": "RANGED"
+    },
+    "char_4046_ebnhlz": {
+        "name": "エーベンホルツ",
+        "rarity": "TIER_6",
+        "profession": "CASTER",
+        "subProfessionId": "mystic",
+        "position": "RANGED"
+    },
+    "char_206_gnosis": {
+        "name": "ノーシス",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "underminer",
+        "position": "RANGED"
+    },
+    "char_291_aglina": {
+        "name": "アンジェリーナ",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_358_lisa": {
+        "name": "スズラン",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "slower",
+        "position": "RANGED"
+    },
+    "char_248_mgllan": {
+        "name": "マゼラン",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "summoner",
+        "position": "RANGED"
+    },
+    "char_1012_skadi2": {
+        "name": "濁心スカジ",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "bard",
+        "position": "RANGED"
+    },
+    "char_4134_cetsyr": {
+        "name": "シヴィライト・エテルナ",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "bard",
+        "position": "RANGED"
+    },
+    "char_1031_slent2": {
+        "name": "淬羽サイレンス",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "blessing",
+        "position": "RANGED"
+    },
+    "char_2023_ling": {
+        "name": "リィン",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "summoner",
+        "position": "RANGED"
+    },
+    "char_4072_ironmn": {
+        "name": "ステインレス",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "craftsman",
+        "position": "MELEE"
+    },
+    "char_245_cello": {
+        "name": "ヴィルトゥオーサ",
+        "rarity": "TIER_6",
+        "profession": "SUPPORT",
+        "subProfessionId": "ritualist",
+        "position": "RANGED"
+    },
+    "char_250_phatom": {
+        "name": "ファントム",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "position": "MELEE"
+    },
+    "char_1028_texas2": {
+        "name": "血掟テキサス",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "position": "MELEE"
+    },
+    "char_1029_yato2": {
+        "name": "キリンRヤトウ",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "executor",
+        "position": "MELEE"
+    },
+    "char_322_lmlee": {
+        "name": "リー",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "merchant",
+        "position": "MELEE"
+    },
+    "char_1033_swire2": {
+        "name": "琳琅スワイヤー",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "merchant",
+        "position": "MELEE"
+    },
+    "char_400_weedy": {
+        "name": "ウィーディ",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "pusher",
+        "position": "MELEE"
+    },
+    "char_225_haak": {
+        "name": "ア",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "geek",
+        "position": "RANGED"
+    },
+    "char_474_glady": {
+        "name": "グレイディーア",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "hookmaster",
+        "position": "MELEE"
+    },
+    "char_437_mizuki": {
+        "name": "ミヅキ",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "stalker",
+        "position": "MELEE"
+    },
+    "char_4132_ascln": {
+        "name": "アスカロン",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "stalker",
+        "position": "MELEE"
+    },
+    "char_1023_ghost2": {
+        "name": "帰溟スペクター",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "dollkeeper",
+        "position": "MELEE"
+    },
+    "char_4048_doroth": {
+        "name": "ドロシー",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "traper",
+        "position": "RANGED"
+    },
+    "char_4123_ela": {
+        "name": "Ela",
+        "rarity": "TIER_6",
+        "profession": "SPECIAL",
+        "subProfessionId": "traper",
+        "position": "RANGED"
+    },
+    "char_147_shining": {
+        "name": "シャイニング",
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_179_cgbird": {
+        "name": "ナイチンゲール",
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "ringhealer",
+        "position": "RANGED"
+    },
+    "char_003_kalts": {
+        "name": "ケルシー",
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "physician",
+        "position": "RANGED"
+    },
+    "char_4042_lumen": {
+        "name": "ルーメン",
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "healer",
+        "position": "RANGED"
+    },
+    "char_1016_agoat2": {
+        "name": "純燼エイヤフィヤトラ",
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "wandermedic",
+        "position": "RANGED"
+    },
+    "char_1020_reed2": {
+        "name": "焔影リード",
+        "rarity": "TIER_6",
+        "profession": "MEDIC",
+        "subProfessionId": "incantationmedic",
+        "position": "RANGED"
+    },
+    "char_136_hsguma": {
+        "name": "ホシグマ",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_202_demkni": {
+        "name": "サリア",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "position": "MELEE"
+    },
+    "char_423_blemsh": {
+        "name": "ブレミシャイン",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "position": "MELEE"
+    },
+    "char_2025_shu": {
+        "name": "シュウ",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "guardian",
+        "position": "MELEE"
+    },
+    "char_2014_nian": {
+        "name": "ニェン",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "protector",
+        "position": "MELEE"
+    },
+    "char_311_mudrok": {
+        "name": "マドロック",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "unyield",
+        "position": "MELEE"
+    },
+    "char_4065_judge": {
+        "name": "ペナンス",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "unyield",
+        "position": "MELEE"
+    },
+    "char_416_zumama": {
+        "name": "ユーネクテス",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "duelist",
+        "position": "MELEE"
+    },
+    "char_4039_horn": {
+        "name": "ホルン",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "fortress",
+        "position": "MELEE"
+    },
+    "char_1034_jesca2": {
+        "name": "滌火ジェシカ",
+        "rarity": "TIER_6",
+        "profession": "TANK",
+        "subProfessionId": "shotprotector",
+        "position": "MELEE"
+    },
+    "char_264_f12yin": {
+        "name": "マウンテン",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "position": "MELEE"
+    },
+    "char_2024_chyue": {
+        "name": "チョンユエ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "position": "MELEE"
+    },
+    "char_172_svrash": {
+        "name": "シルバーアッシュ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_293_thorns": {
+        "name": "ソーンズ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_4082_qiubai": {
+        "name": "チューバイ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_4088_hodrer": {
+        "name": "ヘドリー",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "crusher",
+        "position": "MELEE"
+    },
+    "char_4145_ulpia": {
+        "name": "ウルピアヌス",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "crusher",
+        "position": "MELEE"
+    },
+    "char_010_chen": {
+        "name": "チェン",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "sword",
+        "position": "MELEE"
+    },
+    "char_4009_irene": {
+        "name": "アイリーニ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "sword",
+        "position": "MELEE"
+    },
+    "char_4116_blkkgt": {
+        "name": "デーゲンブレヒャー",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "sword",
+        "position": "MELEE"
+    },
+    "char_017_huang": {
+        "name": "ブレイズ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "position": "MELEE"
+    },
+    "char_1026_gvial2": {
+        "name": "百錬ガヴィル",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "position": "MELEE"
+    },
+    "char_350_surtr": {
+        "name": "スルト",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "artsfghter",
+        "position": "MELEE"
+    },
+    "char_4098_vvana": {
+        "name": "ヴィヴィアナ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "artsfghter",
+        "position": "MELEE"
+    },
+    "char_188_helage": {
+        "name": "ヘラグ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "musha",
+        "position": "MELEE"
+    },
+    "char_4121_zuole": {
+        "name": "ズオ・ラウ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "musha",
+        "position": "MELEE"
+    },
+    "char_485_pallas": {
+        "name": "パラス",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "instructor",
+        "position": "MELEE"
+    },
+    "char_1014_nearl2": {
+        "name": "耀騎士ニアール",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_4011_lessng": {
+        "name": "レッシング",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    },
+    "char_1032_excu2": {
+        "name": "聖約イグゼキュター",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "reaper",
+        "position": "MELEE"
+    },
+    "char_4064_mlynar": {
+        "name": "ムリナール",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "librator",
+        "position": "MELEE"
+    },
+    "char_230_savage": {
+        "name": "サベージ",
+        "rarity": "TIER_5",
+        "profession": "WARRIOR",
+        "subProfessionId": "centurion",
+        "position": "MELEE"
+    },
+    "char_282_catap": {
+        "name": "カタパルト",
+        "rarity": "TIER_3",
+        "profession": "SNIPER",
+        "subProfessionId": "aoesniper",
+        "position": "RANGED"
+    },
+    "char_283_midn": {
+        "name": "ミッドナイト",
+        "rarity": "TIER_3",
+        "profession": "WARRIOR",
+        "subProfessionId": "lord",
+        "position": "MELEE"
+    },
+    "char_137_brownb": {
+        "name": "ビーハンター",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "position": "MELEE"
+    },
+    "char_347_jaksel": {
+        "name": "ジャッキー",
+        "rarity": "TIER_4",
+        "profession": "WARRIOR",
+        "subProfessionId": "fighter",
+        "position": "MELEE"
+    },
+    "char_164_nightm": {
+        "name": "ナイトメア",
+        "rarity": "TIER_5",
+        "profession": "CASTER",
+        "subProfessionId": "corecaster",
+        "position": "RANGED"
+    },
+    "char_220_grani": {
+        "name": "グラニ",
+        "rarity": "TIER_5",
+        "profession": "PIONEER",
+        "subProfessionId": "charger",
+        "position": "MELEE"
+    },
+    "char_263_skadi": {
+        "name": "スカジ",
+        "rarity": "TIER_6",
+        "profession": "WARRIOR",
+        "subProfessionId": "fearless",
+        "position": "MELEE"
+    }
+}
