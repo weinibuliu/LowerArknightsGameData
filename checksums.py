@@ -29,6 +29,7 @@ for a in assets:
     a.update_asset(a.name, md5)
 
 release.update_release(
+    name=release.tag_name,
     message=release.body
-    + f"### MD5\n\n- zh_CN: {md5s["zh_CN"]}\n- en_US: {md5s["en_US"]}\n-ja_JP: {md5s["ja_JP"]}\n -ko_KR: {md5s["ko_KR"]}"
+    + f"### MD5\n\n- zh_CN: {md5s["zh_CN"]}\n- en_US: {md5s["en_US"]}\n-ja_JP: {md5s["ja_JP"]}\n -ko_KR: {md5s["ko_KR"]}",
 )
