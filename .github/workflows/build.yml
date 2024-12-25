@@ -190,3 +190,4 @@ jobs:
             author_name: github-actions
             author_email: github-actions[bot]@users.noreply.github.com
             message: '[ko_KR] ${{ needs.ko_KR.outputs.ver }}'
+            add: 'version/ko-KR/version'
