@@ -30,8 +30,8 @@ print(f"Current Version: {currentt_vers}")
 release = "false"
 target_versions = get_versions()
 for lang in ["zh_CN", "en_US", "ja_JP", "ko_KR"]:
-    current_ver = currentt_vers[lang]
-    target_ver = target_versions[lang]
+    current_ver = currentt_vers.get(lang)
+    target_ver = target_versions.get(lang)
     if current_ver is None and target_ver is not None:
         release = "true"
         break
