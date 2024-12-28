@@ -18,15 +18,14 @@ def run(lang: str):
         f"{cache_path}/gamedata/excel/character_table.json", "r", encoding="utf-8"
     ) as js:
         raw: dict = json.load(js)
-        raw_items: list[list] = list(raw.items())
 
     with open(f"{build_path}/character.json", "r", encoding="utf-8") as f:
         chars: dict = json.load(f)
 
     num = 0
-    for data in raw_items:
-        info: dict = data[-1]
-        id: str = data[0]  # id
+    for key in raw:
+        id: str = key  # id
+        info: dict = raw[key]
         if "char_" not in id:
             continue
 
