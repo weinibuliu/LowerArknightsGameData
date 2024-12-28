@@ -33,6 +33,11 @@ jobs:
               version
               gamedata/excel/character_table.json
 
+        - name: Debug
+          run: |
+            ls cache
+            ls cache/zh_CN
+
         - name: Checkout Kengxxiao/ArknightsGameData_YoStar
           uses: actions/checkout@v4
           with:

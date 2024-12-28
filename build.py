@@ -31,7 +31,13 @@ print(f"Current Version: {currentt_vers}")
 # 检查目标版本信息
 release = "false"
 target_versions = get_versions()
-for lang in ["zh_CN", "en_US", "ja_JP", "ko_KR"]:
+cn_ver_path = Path(Path.cwd(), "version")
+if cn_ver_path.exists():
+    with open(cn_ver_path, "r", encoding="utf-8") as cnv:
+        cn_ver = cnv.read()
+        target_versions.update({"zh_CN": cn_ver})
+
+for lang in ["en_US", "ja_JP", "ko_KR"]:
     current_ver = currentt_vers.get(lang)
     target_ver = target_versions.get(lang)
     if current_ver is None and target_ver is not None:
@@ -45,8 +51,10 @@ for lang in ["zh_CN", "en_US", "ja_JP", "ko_KR"]:
 
 if release != "true":
     print("Exit caused by release == 'false'.")
+    subprocess.run("::notice :: Exit caused by release == 'false'")
     exit()
 
+subprocess.run("::notice :: Test")  #
 print(f"Target Version: {target_versions}")
 
 

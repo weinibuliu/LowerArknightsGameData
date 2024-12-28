@@ -53,7 +53,7 @@ def _get_version(
 
 def get_versions() -> dict[str]:
     commits = _get_commits()
-    versions = {"build_timestamp": int(time.time())}
+    versions = {"zh_CN": None, "build_timestamp": int(time.time())}
     for lang in langs:
         ver = _get_version(commits, lang)
         versions.update(ver)
