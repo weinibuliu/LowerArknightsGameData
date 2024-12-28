@@ -27,7 +27,7 @@ jobs:
           uses: actions/checkout@v4
           with:
             repository: yuanyan3060/ArknightsGameResource
-            path: cache/zh_CN/
+            path: zh_CN
             sparse-checkout:
               avatar
               version
@@ -37,7 +37,7 @@ jobs:
           uses: actions/checkout@v4
           with:
             repository: Kengxxiao/ArknightsGameData_YoStar
-            path: cache
+            path: global
             sparse-checkout:
               en_US/gamedata/excel/character_table.json
               ja_JP/gamedata/excel/character_table.json
@@ -63,7 +63,9 @@ jobs:
           uses: actions/upload-artifact@v4
           with:
             name: debug
-            path: cache
+            path: |
+              zh_CN
+              global
 
         - name: Upload Avatar Artifact
           uses: actions/upload-artifact@v4
