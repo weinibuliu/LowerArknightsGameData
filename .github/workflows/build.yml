@@ -62,6 +62,7 @@ jobs:
             python build.py ${{ secrets.GITHUB_TOKEN }}
 
         - name: Upload Avatar Artifact
+          if: env.release == 'true'
           uses: actions/upload-artifact@v4
           with:
             name: debug
@@ -70,6 +71,7 @@ jobs:
               global
 
         - name: Upload Avatar Artifact
+          if: env.release == 'true'
           uses: actions/upload-artifact@v4
           with:
             name: avatar
@@ -77,6 +79,7 @@ jobs:
               build/avatar/*
 
         - name: Upload GameData Artifact
+          if: env.release == 'true'
           uses: actions/upload-artifact@v4
           with:
             name: GameData
@@ -84,6 +87,7 @@ jobs:
               build/*
 
         - name: Upload GameData Artifact(Noavatar)
+          if: env.release == 'true'
           uses: actions/upload-artifact@v4
           with:
             name: GameData(NoAvatar)

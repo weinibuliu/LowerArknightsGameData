@@ -37,11 +37,11 @@ def run(lang: str):
             position: str = info.get("position")  # 部署位置
 
             chars[id] = {
-                "name": name,
                 "rarity": rarity,
                 "profession": profession,
                 "subProfessionId": subProfessionId,
                 "position": position,
+                "zh_CN_name": name,
             }
         else:
             name: str = info.get("name")
