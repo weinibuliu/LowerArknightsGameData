@@ -36,9 +36,10 @@ jobs:
             repository: Kengxxiao/ArknightsGameData_YoStar
             path: cache
 
-        - name: Download Lateset Release
+        - name: Download Latest Release
           uses: robinraju/release-downloader@v1
           with:
+            latest: true
             fileName: "version.json"
             token: ${{ secrets.GITHUB_TOKEN }}
 
