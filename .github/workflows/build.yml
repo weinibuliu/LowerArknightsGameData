@@ -56,8 +56,8 @@ jobs:
             python-version: "3.12"
 
         - name: Debug
-          run: |
-            ls cache/zh_CN/gamedata/excel/
+            run: |
+              ls cache/zh_CN/gamedata/excel/
 
         - name: Run build.py
           run: |
