@@ -88,9 +88,9 @@ jobs:
         - name: Release Preparation
           if: env.release == 'true'
           run: |
-            python checksums.py
             cd build
             zip -r -q GameData.zip .
+            python checksums.py
 
         - name: Create Release
           if: env.release == 'true'
