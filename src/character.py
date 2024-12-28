@@ -27,27 +27,29 @@ def run(lang: str):
         id: str = data[0]  # id
         if "char_" not in id:
             continue
+
+        if lang == "zh_CN":
+            name: str = info.get("name")  # 名称
+            rarity: int = info.get("rarity")  # 稀有度 (0 对应 1星干员)
+            profession: str = info.get("profession")  # 职业
+            subProfessionId: str = info.get("subProfessionId")  # 子职业
+            position: str = info.get("position")  # 部署位置
+
+            characters[id] = {
+                "name": name,
+                "rarity": rarity,
+                "profession": profession,
+                "subProfessionId": subProfessionId,
+                "position": position,
+            }
+        else:
+            name: str = info.get("name")
+            characters[id][f"{lang}_name"] = name
+
         num += 1
+
     if num == 0:
         raise RuntimeError("Fail to get characters.")
-
-    if lang == "zh_CN":
-        name: str = info.get("name")  # 名称
-        rarity: int = info.get("rarity")  # 稀有度 (0 对应 1星干员)
-        profession: str = info.get("profession")  # 职业
-        subProfessionId: str = info.get("subProfessionId")  # 子职业
-        position: str = info.get("position")  # 部署位置
-
-        characters[id] = {
-            "name": name,
-            "rarity": rarity,
-            "profession": profession,
-            "subProfessionId": subProfessionId,
-            "position": position,
-        }
-    else:
-        name: str = info.get("name")
-        characters[id][f"{lang}_name"] = name
 
     with open(f"{build_path}/character.json", "r", encoding="utf-8") as f:
         raw: dict = json.load(f)
