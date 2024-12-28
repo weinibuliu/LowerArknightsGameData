@@ -11,8 +11,7 @@ def run(lang: str):
         cache_path = Path(Path.cwd(), "global", lang)
 
     if not Path(build_path, "character.json").exists():
-        with open(Path(build_path, "character.json"), "w", encoding="utf-8") as f:
-            json.dump({}, f)
+        Path(build_path, "character.json").write_text("{}", encoding="utf-8")
 
     with open(
         f"{cache_path}/gamedata/excel/character_table.json", "r", encoding="utf-8"
