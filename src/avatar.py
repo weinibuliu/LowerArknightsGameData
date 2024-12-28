@@ -6,7 +6,7 @@ from pathlib import Path
 
 def run():
     build_path = Path(Path.cwd(), "build")
-    cache_path = Path(Path.cwd(), "cache", "zh_CN")
+    cache_path = Path(Path.cwd(), "zh_CN")
 
     with open(Path(build_path, "character.json"), "r", encoding="utf-8") as c:
         chars: dict = json.load(c)
