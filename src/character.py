@@ -53,8 +53,7 @@ def run(lang: str):
         raise RuntimeError("Fail to get characters.")
 
     with open(f"{build_path}/character.json", "w", encoding="utf-8") as ct:
-        characters = raw.update(chars)
-        json.dump(characters, ct, indent=4, ensure_ascii=False)
+        json.dump(chars, ct, indent=4, ensure_ascii=False)
 
     print(f"Done: {lang} Character ({num})")
 
