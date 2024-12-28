@@ -1,8 +1,10 @@
 from pathlib import Path
 
 build_path = Path(Path.cwd(), "build")
+avatar_path = Path(build_path, "avatar")
 
-if not build_path.exists():
-    build_path.mkdir()
+for path in [build_path, avatar_path]:
+    if not path.exists():
+        path.mkdir()
 
 print("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
