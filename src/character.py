@@ -21,7 +21,7 @@ def run(lang: str):
         raw_items: list[list] = list(raw.items())
 
     with open(f"{build_path}/character.json", "r", encoding="utf-8") as f:
-        characters: dict = json.load(f)
+        chars: dict = json.load(f)
 
     num = 0
     for data in raw_items:
@@ -37,7 +37,7 @@ def run(lang: str):
             subProfessionId: str = info.get("subProfessionId")  # 子职业
             position: str = info.get("position")  # 部署位置
 
-            characters[id] = {
+            chars[id] = {
                 "name": name,
                 "rarity": rarity,
                 "profession": profession,
@@ -46,7 +46,7 @@ def run(lang: str):
             }
         else:
             name: str = info.get("name")
-            characters[id][f"{lang}_name"] = name
+            chars[id][f"{lang}_name"] = name
 
         num += 1
 
@@ -54,7 +54,7 @@ def run(lang: str):
         raise RuntimeError("Fail to get characters.")
 
     with open(f"{build_path}/character.json", "w", encoding="utf-8") as ct:
-        characters = raw.update(characters)
+        characters = raw.update(chars)
         json.dump(characters, ct, indent=4, ensure_ascii=False)
 
     print(f"Done: {lang} Character ({num})")
