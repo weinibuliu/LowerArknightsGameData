@@ -28,7 +28,7 @@ jobs:
           with:
             repository: yuanyan3060/ArknightsGameResource
             path: cache/zh_CN/
-            sparse-checkout: |
+            sparse-checkout:
               avatar
               version
               gamedata/excel/character_table.json
@@ -55,6 +55,12 @@ jobs:
           run: |
             pip install -r requirements.txt
             python build.py ${{ secrets.GITHUB_TOKEN }}
+
+        - name: Upload Avatar Artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: debug
+            path: cache
 
         - name: Upload Avatar Artifact
           uses: actions/upload-artifact@v4
