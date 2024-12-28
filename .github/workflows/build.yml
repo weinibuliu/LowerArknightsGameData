@@ -56,19 +56,9 @@ jobs:
             python-version: "3.12"
 
         - name: Run build.py
-          continue-on-error: true
           run: |
             pip install -r requirements.txt
             python build.py ${{ secrets.GITHUB_TOKEN }}
-
-        - name: Upload Avatar Artifact
-          if: env.release == 'true'
-          uses: actions/upload-artifact@v4
-          with:
-            name: debug
-            path: |
-              zh_CN
-              global
 
         - name: Upload Avatar Artifact
           if: env.release == 'true'
@@ -95,118 +85,23 @@ jobs:
               build/*
               !build/avatar
 
-      outputs:
-        release: ${{ env.release }}
-
-    Release:
-        needs: [Build]
-        runs-on: macos-latest
-        if: needs.Build.outputs.release == 'skip'
-
-        steps:
-        - name: Checkout Code
-          uses: actions/checkout@v4
-
-        - name: Download Artifacts
-          uses: actions/download-artifact@v4
-          with:
-            path: assets
-
-        - name: Release(s) Preparation
+        - name: Release Preparation
+          if: env.release == 'true'
           run: |
-            echo "zh_CN: ${{ needs.zh_CN.outputs.change }}"
-            echo "en_US: ${{ needs.en_US.outputs.change }}"
-            echo "ja_JP: ${{ needs.ja_JP.outputs.change }}"
-            echo "ko_KR: ${{ needs.ko_KR.outputs.change }}"
-
-            mkdir -p version && cd version
-            mkdir -p zh_CN && mkdir -p en_US && mkdir -p ja_JP && mkdir -p ko_KR && cd ..
-
-            cd assets/zh_CN-${{ env.timestamp }} && mv zh_CN-version ..
-            zip -r -q zh_CN.zip . && mv zh_CN.zip .. && mv -f version ../../version/zh_CN/
-
-            cd ../en_US-${{ env.timestamp }} && mv en_US-version ..
-            zip -r -q en_US.zip . && mv en_US.zip .. && mv -f version ../../version/en_US/
-
-            cd ../ja_JP-${{ env.timestamp }} && mv ja_JP-version ..
-            zip -r -q ja_JP.zip . && mv ja_JP.zip .. && mv -f version ../../version/ja_JP/
-
-            cd ../ko_KR-${{ env.timestamp }} && mv ko_KR-version ..
-            zip -r -q ko_KR.zip . && mv ko_KR.zip .. && mv -f version ../../version/ko_KR/
-
-        - name: Setup Python
-          uses: actions/setup-python@v5
-          with:
-            python-version: "3.12"
-
-        - name: Update Checksums
-          run: |
-            pip install -r requirements.txt
             python checksums.py
+            cd build
+            zip -r -q GameData.zip .
 
         - name: Create Release
+          if: env.release == 'true'
           uses: softprops/action-gh-release@v2
           with:
             tag_name: ${{ env.timestamp }}
             make_latest: true
             files: |
-              assets/zh_CN.zip
-              assets/en_US.zip
-              assets/ja_JP.zip
-              assets/ko_KR.zip
-              assets/zh_CN-version
-              assets/en_US-version
-              assets/ja_JP-version
-              assets/ko_KR-version
+              build/zh_CN.zip
+              build/charater.json
+              build/version.json
             body: |
-              ### Version Info
-              - zh_CN: ${{ needs.zh_CN.outputs.ver }}
-              - en_US: ${{ needs.en_US.outputs.ver }}
-              - ja_JP: ${{ needs.ja_JP.outputs.ver }}
-              - ko_KR: ${{ needs.ko_KR.outputs.ver }}
-              ### Changing
-              - zh_CN: ${{ needs.zh_CN.outputs.change }}
-              - en_US: ${{ needs.en_US.outputs.change }}
-              - ja_JP: ${{ needs.ja_JP.outputs.change }}
-              - ko_KR: ${{ needs.ko_KR.outputs.change }}
               ### MD5
-              - zh_CN: ${{ env.zh_CN_MD5 }}
-              - en_US: ${{ env.en_US_MD5 }}
-              - ja_JP: ${{ env.ja_JP_MD5 }}
-              - ko_KR: ${{ env.ko_KR_MD5 }}
-
-        - name: Commit zh_CN Version
-          if: ${{ needs.zh_CN.outputs.release == 'true' }}
-          uses: EndBug/add-and-commit@v9
-          with:
-            author_name: github-actions
-            author_email: github-actions[bot]@users.noreply.github.com
-            message: '[zh_CN] ${{ needs.zh_CN.outputs.ver }}'
-            add: 'version/zh_CN/version'
-
-        - name: Commit en_US Version
-          if: ${{ needs.en_US.outputs.release == 'true' }}
-          uses: EndBug/add-and-commit@v9
-          with:
-            author_name: github-actions
-            author_email: github-actions[bot]@users.noreply.github.com
-            message: '[en_US] ${{ needs.en_US.outputs.ver }}'
-            add: 'version/en_US/version'
-
-        - name: Commit ja_JP Version
-          if: ${{ needs.ja_JP.outputs.release == 'true' }}
-          uses: EndBug/add-and-commit@v9
-          with:
-            author_name: github-actions
-            author_email: github-actions[bot]@users.noreply.github.com
-            message: '[ja_JP] ${{ needs.ja_JP.outputs.ver }}'
-            add: 'version/ja_JP/version'
-
-        - name: Commit ko_KR Version
-          if: ${{ needs.ko_KR.outputs.release == 'true' }}
-          uses: EndBug/add-and-commit@v9
-          with:
-            author_name: github-actions
-            author_email: github-actions[bot]@users.noreply.github.com
-            message: '[ko_KR] ${{ needs.ko_KR.outputs.ver }}'
-            add: 'version/ko-KR/version'
+              ${{ env.MD5 }}

@@ -9,6 +9,8 @@ from datetime import datetime, timedelta
 from github import Github
 from github.Commit import Commit
 
+from src import timestamp
+
 token = None
 if len(sys.argv) >= 2:
     token = sys.argv[1]
@@ -53,7 +55,7 @@ def _get_version(
 
 def get_versions() -> dict[str]:
     commits = _get_commits()
-    versions = {"build_timestamp": int(time.time()), "zh_CN": None}
+    versions = {"build_timestamp": timestamp, "zh_CN": None}
     for lang in langs:
         ver = _get_version(commits, lang)
         versions.update(ver)

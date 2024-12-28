@@ -8,8 +8,9 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
+from src import timestamp
 from src import avatar, character
-from src.commit import get_versions
+from src.version import get_versions
 
 LANGS = ["zh_CN", "en_US", "ja_JP", "ko_KR"]
 
@@ -53,7 +54,6 @@ if release != "true":
     subprocess.run("echo '::notice :: Exit caused by release == 'false'", shell=True)
     exit()
 
-subprocess.run("echo '::notice :: 'Test''", shell=True)  #
 print(f"Target Version: {target_versions}")
 
 
@@ -67,7 +67,9 @@ avatar.run()
 
 # 写入 GITHUB ENV
 if os.environ.get("CI"):
+    subprocess.run(f'echo "timestamp={timestamp}" >> "$GITHUB_ENV"', shell=True)
     subprocess.run(f'echo "release={release}" >> "$GITHUB_ENV"', shell=True)
+    print(f"env.timestamp = {timestamp}")
     print(f"env.release = {release}")
 
 print("Done: Version")

@@ -3,10 +3,14 @@ import subprocess
 from pathlib import Path
 
 
-md5s = {}
-for name in ["zh_CN", "en_US", "ja_JP", "ko_KR"]:
-    path = Path(Path.cwd(), "assets", f"{name}.zip")
-    with open(path, "rb") as file:
+def make_md5():
+    release_path = Path(Path.cwd(), "build/GameData.zip")
+    with open(release_path, "rb") as file:
         data = file.read()
     md5 = hashlib.md5(data).hexdigest()
-    subprocess.check_call(f'echo {name}_MD5={md5} >> "$GITHUB_ENV"', shell=True)
+    subprocess.check_call(f'echo MD5={md5} >> "$GITHUB_ENV"', shell=True)
+    print(f"MD5 = {md5}")
+
+
+if __name__ == "__main__":
+    make_md5()
