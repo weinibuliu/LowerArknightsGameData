@@ -49,7 +49,7 @@ def run(lang: str):
         name: str = info.get("name")
         characters[id][f"{lang}_name"] = name
 
-    with open(f"{build_path}/character.json", "w", encoding="utf-8") as ct:
+    with open(f"{build_path}/character.json", "w+", encoding="utf-8") as ct:
         raw: dict = json.load(ct)
         characters = raw.update(characters)
         json.dump(characters, ct, indent=4, ensure_ascii=False)

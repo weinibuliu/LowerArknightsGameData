@@ -9,7 +9,6 @@ from pathlib import Path
 from datetime import datetime
 
 from src import avatar, character
-from src import cwd, build_path, cache_path
 from src.commit import get_versions
 
 LANGS = ["zh_CN", "en_US", "ja_JP", "ko_KR"]
@@ -31,7 +30,7 @@ print(f"Current Version: {currentt_vers}")
 # 检查目标版本信息
 release = "false"
 target_versions = get_versions()
-cn_ver_path = Path(Path.cwd(), "cache/zh_CN/version")
+cn_ver_path = Path(Path.cwd(), "zh_CN/version")
 if cn_ver_path.exists():
     with open(cn_ver_path, "r", encoding="utf-8") as cnv:
         cn_ver = cnv.read()
