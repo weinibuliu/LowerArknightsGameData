@@ -38,6 +38,10 @@ jobs:
           with:
             repository: Kengxxiao/ArknightsGameData_YoStar
             path: cache
+            sparse-checkout:
+              en_US/gamedata/excel/character_table.json
+              ja_JP/gamedata/excel/character_table.json
+              ko_KR/gamedata/excel/character_table.json
 
         - name: Download Latest Release
           uses: robinraju/release-downloader@v1
@@ -54,7 +58,6 @@ jobs:
         - name: Run build.py
           run: |
             pip install -r requirements.txt
-            python build.py ${{ secrets.GITHUB_TOKEN }}
 
         - name: Upload Avatar Artifact
           uses: actions/upload-artifact@v4
