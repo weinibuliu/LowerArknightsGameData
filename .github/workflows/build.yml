@@ -59,7 +59,7 @@ jobs:
         - name: Run build.py
           run: |
             pip install -r requirements.txt
-            python build.py
+            python build.py ${{ secrets.GITHUB_TOKEN }}
 
         - name: Upload Avatar Artifact
           uses: actions/upload-artifact@v4

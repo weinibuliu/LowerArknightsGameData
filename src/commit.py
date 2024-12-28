@@ -17,7 +17,7 @@ until = datetime.now()
 since = until - timedelta(30)
 
 langs = ["en_US", "ja_JP", "ko_KR"]
-gh = Github(login_or_token=token, per_page=15, seconds_between_requests=2)
+gh = Github(login_or_token=token, per_page=30, seconds_between_requests=2, retry=None)
 repo = gh.get_repo("Kengxxiao/ArknightsGameData_YoStar")
 
 
