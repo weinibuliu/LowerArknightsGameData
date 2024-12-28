@@ -28,7 +28,7 @@ jobs:
           with:
             repository: yuanyan3060/ArknightsGameResource
             path: zh_CN
-            sparse-checkout:
+            sparse-checkout: |
               avatar
               version
               gamedata/excel/character_table.json
@@ -38,7 +38,7 @@ jobs:
           with:
             repository: Kengxxiao/ArknightsGameData_YoStar
             path: global
-            sparse-checkout:
+            sparse-checkout: |
               en_US/gamedata/excel/character_table.json
               ja_JP/gamedata/excel/character_table.json
               ko_KR/gamedata/excel/character_table.json
