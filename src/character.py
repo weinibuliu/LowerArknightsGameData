@@ -11,7 +11,8 @@ def run(lang: str):
         cache_path = Path(Path.cwd(), "global", lang)
 
     if not Path(build_path, "character.json").exists():
-        Path(build_path, "character.json").write_text("{}", encoding="utf-8")
+        with open(Path(build_path, "character.json"), "w", encoding="utf-8") as f:
+            json.dump({}, f)
 
     with open(
         f"{cache_path}/gamedata/excel/character_table.json", "r", encoding="utf-8"
@@ -48,8 +49,9 @@ def run(lang: str):
         name: str = info.get("name")
         characters[id][f"{lang}_name"] = name
 
-    with open(f"{build_path}/character.json", "w+", encoding="utf-8") as ct:
+    with open(f"{build_path}/character.json", "r", encoding="utf-8") as f:
         raw: dict = json.load(ct)
+    with open(f"{build_path}/character.json", "w", encoding="utf-8") as ct:
         characters = raw.update(characters)
         json.dump(characters, ct, indent=4, ensure_ascii=False)
 
