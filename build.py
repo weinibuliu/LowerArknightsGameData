@@ -12,6 +12,8 @@ from src import avatar, character
 from src import cwd, build_path, cache_path
 from src.commit import get_versions
 
+LANGS = ["zh_CN", "en_US", "ja_JP", "ko_KR"]
+
 # 检查当前版本信息
 curent_version_path = Path(Path.cwd(), "version.json")
 vers = {}
@@ -50,6 +52,11 @@ print(f"Target Version: {target_versions}")
 
 with open(f"version.json", "w", encoding="utf-8") as v:
     json.dump(target_versions, v, indent=4, ensure_ascii=False)
+
+# 执行构建
+for lang in LANGS:
+    character.run(lang)
+avatar.run()
 
 # 写入 GITHUB ENV
 if os.environ.get("CI"):

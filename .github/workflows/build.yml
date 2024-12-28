@@ -63,14 +63,14 @@ jobs:
             path: |
               build/avatar/*
 
-        - name: Upload Avatar Artifact
+        - name: Upload GameData Artifact
           uses: actions/upload-artifact@v4
           with:
             name: GameData
             path: |
               build/*
 
-        - name: Upload Avatar Artifact
+        - name: Upload GameData Artifact(Noavatar)
           uses: actions/upload-artifact@v4
           with:
             name: GameData(NoAvatar)
