@@ -20,6 +20,9 @@ jobs:
     Build:
       runs-on: macos-latest
       steps:
+        - name: Checkout Code
+          uses: actions/checkout@v4
+
         - name: Checkout yuanyan3060/ArknightsGameResource
           uses: actions/checkout@v4
           with:
