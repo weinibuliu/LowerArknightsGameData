@@ -35,7 +35,6 @@ jobs:
 
         - name: Debug
           run: |
-            ls cache/zh_CN/gamedata
             ls cache/zh_CN/gamedata/excel/
 
         - name: Checkout Kengxxiao/ArknightsGameData_YoStar

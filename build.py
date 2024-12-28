@@ -51,10 +51,10 @@ for lang in ["en_US", "ja_JP", "ko_KR"]:
 
 if release != "true":
     print("Exit caused by release == 'false'.")
-    subprocess.run("::notice :: Exit caused by release == 'false'", shell=True)
+    subprocess.run("echo '::notice :: Exit caused by release == 'false'", shell=True)
     exit()
 
-subprocess.run("::notice :: Test", shell=True)  #
+subprocess.run("echo '::notice :: 'Test''", shell=True)  #
 print(f"Target Version: {target_versions}")
 
 
