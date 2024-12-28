@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def run(lang: str):
-    # cache_path = Path(Path.cwd(), "cache", lang)
+    cache_path = Path(Path.cwd(), "cache", lang)
     build_path = Path(Path.cwd(), "build")
 
     if not Path(build_path, "character.json").exists():
@@ -12,7 +12,7 @@ def run(lang: str):
             json.dump({}, f)
 
     with open(
-        f"cache/{lang}/gamedata/excel/character_table.json", "r", encoding="utf-8"
+        f"{cache_path}/gamedata/excel/character_table.json", "r", encoding="utf-8"
     ) as js:
         raw: dict = json.load(js)
         raw_items: list[list] = list(raw.items())

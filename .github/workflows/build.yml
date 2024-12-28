@@ -27,7 +27,7 @@ jobs:
           uses: actions/checkout@v4
           with:
             repository: yuanyan3060/ArknightsGameResource
-            path: cache/zh_CN
+            path: cache/zh_CN/
             sparse-checkout: |
               avatar
               version
