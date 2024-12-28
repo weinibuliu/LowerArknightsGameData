@@ -90,6 +90,7 @@ jobs:
           run: |
             cd build
             zip -r -q GameData.zip .
+            cd ..
             python checksums.py
 
         - name: Create Release
