@@ -33,10 +33,6 @@ jobs:
               version
               gamedata/excel/character_table.json
 
-        - name: Debug
-          run: |
-            ls cache/zh_CN/gamedata/excel/
-
         - name: Checkout Kengxxiao/ArknightsGameData_YoStar
           uses: actions/checkout@v4
           with:
@@ -54,10 +50,6 @@ jobs:
           uses: actions/setup-python@v5
           with:
             python-version: "3.12"
-
-        - name: Debug
-            run: |
-              ls cache/zh_CN/gamedata/excel/
 
         - name: Run build.py
           run: |

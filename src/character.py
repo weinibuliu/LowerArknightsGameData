@@ -10,9 +10,6 @@ def run(lang: str):
     if not Path(build_path, "character.json").exists():
         with open(Path(build_path, "character.json"), "w", encoding="utf-8") as f:
             json.dump({}, f)
-    if not Path(build_path, "character_table.json").exists():
-        with open(Path(build_path, "character_table.json"), "w", encoding="utf-8") as f:
-            json.dump({}, f)
 
     with open(
         f"{cache_path}/gamedata/excel/character_table.json", "r", encoding="utf-8"
