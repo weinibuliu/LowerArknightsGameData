@@ -7,6 +7,10 @@ def run(lang: str):
     cache_path = Path(Path.cwd(), "cache", lang)
     build_path = Path(Path.cwd(), "build")
 
+    if not Path(build_path, "character.json").exists():
+        with open(Path(build_path, "character.json"), "w", encoding="utf-8") as f:
+            json.dump({}, f)
+
     with open(
         f"{cache_path}/gamedata/excel/character_table.json", "r", encoding="utf-8"
     ) as js:
@@ -21,7 +25,10 @@ def run(lang: str):
         if "char_" not in id:
             continue
         num += 1
+    if num == 0:
+        raise RuntimeError("Fail to get characters.")
 
+    if lang == "zh_CN":
         name: str = info.get("name")  # 名称
         rarity: int = info.get("rarity")  # 稀有度 (0 对应 1星干员)
         profession: str = info.get("profession")  # 职业
@@ -35,14 +42,16 @@ def run(lang: str):
             "subProfessionId": subProfessionId,
             "position": position,
         }
+    else:
+        name: str = info.get("name")
+        characters[id][f"{lang}_name"] = name
 
-    with open(f"{build_path}/character_table.json", "w", encoding="utf-8") as ct:
+    with open(f"{build_path}/character.json", "w+", encoding="utf-8") as ct:
+        raw: dict = json.load(ct)
+        characters = raw.update(characters)
         json.dump(characters, ct, indent=4, ensure_ascii=False)
 
-    if num == 0:
-        raise RuntimeError("Fail to get characters.")
-    else:
-        print(f"Done: Character ({num})")
+    print(f"Done: {lang} Character ({num})")
 
 
 if __name__ == "__main__":

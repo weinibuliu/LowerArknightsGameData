@@ -22,10 +22,8 @@ The repository uses **[Pygithub](https://github.com/PyGithub/PyGithub)** to get 
 Whenever there is a newer version of the game files for any region, a release is created and marked as **latest** . Therefore, it is also necessary to verify that the version information corresponding to the game files for specific regions is consistent. They are stored in the `{language}-version` file.
 
 ## 文件列表 | Files List
-- `version`
 - `avatar` (干员头像)
-- `character_table.json`（干员信息）
-- `char_classisy` (经过分类的干员信息)
+- `character.json`（干员信息）
 
 ## 数据来源 | Data Source
 本仓库使用了以下仓库的数据，感谢其维护者与贡献者的贡献。
@@ -49,7 +47,6 @@ The copyright of all static resources in this repository belongs to **[Arknights
 - **[checkout](https://github.com/actions/checkout)**
 - **[download-artifact](https://github.com/actions/download-artifact)**
 - **[upload-artifact](https://github.com/actions/upload-artifact)**
-- **[set-timezone](https://github.com/szenius/set-timezone)**
 - **[setup-python](https://github.com/actions/setup-python)**
 
 #### 开源库 | Library

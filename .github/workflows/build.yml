@@ -17,73 +17,71 @@ on:
       - cron: '0 7 * * *'  # UTC-7 00:00 [en_US]
 
 jobs:
-    meta:
+    Build:
       runs-on: macos-latest
       steps:
-        - name: Checkout Code
+        - name: Checkout yuanyan3060/ArknightsGameResource
           uses: actions/checkout@v4
+          with:
+          repository: yuanyan3060/ArknightsGameResource
+          path: cache/zh_CN
+          sparse-checkout: |
+            avatar
+            version
+            gamedata/excel/character_table.json
+
+        - name: Checkout Kengxxiao/ArknightsGameData_YoStar
+          uses: actions/checkout@v4
+          with:
+          repository: Kengxxiao/ArknightsGameData_YoStar
+          path: cache
+
+        - name: Download Lateset Release
+          uses: robinraju/release-downloader@v1
+          with:
+            fileName: "version.json"
+            token: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Setup Python
           uses: actions/setup-python@v5
           with:
             python-version: "3.12"
-        - name: Run meta.py
+
+        - name: Run build.py
           run: |
-            python meta.py
+            pip install -r requirements.txt
+            python build.py
+
+        - name: Upload Avatar Artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: avatar
+            path: |
+              build/avatar/*
+
+        - name: Upload Avatar Artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: GameData
+            path: |
+              build/*
+
+        - name: Upload Avatar Artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: GameData(NoAvatar)
+            path: |
+              build/*
+              !build/avatar
 
       outputs:
-        timestamp: ${{ env.timestamp }}
-        enable_workflow: ${{ env.enable_workflow }}
-        create_release: ${{ env.create_release }}
-
-    zh_CN:
-        needs: meta
-        if: ${{ needs.meta.outputs.enable_workflow }}
-        uses: ./.github/workflows/data.yml
-        with:
-          checkout_repo: yuanyan3060/ArknightsGameResource
-          checkout_path: cache/zh_CN/
-          checkout_files: |
-            avatar
-            version
-            gamedata/excel/character_table.json
-          lang: zh_CN
-          timezone: Asia/Shanghai
-          timestamp: ${{ needs.meta.outputs.timestamp }}
-
-    en_US:
-        needs: [meta,zh_CN]
-        uses: ./.github/workflows/data.yml
-        with:
-          checkout_files: en_US/gamedata/excel/character_table.json
-          lang: en_US
-          timezone: America/Dawson
-          timestamp: ${{ needs.meta.outputs.timestamp }}
-
-    ja_JP:
-        needs: [meta,zh_CN]
-        uses: ./.github/workflows/data.yml
-        with:
-          checkout_files: ja_JP/gamedata/excel/character_table.json
-          lang: ja_JP
-          timezone: Asia/Tokyo
-          timestamp: ${{ needs.meta.outputs.timestamp }}
-
-    ko_KR:
-        needs: [meta,zh_CN]
-        uses: ./.github/workflows/data.yml
-        with:
-          checkout_files: ko_KR/gamedata/excel/character_table.json
-          lang: ko_KR
-          timezone: Asia/Seoul
-          timestamp: ${{ needs.meta.outputs.timestamp }}
+        release: ${{ env.release }}
 
     Release:
-        needs: [meta,zh_CN,en_US,ja_JP,ko_KR]
+        needs: [Build]
         runs-on: macos-latest
-        if: (needs.meta.outputs.create_release == 'true') && (needs.zh_CN.outputs.release == 'true' || needs.en_US.outputs.release == 'true' || needs.ja_JP.outputs.release == 'true' || needs.ko_KR.outputs.release == 'true')
-        env:
-          timestamp: ${{ needs.meta.outputs.timestamp }}
+        if: needs.Build.outputs.release == 'skip'
+
         steps:
         - name: Checkout Code
           uses: actions/checkout@v4
