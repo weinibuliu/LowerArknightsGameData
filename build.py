@@ -8,7 +8,7 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
-from src import avatar, character, char_classisy
+from src import avatar, character
 from src import cwd, build_path, cache_path
 from src.commit import get_versions
 
