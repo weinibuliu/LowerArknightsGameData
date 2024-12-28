@@ -23,18 +23,18 @@ jobs:
         - name: Checkout yuanyan3060/ArknightsGameResource
           uses: actions/checkout@v4
           with:
-          repository: yuanyan3060/ArknightsGameResource
-          path: cache/zh_CN
-          sparse-checkout: |
-            avatar
-            version
-            gamedata/excel/character_table.json
+            repository: yuanyan3060/ArknightsGameResource
+            path: cache/zh_CN
+            sparse-checkout: |
+              avatar
+              version
+              gamedata/excel/character_table.json
 
         - name: Checkout Kengxxiao/ArknightsGameData_YoStar
           uses: actions/checkout@v4
           with:
-          repository: Kengxxiao/ArknightsGameData_YoStar
-          path: cache
+            repository: Kengxxiao/ArknightsGameData_YoStar
+            path: cache
 
         - name: Download Lateset Release
           uses: robinraju/release-downloader@v1
