@@ -31,7 +31,7 @@ print(f"Current Version: {currentt_vers}")
 # 检查目标版本信息
 release = "false"
 target_versions = get_versions()
-cn_ver_path = Path(Path.cwd(), "version")
+cn_ver_path = Path(Path.cwd(), "cache/zh_CN/version")
 if cn_ver_path.exists():
     with open(cn_ver_path, "r", encoding="utf-8") as cnv:
         cn_ver = cnv.read()

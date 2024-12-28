@@ -35,8 +35,8 @@ jobs:
 
         - name: Debug
           run: |
-            ls cache
-            ls cache/zh_CN
+            ls cache/zh_CN/gamedata
+            ls cache/zh_CN/gamedata/excel/
 
         - name: Checkout Kengxxiao/ArknightsGameData_YoStar
           uses: actions/checkout@v4
