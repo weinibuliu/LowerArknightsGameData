@@ -20,8 +20,10 @@ def run(lang: str):
         raw: dict = json.load(js)
         raw_items: list[list] = list(raw.items())
 
+    with open(f"{build_path}/character.json", "r", encoding="utf-8") as f:
+        characters: dict = json.load(f)
+
     num = 0
-    characters: dict = {}
     for data in raw_items:
         info: dict = data[-1]
         id: str = data[0]  # id
@@ -51,8 +53,6 @@ def run(lang: str):
     if num == 0:
         raise RuntimeError("Fail to get characters.")
 
-    with open(f"{build_path}/character.json", "r", encoding="utf-8") as f:
-        raw: dict = json.load(f)
     with open(f"{build_path}/character.json", "w", encoding="utf-8") as ct:
         characters = raw.update(characters)
         json.dump(characters, ct, indent=4, ensure_ascii=False)
