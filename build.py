@@ -8,16 +8,15 @@ from pathlib import Path
 from src import avatar, character
 from src.version import get_commit
 
+
 # 检查当前版本信息
-curent_version_path = Path(Path.cwd(), "version.json")
-vers = {}
-with open(curent_version_path, "r", encoding="utf-8") as f:
-    version: dict = json.load(f)
-    print(version)
-    current_sha = version.get("Sha")
+with open("version.json", "r", encoding="utf-8") as f:
+    current_sha: dict = json.load(f).get("Sha")
 
 
 # 检查目标版本信息
+with open("resource/version.json", "r", encoding="utf-8") as f:
+    version: dict = json.load(f)
 commit_info = get_commit()
 target_sha = commit_info["sha"]
 update_time = commit_info["update_time"]
