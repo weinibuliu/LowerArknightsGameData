@@ -27,13 +27,13 @@ def get_commit() -> str:
         since=SINCE,
         until=UNTIL,
     ).get_page(0)
-    commit = commits[0]
-    return {
-        "sha": commit.commit.sha,
-        "update_time": str(commit.commit.last_modified_datetime)
-        .split("+")[0]
-        .replace(" ", ""),
-    }
+    c = commits[0]
+    sha = c.commit.sha
+    update_time = c.commit.last_modified_datetime
+    update_ts = int(
+        datetime.timestamp(datetime.strptime(update_time, "%Y-%m-%d %H:%M:%S"))
+    )
+    return {"sha": sha, "update_time": update_ts}
 
 
 if __name__ == "__main__":
