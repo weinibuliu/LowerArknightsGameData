@@ -8,7 +8,7 @@ def run():
     build_path = Path(Path.cwd(), "build")
     cache_path = Path(Path.cwd(), "avatar")
 
-    with open(Path(build_path, "character.json"), "r", encoding="utf-8") as c:
+    with open(Path(build_path, "operators.json"), "r", encoding="utf-8") as c:
         chars: dict = json.load(c)
 
     c_ava_path = cache_path

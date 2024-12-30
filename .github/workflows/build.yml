@@ -60,7 +60,7 @@ jobs:
           if: env.release == 'true'
           run: |
             cd build
-            zip -r -q GameData.zip .
+            zip -r -q GameResource.zip .
             cd ..
             python checksums.py
 
@@ -72,8 +72,8 @@ jobs:
             make_latest: true
             files: |
               version.json
-              GameData.zip.sha256
-              build/GameData.zip
+              GameResource.zip.sha256
+              build/GameResource.zip
               build/character.json
             body: |
               Sha256
