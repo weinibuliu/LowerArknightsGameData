@@ -13,6 +13,7 @@ curent_version_path = Path(Path.cwd(), "version.json")
 vers = {}
 with open(curent_version_path, "r", encoding="utf-8") as f:
     version: dict = json.load(f)
+    print(version)
     current_sha = version.get("Sha")
 
 

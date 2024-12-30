@@ -8,7 +8,6 @@ on:
       paths:
         - ".github/workflows/**"
         - "src/**"
-        - "version/**"
         - "**.py"
 
     schedule:
@@ -76,7 +75,7 @@ jobs:
             files: |
               GameData.zip.sha256
               build/GameData.zip
-              build/charater.json
+              build/character.json
               build/version.json
             body: |
               Sha256
