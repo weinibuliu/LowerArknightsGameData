@@ -88,10 +88,10 @@ jobs:
           if: env.release == 'true'
           uses: softprops/action-gh-release@v2
           with:
-            tag_name: ${{ env.timestamp }}
+            tag_name: ${{ env.update_time }}
             make_latest: true
             files: |
-              build/zh_CN.zip
+              build/GameData.zip
               build/charater.json
               build/version.json
             body: |

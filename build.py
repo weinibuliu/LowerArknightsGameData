@@ -29,7 +29,7 @@ if current_sha == target_sha:
     exit()
 print(f"Target Sha: {target_sha}")
 
-version.pop("gacha")
+version.pop("gacha", None)
 version["Sha"] = target_sha
 
 with open(f"version.json", "w", encoding="utf-8") as v:
