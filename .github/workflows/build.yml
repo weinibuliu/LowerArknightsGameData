@@ -11,9 +11,7 @@ on:
         - "**.py"
 
     schedule:
-      - cron: '0 16 * * *' # UTC+8 00:00 [zh_CN]
-      - cron: '0 15 * * *'  # UTC+9 00:00 [ja_JP , ko_KR]
-      - cron: '0 7 * * *'  # UTC-7 00:00 [en_US]
+      - cron: "0 */1 * * *" # Runs every 1 hour
 
 jobs:
     Build:
@@ -73,10 +71,10 @@ jobs:
             tag_name: ${{ env.update_ts }}
             make_latest: true
             files: |
+              version.json
               GameData.zip.sha256
               build/GameData.zip
               build/character.json
-              build/version.json
             body: |
               Sha256
               ${{ env.Sha }}
