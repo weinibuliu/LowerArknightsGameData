@@ -7,60 +7,32 @@ from typing import Literal, List
 from datetime import datetime, timedelta
 
 from github import Github
-from github.Commit import Commit
 
-from src import timestamp
+# from src import timestamp
 
 token = None
 if len(sys.argv) >= 2:
     token = sys.argv[1]
 
-until = datetime.now()
-since = until - timedelta(30)
+UNTIL = datetime.now()
+SINCE = UNTIL - timedelta(30)
 
-langs = ["en_US", "ja_JP", "ko_KR"]
-gh = Github(login_or_token=token, per_page=30, seconds_between_requests=2, retry=None)
-repo = gh.get_repo("Kengxxiao/ArknightsGameData_YoStar")
+GH = Github(login_or_token=token, per_page=30, seconds_between_requests=2, retry=None)
+REPO = GH.get_repo("MaaAssistantArknights/MaaAssistantArknights")
 
 
-def _get_commits() -> List[Commit]:
-    commits = repo.get_commits(
-        since=since,
-        until=until,
+def get_commit() -> str:
+    commits = REPO.get_commits(
+        path="resource/version.json",
+        since=SINCE,
+        until=UNTIL,
     ).get_page(0)
-
-    if commits is None:
-        raise RuntimeError("Commits is None.Please check the repo.")
-    else:
-        return commits
-
-
-def _get_version(
-    commits: List[Commit],
-    lang: Literal["en_US", "ja_JP", "ko_KR"],
-) -> dict[str]:
-    if lang == "en_US":
-        flag = "EN"
-    else:
-        flag = lang.split("_")[-1]
-
-    version = {lang: None}
-    for c in commits:
-        if flag in c.commit.message:
-            ver = c.commit.message.split("Data:")[-1]
-            version[lang] = ver
-            break
-    return version
-
-
-def get_versions() -> dict[str]:
-    commits = _get_commits()
-    versions = {"build_timestamp": timestamp, "zh_CN": None}
-    for lang in langs:
-        ver = _get_version(commits, lang)
-        versions.update(ver)
-    return versions
+    commit = commits[0]
+    return {
+        "sha": commit.commit.sha,
+        "update_time": str(commit.commit.last_modified_datetime).split("+")[0],
+    }
 
 
 if __name__ == "__main__":
-    print(get_versions())
+    print(get_commit())

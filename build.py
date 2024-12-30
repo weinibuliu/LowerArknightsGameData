@@ -8,69 +8,40 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
-from src import timestamp
 from src import avatar, character
-from src.version import get_versions
-
-LANGS = ["zh_CN", "en_US", "ja_JP", "ko_KR"]
+from src.version import get_commit
 
 # 检查当前版本信息
 curent_version_path = Path(Path.cwd(), "version.json")
 vers = {}
-if curent_version_path.exists():
-    with open(curent_version_path, "r", encoding="utf-8") as f:
-        vers: dict = json.load(f)
-currentt_vers = {
-    "zh_CN ": vers.get("zh_CN"),
-    "en_US": vers.get("en_US"),
-    "ja_JP": vers.get("ja_JP"),
-    "ko_KR": vers.get("ko_KR"),
-}
-print(f"Current Version: {currentt_vers}")
+with open(curent_version_path, "r", encoding="utf-8") as f:
+    version: dict = json.load(f)
+    current_sha = version.get("Sha")
+
 
 # 检查目标版本信息
-release = "false"
-target_versions = get_versions()
-cn_ver_path = Path(Path.cwd(), "zh_CN/version")
-if cn_ver_path.exists():
-    with open(cn_ver_path, "r", encoding="utf-8") as cnv:
-        cn_ver = cnv.read()
-        target_versions.update({"zh_CN": cn_ver})
-
-for lang in ["en_US", "ja_JP", "ko_KR"]:
-    current_ver = currentt_vers.get(lang)
-    target_ver = target_versions.get(lang)
-    if current_ver is None and target_ver is not None:
-        release = "true"
-        break
-    elif (
-        current_ver is not None and target_ver is not None and current_ver < target_ver
-    ):
-        release = "true"
-        break
-
-if release != "true":
+commit_info = get_commit()
+target_sha = commit_info["sha"]
+update_time = commit_info["update_time"]
+if current_sha == target_sha:
     print("Exit caused by release == 'false'.")
     subprocess.run("echo '::notice :: Exit caused by release == 'false'", shell=True)
     exit()
+print(f"Target Sha: {target_sha}")
 
-print(f"Target Version: {target_versions}")
-
+version.pop("gacha")
+version["Sha"] = target_sha
 
 with open(f"version.json", "w", encoding="utf-8") as v:
-    json.dump(target_versions, v, indent=4, ensure_ascii=False)
+    json.dump(version, v, indent=4, ensure_ascii=False)
 
-# 执行构建
-for lang in LANGS:
-    character.run(lang)
-avatar.run()
 
 # 写入 GITHUB ENV
 if os.environ.get("CI"):
-    subprocess.run(f'echo "timestamp={timestamp}" >> "$GITHUB_ENV"', shell=True)
-    subprocess.run(f'echo "release={release}" >> "$GITHUB_ENV"', shell=True)
-    print(f"env.timestamp = {timestamp}")
-    print(f"env.release = {release}")
+    subprocess.run(f'echo "update_time={update_time}" >> "$GITHUB_ENV"', shell=True)
+    subprocess.run(f'echo "release=true" >> "$GITHUB_ENV"', shell=True)
+    print(f"env.update_time = {update_time}")
+    print(f"env.release = 'true'")
 
 print("Done: Version")
 print("\nAll Done!")

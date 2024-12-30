@@ -6,12 +6,12 @@ from pathlib import Path
 
 def run():
     build_path = Path(Path.cwd(), "build")
-    cache_path = Path(Path.cwd(), "zh_CN")
+    cache_path = Path(Path.cwd(), "avatar")
 
     with open(Path(build_path, "character.json"), "r", encoding="utf-8") as c:
         chars: dict = json.load(c)
 
-    c_ava_path = Path(cache_path, "avatar")
+    c_ava_path = cache_path
     b_ava_path = Path(build_path, "avatar")
 
     avatar_paths = [path for path in c_ava_path.rglob("*")]
