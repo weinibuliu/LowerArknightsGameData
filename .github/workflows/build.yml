@@ -74,7 +74,7 @@ jobs:
               version.json
               GameResource.zip.sha256
               build/GameResource.zip
-              build/character.json
+              build/operators.json
             body: |
               Sha256
               ${{ env.Sha }}
