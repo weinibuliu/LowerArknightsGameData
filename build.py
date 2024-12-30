@@ -15,7 +15,7 @@ with open("version.json", "r", encoding="utf-8") as f:
 
 
 # 检查目标版本信息
-with open("resource/version.json", "r", encoding="utf-8") as f:
+with open("cache/resource/version.json", "r", encoding="utf-8") as f:
     version: dict = json.load(f)
 commit_info = get_commit()
 target_sha = commit_info["sha"]
