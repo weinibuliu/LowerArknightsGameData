@@ -32,7 +32,7 @@ def get_commit() -> str:
         "sha": commit.commit.sha,
         "update_time": str(commit.commit.last_modified_datetime)
         .split("+")[0]
-        .replace(" "),
+        .replace(" ", ""),
     }
 
 
