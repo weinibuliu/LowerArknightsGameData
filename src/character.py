@@ -20,7 +20,7 @@ def run():
         if "char_" not in id:
             continue
 
-        chars[id]: = raw[id]
+        chars[id] = raw[id]
         chars[id].pop("rangeId", None)
         num += 1
 
