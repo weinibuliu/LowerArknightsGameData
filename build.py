@@ -2,11 +2,8 @@
 
 import os
 import json
-import sys
-import shutil
 import subprocess
 from pathlib import Path
-from datetime import datetime
 
 from src import avatar, character
 from src.version import get_commit
@@ -23,6 +20,7 @@ with open(curent_version_path, "r", encoding="utf-8") as f:
 commit_info = get_commit()
 target_sha = commit_info["sha"]
 update_time = commit_info["update_time"]
+update_ts = commit_info["update_ts"]
 if current_sha == target_sha:
     print("Exit caused by release == 'false'.")
     subprocess.run("echo '::notice :: Exit caused by release == 'false'", shell=True)
@@ -39,8 +37,10 @@ with open(f"version.json", "w", encoding="utf-8") as v:
 # 写入 GITHUB ENV
 if os.environ.get("CI"):
     subprocess.run(f'echo "update_time={update_time}" >> "$GITHUB_ENV"', shell=True)
+    subprocess.run(f'echo "update_ts={update_ts}" >> "$GITHUB_ENV"', shell=True)
     subprocess.run(f'echo "release=true" >> "$GITHUB_ENV"', shell=True)
     print(f"env.update_time = {update_time}")
+    print(f"env.update_ts = {update_ts}")
     print(f"env.release = 'true'")
 
 print("Done: Version")

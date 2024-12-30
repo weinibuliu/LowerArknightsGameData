@@ -59,23 +59,6 @@ jobs:
             pip install -r requirements.txt
             python build.py ${{ secrets.GITHUB_TOKEN }}
 
-        - name: Upload GameData Artifact
-          if: env.release == 'true'
-          uses: actions/upload-artifact@v4
-          with:
-            name: GameData
-            path: |
-              build/*
-
-        - name: Upload GameData Artifact(Noavatar)
-          if: env.release == 'true'
-          uses: actions/upload-artifact@v4
-          with:
-            name: GameData(NoAvatar)
-            path: |
-              build/*
-              !build/avatar
-
         - name: Release Preparation
           if: env.release == 'true'
           run: |
@@ -88,7 +71,7 @@ jobs:
           if: env.release == 'true'
           uses: softprops/action-gh-release@v2
           with:
-            tag_name: ${{ env.update_time }}
+            tag_name: ${{ env.update_ts }}
             make_latest: true
             files: |
               build/GameData.zip

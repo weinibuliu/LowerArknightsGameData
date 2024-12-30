@@ -31,9 +31,11 @@ def get_commit() -> str:
     sha = c.commit.sha
     update_time = c.commit.last_modified_datetime
     update_ts = int(
-        datetime.timestamp(datetime.strptime(update_time, "%Y-%m-%d %H:%M:%S"))
+        datetime.timestamp(
+            datetime.strptime(str(update_time).split("+")[0], "%Y-%m-%d %H:%M:%S")
+        )
     )
-    return {"sha": sha, "update_time": update_ts}
+    return {"sha": sha, "update_time": str(update_time), "update_ts": update_ts}
 
 
 if __name__ == "__main__":
