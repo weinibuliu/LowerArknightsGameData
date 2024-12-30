@@ -33,6 +33,8 @@ version["Sha"] = target_sha
 with open(f"version.json", "w", encoding="utf-8") as v:
     json.dump(version, v, indent=4, ensure_ascii=False)
 
+character.run()
+avatar.run()
 
 # 写入 GITHUB ENV
 if os.environ.get("CI"):

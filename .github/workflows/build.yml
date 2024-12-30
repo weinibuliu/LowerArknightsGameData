@@ -74,6 +74,7 @@ jobs:
             tag_name: ${{ env.update_ts }}
             make_latest: true
             files: |
+              GameData.zip.sha256
               build/GameData.zip
               build/charater.json
               build/version.json

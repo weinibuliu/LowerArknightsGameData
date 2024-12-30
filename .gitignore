@@ -160,5 +160,5 @@ cython_debug/
 #.idea/
 
 cache
-assets
+avatar
 test*.py
