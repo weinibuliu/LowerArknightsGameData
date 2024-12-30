@@ -38,6 +38,10 @@ jobs:
             sparse-checkout: |
               resource/version.json
               resource/battle_data.json
+              resource/global/YoStarEN/resource
+              resource/global/YoStarJP/resource
+              resource/global/YoStarKR/resource
+              resource/global/txwy/resource
 
         - name: Download Latest Release
           uses: robinraju/release-downloader@v1

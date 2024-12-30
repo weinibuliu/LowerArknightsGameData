@@ -15,8 +15,6 @@ with open("version.json", "r", encoding="utf-8") as f:
 
 
 # 检查目标版本信息
-with open("cache/resource/version.json", "r", encoding="utf-8") as f:
-    version: dict = json.load(f)
 commit_info = get_commit()
 target_sha = commit_info["sha"]
 update_time = commit_info["update_time"]
@@ -27,11 +25,45 @@ if current_sha == target_sha:
     exit()
 print(f"Target Sha: {target_sha}")
 
-version.pop("gacha", None)
-version["Sha"] = target_sha
+with open("cache/resource/version.json", "r", encoding="utf-8") as f:
+    cnver: dict = json.load(f)
+    cnver.pop("gacha", None)
+
+with open(
+    "cache/resource/global/YoStarEN/resource/version.json", "r", encoding="utf-8"
+) as f:
+    enver: dict = json.load(f)
+    enver.pop("gacha", None)
+
+with open(
+    "cache/resource/global/YoStarJP/resource/version.json", "r", encoding="utf-8"
+) as f:
+    jpver: dict = json.load(f)
+    jpver.pop("gacha", None)
+
+with open(
+    "cache/resource/global/YoStarKR/resource/version.json", "r", encoding="utf-8"
+) as f:
+    krver: dict = json.load(f)
+    krver.pop("gacha", None)
+
+with open(
+    "cache/resource/global/txwy/resource/version.json", "r", encoding="utf-8"
+) as f:
+    twver: dict = json.load(f)
+    twver.pop("gacha", None)
+
+vers = {
+    "Sha": target_sha,
+    "CN": cnver,
+    "TW": twver,
+    "EN": enver,
+    "JP": jpver,
+    "KR": krver,
+}
 
 with open(f"version.json", "w", encoding="utf-8") as v:
-    json.dump(version, v, indent=4, ensure_ascii=False)
+    json.dump(vers, v, indent=4, ensure_ascii=False)
 
 character.run()
 avatar.run()
