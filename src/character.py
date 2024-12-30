@@ -17,12 +17,11 @@ def run():
     chars = {}
     for key in raw:
         id: str = key  # id
-        info: dict = raw[key]
         if "char_" not in id:
             continue
 
-        chars[id] = raw[id]
-        del chars[id]["rangeId"]
+        chars[id]: = raw[id]
+        chars[id].pop("rangeId", None)
         num += 1
 
     if num == 0:
