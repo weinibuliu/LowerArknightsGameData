@@ -22,9 +22,10 @@ def run():
         chars[id] = raw[id]
         chars[id].pop("rangeId", None)
         for g in GLOBALS:
-            if chars[id][f"name_{g}_unavailable"]:
-                chars[id][f"name_{g}"] = None
+            unable = chars[id].get(f"name_{g}_unavailable")
             chars[id].pop(f"name_{g}_unavailable", None)
+            if unable:
+                chars[id][f"name_{g}"] = None
         num += 1
 
     if num == 0:
