@@ -10,16 +10,6 @@ This repository aims to provide smaller and more targeted Arknights data and res
 \
 The repository uses **[Pygithub](https://github.com/PyGithub/PyGithub)** to get commit messages. If the request is too frequent, it may trigger Github API related restrictions. Please control the request frequency.
 
-## 发行版 | Release
->[!NOTE]
-只要任一地区的游戏文件存在版本更新，就会创建发行版并将其标记为 **最新** 。因此，还需要校验具体地区的游戏文件对应的版本信息是否一致。它们存放于 `{language}-version` 文件中。\
-\
-Whenever there is a newer version of the game files for any region, a release is created and marked as **latest** . Therefore, it is also necessary to verify that the version information corresponding to the game files for specific regions is consistent. They are stored in the `{language}-version` file.
-
-## 文件列表 | Files List
-- `avatar` (干员头像)
-- `character.json`（干员信息）
-
 ## 数据来源 | Data Source
 本仓库使用了以下仓库的数据，感谢其维护者与贡献者的贡献。
 
