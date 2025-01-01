@@ -63,6 +63,7 @@ jobs:
         - name: Release Preparation
           if: env.release == 'true'
           run: |
+            cp version.json build/version.json
             cd build
             zip -r -q GameResource.zip .
             cd ..

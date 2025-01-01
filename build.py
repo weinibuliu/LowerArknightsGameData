@@ -25,9 +25,17 @@ if current_sha == target_sha:
     exit()
 print(f"Target Sha: {target_sha}")
 
+
+# 获取各区服版本信息
 with open("cache/resource/version.json", "r", encoding="utf-8") as f:
     cnver: dict = json.load(f)
     cnver.pop("gacha", None)
+
+with open(
+    "cache/resource/global/txwy/resource/version.json", "r", encoding="utf-8"
+) as f:
+    twver: dict = json.load(f)
+    twver.pop("gacha", None)
 
 with open(
     "cache/resource/global/YoStarEN/resource/version.json", "r", encoding="utf-8"
@@ -46,12 +54,6 @@ with open(
 ) as f:
     krver: dict = json.load(f)
     krver.pop("gacha", None)
-
-with open(
-    "cache/resource/global/txwy/resource/version.json", "r", encoding="utf-8"
-) as f:
-    twver: dict = json.load(f)
-    twver.pop("gacha", None)
 
 vers = {
     "Sha": target_sha,

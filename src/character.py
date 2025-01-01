@@ -2,6 +2,8 @@
 import json
 from pathlib import Path
 
+GLOBALS = ["en", "jp", "kr", "tw"]
+
 
 def run():
     build_path = Path(Path.cwd(), "build")
@@ -19,6 +21,10 @@ def run():
 
         chars[id] = raw[id]
         chars[id].pop("rangeId", None)
+        for g in GLOBALS:
+            if chars[id][f"name_{g}_unavailable"]:
+                chars[id][f"name_{g}"] = None
+            chars[id].pop(f"name_{g}_unavailable", None)
         num += 1
 
     if num == 0:
