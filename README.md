@@ -5,11 +5,6 @@
 
 This repository aims to provide smaller and more targeted Arknights data and resource files for use in other scenarios. For details on the using data, see **[Data Source](#数据来源--data-source)** .
 
-## 更新时间 | Update Time
-仓库将于 **UTC-7 | UTC+8 | UTC+9** 的 **00:00** 运行工作流。这意味着仓库数据 ***不会*** 立即跟进计划外的修复（如临时闪断更新）。如您对数据时效有较高要求，建议 **fork** 仓库后自行修改工作流。
-
-The repository will run the workflow at **00:00** on **UTC-7 | UTC+8 | UTC+9**. This means that the repository datas ***don't*** keep up with unplanned fixes (such as temporary flash updates) immediately. If you have high requirements for data timeliness, it is recommended to **fork** the repository and modify the workflow yourself.
-
 >[!WARNING]
 仓库使用 **[Pygithub](https://github.com/PyGithub/PyGithub)** 获取 commit message ，如请求过于频繁，可能会触发 Github API 相关限制。请控制请求频率。\
 \
@@ -30,8 +25,7 @@ Whenever there is a newer version of the game files for any region, a release is
 
 This repository uses data from the following repositories.Thanks the contributions of their maintainers and contributors.
 
-- **[ArknightsGameResource](https://github.com/yuanyan3060/ArknightsGameResource) (zh_CN | avatar)**
-- **[ArknightsGameData_YoStar](https://github.com/Kengxxiao/ArknightsGameData_YoStar) (en_US | ja_JP | ko_KR)**
+- **[MaaAssistantArknights](https://github.com/MaaAssistantArknights/MaaAssistantArknights)**
 
 ## 声明 | Statement
 本仓库所有静态资源，版权均属于 **[明日方舟](https://ak.hypergryph.com)** 。本仓库仅出于学习与交流目的进行引用。
@@ -43,18 +37,15 @@ The copyright of all static resources in this repository belongs to **[Arknights
 
 #### Github 工作流 | Github Workflows
 - **[action-gh-release](https://github.com/softprops/action-gh-release)**
-- **[add-and-commit](https://github.com/EndBug/add-and-commit)**
 - **[checkout](https://github.com/actions/checkout)**
-- **[download-artifact](https://github.com/actions/download-artifact)**
-- **[upload-artifact](https://github.com/actions/upload-artifact)**
+- **[release-downloader](https://github.com/robinraju/release-downloader)**
 - **[setup-python](https://github.com/actions/setup-python)**
 
 #### 开源库 | Library
 - **[pygithub](https://github.com/PyGithub/PyGithub)**
 
 #### 数据 | Data
-- **[ArknightsGameData_YoStar](https://github.com/Kengxxiao/ArknightsGameData_YoStar)**
-- **[ArknightsGameResource](https://github.com/yuanyan3060/ArknightsGameResource)**
+- **[MaaAssistantArknights](https://github.com/MaaAssistantArknights/MaaAssistantArknights)**
 
 ### 贡献者 | Contributors
 <a href="https://github.com/weinibuliu/LowerArknightsGameData/graphs/contributors">
