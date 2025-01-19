@@ -1,0 +1,102 @@
+name: Build
+
+on:
+    push:
+      branches:
+      - "**"
+
+    schedule:
+      - cron: "0 */1 * * *" # Runs every hour
+
+jobs:
+    Build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout Code
+          uses: actions/checkout@v4
+
+        - name: Checkout yuanyan3060/ArknightsGameResource
+          uses: actions/checkout@v4
+          with:
+            repository: yuanyan3060/ArknightsGameResource
+            path: avatar
+            sparse-checkout-cone-mode: false
+            sparse-checkout: |
+              avatar
+
+        - name: Checkout MaaAssistantArknights/MaaAssistantArknights
+          uses: actions/checkout@v4
+          with:
+            repository: MaaAssistantArknights/MaaAssistantArknights
+            path: cache
+            sparse-checkout-cone-mode: false
+            sparse-checkout: |
+              resource/version.json
+              resource/battle_data.json
+              resource/global/YoStarEN/resource
+              resource/global/YoStarJP/resource
+              resource/global/YoStarKR/resource
+              resource/global/txwy/resource
+
+        - name: Setup Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: "3.12"
+
+        - name: Install Deps
+          run: |
+            pip install -r src/requirements.txt
+
+        - name: Run meta
+          run: |
+            python main.py ${{ secrets.GITHUB_TOKEN }} meta
+
+        - name: Run build
+          run: |
+            python main.py ${{ secrets.GITHUB_TOKEN }} build
+
+        - name: Release Preparation
+          if: env.release == 'true'
+          run: |
+            rm -rf avatar
+            cp version.json build/
+            cd build
+            zip -r -q GameResource.zip .
+            cp -R avatar ../res/avatar
+            cp version.json ../res
+            cp operators.json ../res
+
+        - name: Run cheksums
+          if: env.release == 'true'
+          run: |
+            python main.py ${{ secrets.GITHUB_TOKEN }} checksums
+
+        - name: Commit Files
+          id: commit
+          if: env.release == 'true'
+          uses: EndBug/add-and-commit@v9
+          with:
+            add: |
+              res
+            message: "[UPDATE] ${{ env.commit_sha }} ${{ github.run_id }}"
+            commit: -m "Github Action URL ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" -m "From ${{ env.commit_url }}"
+            default_author: github_actions
+            committer_name: GitHub Actions
+            committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+        - name: Create Release
+          if: env.release == 'true'
+          uses: softprops/action-gh-release@v2
+          with:
+            tag_name: ${{ env.commit_sha }}
+            token: ${{ secrets.GITHUB_TOKEN }}
+            make_latest: true
+            files: |
+              version
+              version.json
+              GameResource.zip.sha256
+              build/GameResource.zip
+              build/operators.json
+            body: |
+              - File Sha256
+              ${{ env.sha }}
