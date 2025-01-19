@@ -1,0 +1,38 @@
+{
+    "Commit Sha": "30ce3bae48e0044e54345da677f2030cc225cff6",
+    "CN": {
+        "activity": {
+            "name": "视相博物馆",
+            "time": 1735459200
+        },
+        "last_updated": "2025-01-18 18:29:45.419"
+    },
+    "TW": {
+        "activity": {
+            "name": "引航者試煉",
+            "time": 1736582400
+        },
+        "last_updated": "2025-01-11 08:06:53.791"
+    },
+    "EN": {
+        "activity": {
+            "name": "Adventure That Cannot Wait for the Sun",
+            "time": 1737046800
+        },
+        "last_updated": "2025-01-16 18:30:13.084"
+    },
+    "JP": {
+        "activity": {
+            "name": "太陽すらも追い越して",
+            "time": 1737010800
+        },
+        "last_updated": "2025-01-16 15:06:12.299"
+    },
+    "KR": {
+        "activity": {
+            "name": "태양을 뿌리쳐라",
+            "time": 1737010800
+        },
+        "last_updated": "2025-01-16 07:25:37.622"
+    }
+}
