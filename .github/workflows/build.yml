@@ -56,18 +56,16 @@ jobs:
             python main.py ${{ secrets.GITHUB_TOKEN }} build
 
         - name: Release Preparation
-          if: env.release == 'true'
           run: |
             rm -rf avatar
             cp version.json build/
+            cp version.json res/
             cd build
             zip -r -q GameResource.zip .
             cp -R avatar ../res/avatar
-            cp version.json ../res
             cp operators.json ../res
 
         - name: Run cheksums
-          if: env.release == 'true'
           run: |
             python main.py ${{ secrets.GITHUB_TOKEN }} checksums
 
@@ -99,4 +97,4 @@ jobs:
               build/operators.json
             body: |
               - File Sha256
-              ${{ env.sha }}
+              ${{ env.sha256 }}
