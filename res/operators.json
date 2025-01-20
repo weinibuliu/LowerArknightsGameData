@@ -1083,7 +1083,7 @@
         "name_en": "Shu",
         "name_jp": "シュウ",
         "name_kr": "슈",
-        "name_tw": null,
+        "name_tw": "黍",
         "position": "MELEE",
         "profession": "TANK",
         "rarity": 6
@@ -2270,7 +2270,7 @@
         "name_en": "Kestrel",
         "name_jp": "ケストレル",
         "name_kr": "케스트럴",
-        "name_tw": null,
+        "name_tw": "紅隼",
         "position": "MELEE",
         "profession": "PIONEER",
         "rarity": 5
@@ -2791,7 +2791,7 @@
         "name_en": "Wanqing",
         "name_jp": "ワンチィン",
         "name_kr": "완칭",
-        "name_tw": null,
+        "name_tw": "萬頃",
         "position": "MELEE",
         "profession": "PIONEER",
         "rarity": 5
@@ -2811,7 +2811,7 @@
         "name_en": "Zuo Le",
         "name_jp": "ズオ・ラウ",
         "name_kr": "좌락",
-        "name_tw": null,
+        "name_tw": "左樂",
         "position": "MELEE",
         "profession": "WARRIOR",
         "rarity": 6
@@ -2821,7 +2821,7 @@
         "name_en": "Grain Buds",
         "name_jp": "グレインバッズ",
         "name_kr": "그레인버즈",
-        "name_tw": null,
+        "name_tw": "小滿",
         "position": "RANGED",
         "profession": "SUPPORT",
         "rarity": 5
