@@ -344,6 +344,16 @@
         "profession": "SNIPER",
         "rarity": 6
     },
+    "char_1040_blaze2": {
+        "name": "烛煌",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "CASTER",
+        "rarity": 6
+    },
     "char_106_franka": {
         "name": "芙兰卡",
         "name_en": "Franka",
@@ -1084,6 +1094,16 @@
         "name_jp": "シュウ",
         "name_kr": "슈",
         "name_tw": "黍",
+        "position": "MELEE",
+        "profession": "TANK",
+        "rarity": 6
+    },
+    "char_2026_yu": {
+        "name": "余",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
         "position": "MELEE",
         "profession": "TANK",
         "rarity": 6
@@ -2428,6 +2448,16 @@
         "profession": "SPECIAL",
         "rarity": 6
     },
+    "char_4052_surfer": {
+        "name": "寻澜",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "MELEE",
+        "profession": "PIONEER",
+        "rarity": 5
+    },
     "char_4054_malist": {
         "name": "至简",
         "name_en": "Minimalist",
@@ -3128,6 +3158,16 @@
         "position": "MELEE",
         "profession": "TANK",
         "rarity": 6
+    },
+    "char_4172_xingzh": {
+        "name": "行箸",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "SUPPORT",
+        "rarity": 5
     },
     "char_420_flamtl": {
         "name": "焰尾",
