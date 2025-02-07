@@ -1,11 +1,11 @@
 {
-    "Commit Sha": "3712be5b70b8dba379eb166fbba566adb1775464",
+    "Commit Sha": "5420d33c7df694099bf2dc505fa7e1051fa4f938",
     "CN": {
         "activity": {
             "name": "相见欢",
             "time": 1737518400
         },
-        "last_updated": "2025-02-06 11:05:46.703"
+        "last_updated": "2025-02-07 19:38:44.796"
     },
     "TW": {
         "activity": {
@@ -16,23 +16,23 @@
     },
     "EN": {
         "activity": {
-            "name": "Adventure That Cannot Wait for the Sun",
-            "time": 1737046800
+            "name": "A Kazdelian Rescue",
+            "time": 1738929600
         },
-        "last_updated": "2025-01-22 19:24:38.611"
+        "last_updated": "2025-02-07 19:38:44.796"
     },
     "JP": {
         "activity": {
-            "name": "太陽すらも追い越して",
-            "time": 1737010800
+            "name": "溶炉「還魂」譚",
+            "time": 1738893600
         },
-        "last_updated": "2025-01-22 19:24:38.611"
+        "last_updated": "2025-02-07 19:38:44.796"
     },
     "KR": {
         "activity": {
-            "name": "태양을 뿌리쳐라",
-            "time": 1737010800
+            "name": "카즈델리안 레스큐",
+            "time": 1738893600
         },
-        "last_updated": "2025-01-22 19:24:38.611"
+        "last_updated": "2025-02-07 19:38:44.796"
     }
 }
