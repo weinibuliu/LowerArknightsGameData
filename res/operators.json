@@ -2202,6 +2202,16 @@
         "profession": "SPECIAL",
         "rarity": 6
     },
+    "char_4010_etlchi": {
+        "name": "隐德来希",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "MELEE",
+        "profession": "WARRIOR",
+        "rarity": 6
+    },
     "char_4011_lessng": {
         "name": "止颂",
         "name_en": "Lessing",
@@ -3167,6 +3177,16 @@
         "name_tw": null,
         "position": "RANGED",
         "profession": "SUPPORT",
+        "rarity": 5
+    },
+    "char_4173_nowell": {
+        "name": "诺威尔",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "MEDIC",
         "rarity": 5
     },
     "char_420_flamtl": {
