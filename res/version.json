@@ -1,11 +1,11 @@
 {
-    "Commit Sha": "ff007306fc07e6da2df206788fa6bf4b3d41063d",
+    "Commit Sha": "8f5a398154db9770c545ba6ab6d6755538e85e0b",
     "CN": {
         "activity": {
             "name": "怀黍离·复刻",
             "time": 1740384000
         },
-        "last_updated": "2025-02-25 04:29:48.480"
+        "last_updated": "2025-03-05 20:07:09.249"
     },
     "TW": {
         "activity": {
@@ -16,23 +16,23 @@
     },
     "EN": {
         "activity": {
-            "name": "A Kazdelian Rescue",
-            "time": 1738929600
+            "name": "Come Catastrophes or Wakes of Vultures - Rerun",
+            "time": 1740762000
         },
-        "last_updated": "2025-02-07 19:38:44.796"
+        "last_updated": "2025-02-28 17:05:52.022"
     },
     "JP": {
         "activity": {
-            "name": "溶炉「還魂」譚",
-            "time": 1738893600
+            "name": "ダーティマネー・復刻",
+            "time": 1740726000
         },
-        "last_updated": "2025-02-12 17:06:01.496"
+        "last_updated": "2025-02-28 07:06:35.996"
     },
     "KR": {
         "activity": {
-            "name": "카즈델리안 레스큐",
-            "time": 1738893600
+            "name": "부정축재 (재개방)",
+            "time": 1740726000
         },
-        "last_updated": "2025-02-07 19:38:44.796"
+        "last_updated": "2025-02-28 07:06:36.223"
     }
 }
