@@ -286,7 +286,7 @@
         "name_en": "Wiš'adel",
         "name_jp": "ウィシャデル",
         "name_kr": "위셔델",
-        "name_tw": null,
+        "name_tw": "維什戴爾",
         "position": "RANGED",
         "profession": "SNIPER",
         "rarity": 6,
@@ -299,7 +299,7 @@
         "name_en": "Fang the Fire-Sharpened",
         "name_jp": "歴陣鋭槍フェン",
         "name_kr": "팽 더 파이어 샤픈드",
-        "name_tw": null,
+        "name_tw": "歷陣銳槍芬",
         "position": "MELEE",
         "profession": "PIONEER",
         "rarity": 5
@@ -2941,7 +2941,7 @@
         "name_en": "Logos",
         "name_jp": "ロゴス",
         "name_kr": "로고스",
-        "name_tw": null,
+        "name_tw": "邏各斯",
         "position": "RANGED",
         "profession": "CASTER",
         "rarity": 6
@@ -2951,7 +2951,7 @@
         "name_en": "Civilight Eterna",
         "name_jp": "シヴィライト・エテルナ",
         "name_kr": "시빌라이트 에테르나",
-        "name_tw": null,
+        "name_tw": "魔王",
         "position": "RANGED",
         "profession": "SUPPORT",
         "rarity": 6
@@ -2961,7 +2961,7 @@
         "name_en": "PhonoR-0",
         "name_jp": "PhonoR-0",
         "name_kr": "PhonoR-0",
-        "name_tw": null,
+        "name_tw": "PhonoR-0",
         "position": "RANGED",
         "profession": "SUPPORT",
         "rarity": 1
