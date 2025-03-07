@@ -3169,6 +3169,16 @@
         "profession": "TANK",
         "rarity": 6
     },
+    "char_4171_wulfen": {
+        "name": "钼铅",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "SPECIAL",
+        "rarity": 5
+    },
     "char_4172_xingzh": {
         "name": "行箸",
         "name_en": null,
@@ -3187,6 +3197,16 @@
         "name_tw": null,
         "position": "RANGED",
         "profession": "MEDIC",
+        "rarity": 5
+    },
+    "char_4177_brigid": {
+        "name": "水灯心",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "SNIPER",
         "rarity": 5
     },
     "char_420_flamtl": {
@@ -3328,6 +3348,16 @@
         "position": "RANGED",
         "profession": "MEDIC",
         "rarity": 5
+    },
+    "char_450_necras": {
+        "name": "死芒",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "CASTER",
+        "rarity": 6
     },
     "char_451_robin": {
         "name": "罗宾",
