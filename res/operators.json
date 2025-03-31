@@ -2618,7 +2618,7 @@
         "name_en": "Lucilla",
         "name_jp": "ルシーラ",
         "name_kr": "루실라",
-        "name_tw": null,
+        "name_tw": "海霓",
         "position": "RANGED",
         "profession": "SUPPORT",
         "rarity": 5
@@ -2971,7 +2971,7 @@
         "name_en": "Underflow",
         "name_jp": "アンダーフロー",
         "name_kr": "언더플로우",
-        "name_tw": null,
+        "name_tw": "深巡",
         "position": "MELEE",
         "profession": "TANK",
         "rarity": 5
@@ -3051,7 +3051,7 @@
         "name_en": "Ulpianus",
         "name_jp": "ウルピアヌス",
         "name_kr": "울피아누스",
-        "name_tw": null,
+        "name_tw": "烏爾比安",
         "position": "MELEE",
         "profession": "WARRIOR",
         "rarity": 6,
