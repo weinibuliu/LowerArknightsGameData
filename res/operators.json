@@ -114,9 +114,9 @@
     },
     "char_1019_siege2": {
         "name": "维娜·维多利亚",
-        "name_en": null,
-        "name_jp": null,
-        "name_kr": null,
+        "name_en": "Vina Victoria",
+        "name_jp": "ヴィーナ・ヴィクトリア",
+        "name_kr": "비나 빅토리아",
         "name_tw": null,
         "position": "MELEE",
         "profession": "WARRIOR",
@@ -3121,9 +3121,9 @@
     },
     "char_4162_cathy": {
         "name": "凯瑟琳",
-        "name_en": null,
-        "name_jp": null,
-        "name_kr": null,
+        "name_en": "Catherine",
+        "name_jp": "キャサリン",
+        "name_kr": "캐서린",
         "name_tw": null,
         "position": "MELEE",
         "profession": "SUPPORT",
@@ -3208,6 +3208,26 @@
         "position": "RANGED",
         "profession": "SNIPER",
         "rarity": 5
+    },
+    "char_4178_alanna": {
+        "name": "阿兰娜",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "MELEE",
+        "profession": "SUPPORT",
+        "rarity": 5
+    },
+    "char_4179_monstr": {
+        "name": "Mon3tr",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "MEDIC",
+        "rarity": 6
     },
     "char_420_flamtl": {
         "name": "焰尾",
@@ -3327,6 +3347,16 @@
         "name_tw": "松果",
         "position": "RANGED",
         "profession": "SNIPER",
+        "rarity": 4
+    },
+    "char_445_wscoot": {
+        "name": "骋风",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "MELEE",
+        "profession": "WARRIOR",
         "rarity": 4
     },
     "char_446_aroma": {
@@ -3561,9 +3591,9 @@
     },
     "char_487_bobb": {
         "name": "波卜",
-        "name_en": null,
-        "name_jp": null,
-        "name_kr": null,
+        "name_en": "Bobbing",
+        "name_jp": "ボビング",
+        "name_kr": "보빙",
         "name_tw": null,
         "position": "RANGED",
         "profession": "SUPPORT",
