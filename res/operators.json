@@ -316,7 +316,7 @@
     },
     "char_1038_whitw2": {
         "name": "荒芜拉普兰德",
-        "name_en": null,
+        "name_en": "Lappland the Decadenza",
         "name_jp": "荒蕪ラップランド",
         "name_kr": "라플란드 더 데카덴차",
         "name_tw": null,
@@ -702,7 +702,7 @@
     },
     "char_1502_crosly": {
         "name": "弑君者",
-        "name_en": null,
+        "name_en": "CrownSlayer",
         "name_jp": "クラウンスレイヤー",
         "name_kr": "크라운슬레이어",
         "name_tw": null,
@@ -2317,7 +2317,7 @@
     },
     "char_4026_vulpis": {
         "name": "忍冬",
-        "name_en": null,
+        "name_en": "Vulpisfoglia",
         "name_jp": "ウルピスフォリア",
         "name_kr": "불피스폴리아",
         "name_tw": null,
@@ -2493,7 +2493,7 @@
         "name_en": "Pepe",
         "name_jp": "ペペ",
         "name_kr": "페페",
-        "name_tw": null,
+        "name_tw": "佩佩",
         "position": "MELEE",
         "profession": "WARRIOR",
         "rarity": 6
@@ -2981,7 +2981,7 @@
         "name_en": "Narantuya",
         "name_jp": "ナラントゥヤ",
         "name_kr": "나란투야",
-        "name_tw": null,
+        "name_tw": "娜仁圖亞",
         "position": "RANGED",
         "profession": "SNIPER",
         "rarity": 6
@@ -2991,7 +2991,7 @@
         "name_en": "Papyrus",
         "name_jp": "パピルス",
         "name_kr": "파피루스",
-        "name_tw": null,
+        "name_tw": "莎草",
         "position": "RANGED",
         "profession": "MEDIC",
         "rarity": 5
@@ -3001,7 +3001,7 @@
         "name_en": "Sand Reckoner",
         "name_jp": "サンドレコナー",
         "name_kr": "샌드레코너",
-        "name_tw": null,
+        "name_tw": "衡沙",
         "position": "RANGED",
         "profession": "SUPPORT",
         "rarity": 5
@@ -3081,7 +3081,7 @@
     },
     "char_4148_philae": {
         "name": "菲莱",
-        "name_en": null,
+        "name_en": "Philae",
         "name_jp": "フィラエ",
         "name_kr": "필라에",
         "name_tw": null,
@@ -3101,7 +3101,7 @@
     },
     "char_4155_talr": {
         "name": "裁度",
-        "name_en": null,
+        "name_en": "Figurino",
         "name_jp": "フィグリーノ",
         "name_kr": "피구리노",
         "name_tw": null,
@@ -3151,7 +3151,7 @@
     },
     "char_4165_ctrail": {
         "name": "云迹",
-        "name_en": null,
+        "name_en": "Contrail",
         "name_jp": "コントレイル",
         "name_kr": "콘트레일",
         "name_tw": null,
