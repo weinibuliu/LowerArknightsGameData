@@ -1,11 +1,11 @@
 {
-    "Commit Sha": "b59b42345a4df55ed32e06c3ea7c3004bbde23d0",
+    "Commit Sha": "6f07b163885443c564a6f9857da4d49c45c5cc86",
     "CN": {
         "activity": {
             "name": "离解复合",
             "time": 1743998400
         },
-        "last_updated": "2025-04-24 07:06:29.975"
+        "last_updated": "2025-04-24 07:43:54.420"
     },
     "TW": {
         "activity": {
@@ -23,16 +23,16 @@
     },
     "JP": {
         "activity": {
-            "name": "落日の向こうへ",
-            "time": 1744077600
+            "name": "幕開く者たち",
+            "time": 1745478000
         },
-        "last_updated": "2025-03-25 07:44:02.657"
+        "last_updated": "2025-04-24 07:43:54.633"
     },
     "KR": {
         "activity": {
-            "name": "위대한 서곡의 끝",
-            "time": 1744077600
+            "name": "막을 여는 자들",
+            "time": 1745478000
         },
-        "last_updated": "2025-03-25 07:44:02.659"
+        "last_updated": "2025-04-24 07:43:54.636"
     }
 }
