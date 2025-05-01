@@ -362,8 +362,10 @@
         "name_tw": null,
         "position": "RANGED",
         "profession": "SPECIAL",
-        "rarity": 7,
-        "tokens": []
+        "rarity": 6,
+        "tokens": [
+            "投递坐标"
+        ]
     },
     "char_106_franka": {
         "name": "芙兰卡",
@@ -3248,7 +3250,7 @@
         "name_tw": null,
         "position": "MELEE",
         "profession": "WARRIOR",
-        "rarity": 6
+        "rarity": 5
     },
     "char_4188_confes": {
         "name": "CONFESS-47",
@@ -3268,7 +3270,7 @@
         "name_tw": null,
         "position": "RANGED",
         "profession": "SNIPER",
-        "rarity": 7
+        "rarity": 6
     },
     "char_4194_rmixer": {
         "name": "信仰搅拌机",
@@ -3278,7 +3280,7 @@
         "name_tw": null,
         "position": "MELEE",
         "profession": "TANK",
-        "rarity": 7
+        "rarity": 6
     },
     "char_420_flamtl": {
         "name": "焰尾",
