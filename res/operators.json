@@ -354,6 +354,17 @@
         "profession": "CASTER",
         "rarity": 6
     },
+    "char_1041_angel2": {
+        "name": "新约能天使",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "SPECIAL",
+        "rarity": 7,
+        "tokens": []
+    },
     "char_106_franka": {
         "name": "芙兰卡",
         "name_en": "Franka",
@@ -3228,6 +3239,46 @@
         "position": "RANGED",
         "profession": "MEDIC",
         "rarity": 6
+    },
+    "char_4187_graceb": {
+        "name": "聆音",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "MELEE",
+        "profession": "WARRIOR",
+        "rarity": 6
+    },
+    "char_4188_confes": {
+        "name": "CONFESS-47",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "MELEE",
+        "profession": "PIONEER",
+        "rarity": 1
+    },
+    "char_4193_lemuen": {
+        "name": "蕾缪安",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "SNIPER",
+        "rarity": 7
+    },
+    "char_4194_rmixer": {
+        "name": "信仰搅拌机",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "MELEE",
+        "profession": "TANK",
+        "rarity": 7
     },
     "char_420_flamtl": {
         "name": "焰尾",
