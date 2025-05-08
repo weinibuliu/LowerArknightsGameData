@@ -1,11 +1,11 @@
 {
-    "Commit Sha": "f3f8264b53681ff1c3b568bf1cf726a83f0ba486",
+    "Commit Sha": "5a2e2f2d6a55868be8802c44818c5caa460891f5",
     "CN": {
         "activity": {
             "name": "众生行记",
             "time": 1746072000
         },
-        "last_updated": "2025-05-01 12:13:37.995"
+        "last_updated": "2025-05-08 07:45:06.473"
     },
     "TW": {
         "activity": {
@@ -23,16 +23,16 @@
     },
     "JP": {
         "activity": {
-            "name": "幕開く者たち",
-            "time": 1745478000
+            "name": "堅守協定",
+            "time": 1746687600
         },
-        "last_updated": "2025-04-24 07:43:54.633"
+        "last_updated": "2025-05-08 07:45:06.677"
     },
     "KR": {
         "activity": {
-            "name": "막을 여는 자들",
-            "time": 1745478000
+            "name": "위수 협의",
+            "time": 1746687600
         },
-        "last_updated": "2025-04-24 07:43:54.636"
+        "last_updated": "2025-05-08 07:45:06.680"
     }
 }
