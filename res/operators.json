@@ -3077,7 +3077,7 @@
         "name_en": "Nymph",
         "name_jp": "ニンフ",
         "name_kr": "님프",
-        "name_tw": null,
+        "name_tw": "妮芙",
         "position": "RANGED",
         "profession": "CASTER",
         "rarity": 6
@@ -3087,7 +3087,7 @@
         "name_en": "Mitm",
         "name_jp": "ミトム",
         "name_kr": "미틈",
-        "name_tw": null,
+        "name_tw": "渡橋",
         "position": "RANGED",
         "profession": "PIONEER",
         "rarity": 5
@@ -3107,7 +3107,7 @@
         "name_en": "Tin Man",
         "name_jp": "ブリキ",
         "name_kr": "틴맨",
-        "name_tw": null,
+        "name_tw": "錫人",
         "position": "RANGED",
         "profession": "SPECIAL",
         "rarity": 5
