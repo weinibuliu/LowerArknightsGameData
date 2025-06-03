@@ -3024,7 +3024,7 @@
         "name_en": "Marcille",
         "name_jp": "マルシル",
         "name_kr": "마르실",
-        "name_tw": null,
+        "name_tw": "瑪露希爾",
         "position": "RANGED",
         "profession": "CASTER",
         "rarity": 6
@@ -3034,7 +3034,7 @@
         "name_en": "Laios",
         "name_jp": "ライオス",
         "name_kr": "라이오스",
-        "name_tw": null,
+        "name_tw": "萊歐斯",
         "position": "MELEE",
         "profession": "WARRIOR",
         "rarity": 5
@@ -3044,7 +3044,7 @@
         "name_en": "Senshi",
         "name_jp": "センシ",
         "name_kr": "센시",
-        "name_tw": null,
+        "name_tw": "先西",
         "position": "MELEE",
         "profession": "TANK",
         "rarity": 5
@@ -3054,7 +3054,7 @@
         "name_en": "Chilchuck",
         "name_jp": "チルチャック",
         "name_kr": "칠책",
-        "name_tw": null,
+        "name_tw": "奇爾查克",
         "position": "MELEE",
         "profession": "PIONEER",
         "rarity": 5
