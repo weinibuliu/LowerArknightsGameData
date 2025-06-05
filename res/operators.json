@@ -326,7 +326,7 @@
     },
     "char_1039_thorn2": {
         "name": "引星棘刺",
-        "name_en": null,
+        "name_en": "Thorns the Lodestar",
         "name_jp": "引星ソーンズ",
         "name_kr": "쏜즈 더 로드스타",
         "name_tw": null,
@@ -3158,7 +3158,7 @@
     },
     "char_4163_rosesa": {
         "name": "瑰盐",
-        "name_en": null,
+        "name_en": "Rose Salt",
         "name_jp": "ローズソルト",
         "name_kr": "로즈솔트",
         "name_tw": null,
@@ -3168,7 +3168,7 @@
     },
     "char_4164_tecno": {
         "name": "特克诺",
-        "name_en": null,
+        "name_en": "Tecno",
         "name_jp": "テクノ",
         "name_kr": "테크노",
         "name_tw": null,
