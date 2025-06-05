@@ -327,8 +327,8 @@
     "char_1039_thorn2": {
         "name": "引星棘刺",
         "name_en": null,
-        "name_jp": null,
-        "name_kr": null,
+        "name_jp": "引星ソーンズ",
+        "name_kr": "쏜즈 더 로드스타",
         "name_tw": null,
         "position": "RANGED",
         "profession": "SPECIAL",
@@ -365,6 +365,20 @@
         "rarity": 6,
         "tokens": [
             "投递坐标"
+        ]
+    },
+    "char_1042_phatm2": {
+        "name": "酒神",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "SUPPORT",
+        "rarity": 6,
+        "tokens": [
+            "本能的召唤",
+            "迷狂牢笼"
         ]
     },
     "char_106_franka": {
@@ -3145,8 +3159,8 @@
     "char_4163_rosesa": {
         "name": "瑰盐",
         "name_en": null,
-        "name_jp": null,
-        "name_kr": null,
+        "name_jp": "ローズソルト",
+        "name_kr": "로즈솔트",
         "name_tw": null,
         "position": "RANGED",
         "profession": "MEDIC",
@@ -3155,8 +3169,8 @@
     "char_4164_tecno": {
         "name": "特克诺",
         "name_en": null,
-        "name_jp": null,
-        "name_kr": null,
+        "name_jp": "テクノ",
+        "name_kr": "테크노",
         "name_tw": null,
         "position": "RANGED",
         "profession": "CASTER",
@@ -3262,6 +3276,16 @@
         "profession": "PIONEER",
         "rarity": 1
     },
+    "char_4191_tippi": {
+        "name": "蒂比",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "MELEE",
+        "profession": "SPECIAL",
+        "rarity": 5
+    },
     "char_4193_lemuen": {
         "name": "蕾缪安",
         "name_en": null,
@@ -3281,6 +3305,16 @@
         "position": "MELEE",
         "profession": "TANK",
         "rarity": 6
+    },
+    "char_4198_christ": {
+        "name": "Miss.Christine",
+        "name_en": null,
+        "name_jp": null,
+        "name_kr": null,
+        "name_tw": null,
+        "position": "RANGED",
+        "profession": "CASTER",
+        "rarity": 5
     },
     "char_420_flamtl": {
         "name": "焰尾",
